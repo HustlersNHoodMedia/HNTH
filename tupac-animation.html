@@ -6,18 +6,21 @@
 <title>THE 11-MONTH RUN</title>
 <style>
   @font-face {
-    font-family: "BrandFont";
+    font-family: "BrandText";
     src: url("TUPAHRG_.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  @font-face {
+    font-family: "BrandNumbers";
+    src: url("DK-More-Or-Less.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
   html, body {
     width: 100%;
@@ -27,87 +30,112 @@
   }
 
   body {
-    font-family: "BrandFont", sans-serif;
-    color: #ffffff;
+    font-family: "BrandText", sans-serif;
+    color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 18px;
   }
 
-  /* 16:9 stage centered on screen */
+  /* 16:9 stage centered */
   #stage {
     position: relative;
     background: #000000;
-    color: #ffffff;
+    color: #FFFFFF;
     overflow: hidden;
-    /* Fit a 16:9 box inside the viewport */
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
   }
 
-  #content {
+  /* ---------- Content scenes ---------- */
+  .scene {
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4%;
+    opacity: 0;
+    pointer-events: none;
   }
 
   /* Title */
   #title {
-    font-size: 62px;
-    line-height: 1.05;
+    font-size: 64px;
+    letter-spacing: -0.01em;
     text-align: center;
-    letter-spacing: 0.04em;
-    margin-bottom: 56px;
-    opacity: 0;
-    transform: translateY(14px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
-    white-space: nowrap;
-  }
-  #title.show {
-    opacity: 1;
-    transform: translateY(0);
+    transition: opacity 300ms ease;
   }
 
-  /* Stats */
-  #stats {
+  /* Stat takeover */
+  #statScene {
+    transition: opacity 200ms ease;
+  }
+  .stat-inner {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 22px;
+    align-items: center;
   }
-
-  .stat {
-    display: flex;
-    align-items: baseline;
-    opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .stat.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .stat .num {
-    width: 110px;
-    text-align: right;
-    font-size: 40px;
+  .stat-num {
+    width: 50%;
+    text-align: center;
+    font-family: "BrandNumbers", sans-serif;
+    font-size: 180px;
     line-height: 1;
-    flex: 0 0 auto;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
   }
-
-  .stat .label {
-    margin-left: 26px;
-    font-size: 30px;
-    line-height: 1;
+  .stat-label {
+    width: 50%;
+    font-size: 22px;
     letter-spacing: 0.32em;
+    padding-right: 6%;
   }
 
-  /* Play / Replay button overlay */
-  .overlay {
+  /* ---------- Persistent overlays ---------- */
+  .overlay-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  /* Date stamp top-right */
+  #dateStamp {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+    z-index: 30;
+  }
+
+  /* VHS grain */
+  #grain {
+    z-index: 20;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+  }
+  #grain svg { width: 100%; height: 100%; display: block; }
+
+  /* Scanlines */
+  #scanlines {
+    z-index: 25;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.07) 0px,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  /* ---------- Play overlay ---------- */
+  #playOverlay {
     position: absolute;
     inset: 0;
     display: flex;
@@ -115,167 +143,194 @@
     justify-content: center;
     background: #000000;
     cursor: pointer;
-    z-index: 10;
+    z-index: 40;
   }
-  .overlay.hidden {
-    display: none;
-  }
-
-  .btn {
+  #playOverlay.hidden { display: none; }
+  .play-btn {
     width: 110px;
     height: 110px;
-    border: 3px solid #ffffff;
+    border: 3px solid #FFFFFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease, background 0.2s ease;
   }
-  .overlay:hover .btn {
+  #playOverlay:hover .play-btn {
     transform: scale(1.06);
     background: rgba(255, 255, 255, 0.08);
   }
-
-  /* Play triangle */
-  .btn .triangle {
-    width: 0;
-    height: 0;
+  .triangle {
+    width: 0; height: 0;
     border-style: solid;
     border-width: 22px 0 22px 38px;
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent #FFFFFF;
     margin-left: 8px;
   }
 
-  /* Replay label */
-  #replayOverlay .btn {
-    width: auto;
-    height: auto;
-    border-radius: 40px;
-    padding: 18px 34px;
-    font-size: 24px;
-    letter-spacing: 0.2em;
+  /* ---------- Replay button (below stage) ---------- */
+  #replayBtn {
+    font-family: "BrandText", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px 24px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease, background 0.2s ease;
   }
+  #replayBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #replayBtn:hover { background: rgba(255, 255, 255, 0.1); }
 </style>
 </head>
 <body>
   <div id="stage">
-    <div id="content">
+    <!-- Scenes -->
+    <div class="scene" id="titleScene">
       <div id="title">THE 11-MONTH RUN</div>
-      <div id="stats">
-        <div class="stat" data-target="150">
-          <span class="num">0</span>
-          <span class="label">SONGS RECORDED</span>
-        </div>
-        <div class="stat" data-target="3">
-          <span class="num">0</span>
-          <span class="label">MOVIES FILMED</span>
-        </div>
-        <div class="stat" data-target="2">
-          <span class="num">0</span>
-          <span class="label">ALBUMS RELEASED</span>
-        </div>
-        <div class="stat" data-target="2">
-          <span class="num">0</span>
-          <span class="label">CONTINENTS TOURED</span>
-        </div>
+    </div>
+
+    <div class="scene" id="statScene">
+      <div class="stat-inner">
+        <div class="stat-num" id="statNum">0</div>
+        <div class="stat-label" id="statLabel">SONGS RECORDED</div>
       </div>
     </div>
 
-    <!-- Play overlay -->
-    <div class="overlay" id="playOverlay">
-      <div class="btn"><div class="triangle"></div></div>
+    <!-- Persistent overlays -->
+    <div class="overlay-layer" id="grain">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <filter id="noiseFilter">
+          <feTurbulence id="turb" type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" seed="0"/>
+          <feColorMatrix type="saturate" values="0"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+      </svg>
     </div>
+    <div class="overlay-layer" id="scanlines"></div>
+    <div id="dateStamp">SEPT '95 &mdash; SEPT '96</div>
 
-    <!-- Replay overlay -->
-    <div class="overlay hidden" id="replayOverlay">
-      <div class="btn">REPLAY</div>
+    <!-- Play overlay -->
+    <div id="playOverlay">
+      <div class="play-btn"><div class="triangle"></div></div>
     </div>
   </div>
 
+  <!-- Replay button below the stage -->
+  <button id="replayBtn">&#8635; Replay</button>
+
 <script>
   (function () {
+    var titleScene = document.getElementById("titleScene");
     var title = document.getElementById("title");
-    var stats = Array.prototype.slice.call(document.querySelectorAll(".stat"));
+    var statScene = document.getElementById("statScene");
+    var statNum = document.getElementById("statNum");
+    var statLabel = document.getElementById("statLabel");
     var playOverlay = document.getElementById("playOverlay");
-    var replayOverlay = document.getElementById("replayOverlay");
+    var replayBtn = document.getElementById("replayBtn");
+    var turb = document.getElementById("turb");
+
+    var STATS = [
+      { target: 150, label: "SONGS RECORDED" },
+      { target: 3,   label: "MOVIES FILMED" },
+      { target: 2,   label: "ALBUMS RELEASED" },
+      { target: 2,   label: "CONTINENTS TOURED" }
+    ];
 
     var timers = [];
+    var rafId = null;
 
+    function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
     function clearTimers() {
-      timers.forEach(function (t) { clearTimeout(t); });
+      timers.forEach(clearTimeout);
       timers = [];
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
     }
 
-    function later(fn, ms) {
-      timers.push(setTimeout(fn, ms));
-    }
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
 
-    // Ease-out cubic
-    function easeOut(t) {
-      return 1 - Math.pow(1 - t, 3);
-    }
+    // ---- VHS grain flicker: regenerate seed every ~100ms ----
+    setInterval(function () {
+      turb.setAttribute("seed", Math.floor(Math.random() * 1000));
+    }, 100);
 
-    function countUp(el, target, duration) {
+    function countUp(target, duration) {
       var start = null;
       function frame(ts) {
         if (start === null) start = ts;
         var p = Math.min((ts - start) / duration, 1);
-        var val = Math.round(easeOut(p) * target);
-        el.textContent = val;
+        statNum.textContent = Math.round(easeOutCubic(p) * target);
         if (p < 1) {
-          requestAnimationFrame(frame);
+          rafId = requestAnimationFrame(frame);
         } else {
-          el.textContent = target;
+          statNum.textContent = Math.round(target);
         }
       }
-      requestAnimationFrame(frame);
+      rafId = requestAnimationFrame(frame);
     }
 
     function reset() {
       clearTimers();
-      title.classList.remove("show");
-      stats.forEach(function (s) {
-        s.classList.remove("show");
-        s.querySelector(".num").textContent = "0";
-      });
+      titleScene.style.opacity = "0";
+      statScene.style.opacity = "0";
+      statNum.textContent = "0";
+      replayBtn.classList.remove("show");
     }
 
     function play() {
       reset();
       playOverlay.classList.add("hidden");
-      replayOverlay.classList.add("hidden");
 
-      // Timeline (~9s total)
-      // Title fades in at 0.4s
-      later(function () { title.classList.add("show"); }, 400);
+      // ---------- Phase 1: Opening title (0.3s–1.9s) ----------
+      // Fade in at 0.3s, hold 0.8s, fade out 300ms.
+      later(function () { titleScene.style.opacity = "1"; }, 300);
+      // Title fully in ~600ms after start (300 fade) -> 900ms; hold 800ms -> begin fade out at 1600ms.
+      later(function () { titleScene.style.opacity = "0"; }, 1600);
 
-      // Stats fade in one by one, each counts up
-      var statStart = 1600;   // first stat begins
-      var statGap = 1500;     // spacing between stats
-      var countDuration = 1300;
+      // ---------- Phase 2: Stats one at a time (1.9s–9.1s) ----------
+      // Each stat 1.8s: fade in 200ms -> count 900ms -> hold 500ms -> fade out 200ms.
+      var STAT_START = 1900;
+      var STAT_LEN = 1800;
 
-      stats.forEach(function (stat, i) {
-        var at = statStart + i * statGap;
+      STATS.forEach(function (s, i) {
+        var base = STAT_START + i * STAT_LEN;
+
+        // Set content + fade in
         later(function () {
-          stat.classList.add("show");
-          var num = stat.querySelector(".num");
-          var target = parseInt(stat.getAttribute("data-target"), 10);
-          countUp(num, target, countDuration);
-        }, at);
+          statLabel.textContent = s.label;
+          statNum.textContent = "0";
+          statScene.style.opacity = "1";
+        }, base);
+
+        // Begin count-up after fade-in (200ms)
+        later(function () {
+          countUp(s.target, 900);
+        }, base + 200);
+
+        // Fade out at base + 200(fade) + 900(count) + 500(hold) = base + 1600
+        later(function () {
+          statScene.style.opacity = "0";
+        }, base + 1600);
       });
 
-      // Final stat finishes ~ statStart + 3*gap + countDuration
-      var endTime = statStart + (stats.length - 1) * statGap + countDuration;
-      // = 1600 + 4500 + 1300 = 7400ms
-
-      // Hold final frame 1.8s, then show replay
+      // ---------- Phase 3: End (9.1s+) ----------
+      // Last stat fades out at 1900 + 3*1800 + 1600 = 9100ms; +200 fade done = 9300ms.
+      // Brief hold on black, then replay button.
+      var endTime = STAT_START + (STATS.length - 1) * STAT_LEN + 1600 + 200; // 9300
       later(function () {
-        replayOverlay.classList.remove("hidden");
-      }, endTime + 1800);
+        replayBtn.classList.add("show");
+      }, endTime + 500);
     }
 
     playOverlay.addEventListener("click", play);
-    replayOverlay.addEventListener("click", play);
+    replayBtn.addEventListener("click", play);
   })();
 </script>
 </body>
