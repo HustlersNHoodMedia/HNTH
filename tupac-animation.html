@@ -8,244 +8,308 @@
   @font-face {
     font-family: "BrandText";
     src: url("TUPAHRG_.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-weight: normal; font-style: normal; font-display: swap;
   }
   @font-face {
     font-family: "BrandNumbers";
     src: url("DK-More-Or-Less.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-weight: normal; font-style: normal; font-display: swap;
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html, body {
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    overflow: hidden;
-  }
+  * { box-sizing: border-box; }
 
   body {
-    font-family: "BrandText", sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: sans-serif;
   }
 
   /* 16:9 stage centered */
   #stage {
-    position: relative;
-    background: #000000;
-    color: #FFFFFF;
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    container-type: inline-size;
+    background: #000;
+    color: #fff;
     overflow: hidden;
-    width: min(100vw, calc(100vh * 16 / 9));
-    height: min(100vh, calc(100vw * 9 / 16));
   }
 
-  /* ---------- Content scenes ---------- */
-  .scene {
+  /* Helper font classes for inline spans */
+  .bn { font-family: "BrandNumbers", sans-serif; font-variant-numeric: tabular-nums; }
+  .bt { font-family: "BrandText", sans-serif; }
+
+  /* ---------- Frames: hard cuts via visibility ---------- */
+  .frame {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
+    visibility: hidden;
+    z-index: 1;
   }
+  .frame.active { visibility: visible; }
 
-  /* Title */
-  #title {
-    font-size: 64px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    transition: opacity 300ms ease;
+  /* ----- Title frame ----- */
+  .eyebrow {
+    position: absolute;
+    top: 12cqw;
+    left: 5cqw;
+    font-family: monospace;
+    font-size: 1.6cqw;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
   }
-
-  /* Stat takeover */
-  #statScene {
-    transition: opacity 200ms ease;
-  }
-  .stat-inner {
-    width: 100%;
-    height: 100%;
+  .title-group {
+    position: absolute;
+    bottom: 7cqw;
+    left: 5cqw;
+    right: 5cqw;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
   }
-  .stat-num {
-    width: 50%;
-    text-align: center;
+  .title-num {
     font-family: "BrandNumbers", sans-serif;
-    font-size: 180px;
-    line-height: 1;
+    font-size: 26cqw;
+    line-height: 0.82;
     font-variant-numeric: tabular-nums;
-    font-feature-settings: "tnum" 1;
+  }
+  .title-word {
+    font-family: "BrandText", sans-serif;
+    font-size: 17cqw;
+    line-height: 0.82;
+    letter-spacing: -0.01em;
+  }
+
+  /* ----- Stat frames ----- */
+  .stat-num {
+    position: absolute;
+    font-family: "BrandNumbers", sans-serif;
+    line-height: 0.82;
+    font-variant-numeric: tabular-nums;
   }
   .stat-label {
-    width: 50%;
-    font-size: 22px;
-    letter-spacing: 0.32em;
-    padding-right: 6%;
+    position: absolute;
+    font-family: "BrandText", sans-serif;
+    font-size: 2.4cqw;
+    letter-spacing: 0.2em;
+    line-height: 1.05;
+    text-transform: uppercase;
+  }
+
+  /* Stat 01 */
+  #stat01 .stat-num { bottom: 4cqw; left: 4cqw; font-size: 26cqw; }
+  #stat01 .stat-label { top: 9cqw; right: 4cqw; text-align: right; }
+
+  /* Stat 02 */
+  #stat02 .stat-num {
+    top: 50%; left: 50%;
+    transform: translate(-50%, -52%);
+    font-size: 50cqw;
+  }
+  #stat02 .stat-label { bottom: 5cqw; left: 5cqw; }
+
+  /* Stat 03 */
+  #stat03 .stat-num {
+    top: 50%; right: 4cqw;
+    transform: translateY(-52%);
+    font-size: 45cqw;
+  }
+  #stat03 .stat-label {
+    top: 50%; left: 5cqw;
+    transform: translateY(-50%);
+  }
+
+  /* Stat 04 */
+  #stat04 .stat-num { bottom: 3cqw; left: 4cqw; font-size: 45cqw; }
+  #stat04 .stat-label { top: 9cqw; right: 4cqw; text-align: right; }
+
+  /* ----- Closing frame ----- */
+  .closing-group {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 88%;
+  }
+  .closing-line1 {
+    font-family: monospace;
+    font-size: 5cqw;
+    letter-spacing: 0.06em;
+    font-variant-numeric: tabular-nums;
+  }
+  .closing-divider {
+    height: 0.18cqw;
+    background: rgba(255, 255, 255, 0.55);
+    width: 32%;
+    margin: 1.8cqw auto;
+  }
+  .closing-line2 {
+    font-size: 8cqw;
+    line-height: 1;
   }
 
   /* ---------- Persistent overlays ---------- */
-  .overlay-layer {
+  .meta {
     position: absolute;
-    inset: 0;
-    pointer-events: none;
+    z-index: 5;
+    font-family: monospace;
+    font-size: 1.5cqw;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
+  #metaLeft { top: 2.6cqw; left: 3cqw; }
+  #metaRight { top: 2.6cqw; right: 3cqw; text-align: right; }
+  /* counter digits in BrandNumbers per font rule */
+  #metaRight .bn, #metaLeft .bn { letter-spacing: 0; }
 
-  /* Date stamp top-right */
-  #dateStamp {
+  .reg {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    color: #FFFFFF;
-    opacity: 0.5;
-    letter-spacing: 0.05em;
-    z-index: 30;
+    z-index: 5;
+    width: 1.6cqw;
+    height: 1.6cqw;
+    opacity: 0.4;
   }
+  .reg.tl { top: 1cqw; left: 1cqw; border-top: 0.12cqw solid #fff; border-left: 0.12cqw solid #fff; }
+  .reg.tr { top: 1cqw; right: 1cqw; border-top: 0.12cqw solid #fff; border-right: 0.12cqw solid #fff; }
+  .reg.bl { bottom: 1cqw; left: 1cqw; border-bottom: 0.12cqw solid #fff; border-left: 0.12cqw solid #fff; }
+  .reg.br { bottom: 1cqw; right: 1cqw; border-bottom: 0.12cqw solid #fff; border-right: 0.12cqw solid #fff; }
 
-  /* VHS grain */
-  #grain {
-    z-index: 20;
-    opacity: 0.06;
-    mix-blend-mode: overlay;
-  }
-  #grain svg { width: 100%; height: 100%; display: block; }
-
-  /* Scanlines */
-  #scanlines {
-    z-index: 25;
-    background: repeating-linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.07) 0px,
-      rgba(255, 255, 255, 0.07) 1px,
-      transparent 1px,
-      transparent 3px
-    );
-  }
-
-  /* ---------- Play overlay ---------- */
+  /* ---------- Play / Replay overlay ---------- */
   #playOverlay {
     position: absolute;
     inset: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000000;
+    background: rgba(0, 0, 0, 0.55);
     cursor: pointer;
-    z-index: 40;
+    opacity: 1;
+    transition: opacity 300ms ease;
   }
-  #playOverlay.hidden { display: none; }
+  #playOverlay.fade-out { opacity: 0; pointer-events: none; }
   .play-btn {
-    width: 110px;
-    height: 110px;
-    border: 3px solid #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.55);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease, background 0.2s ease;
   }
-  #playOverlay:hover .play-btn {
-    transform: scale(1.06);
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .triangle {
+  .play-tri {
     width: 0; height: 0;
     border-style: solid;
-    border-width: 22px 0 22px 38px;
-    border-color: transparent transparent transparent #FFFFFF;
-    margin-left: 8px;
+    border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 4px;
   }
-
-  /* ---------- Replay button (below stage) ---------- */
-  #replayBtn {
-    font-family: "BrandText", sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.18em;
-    color: #FFFFFF;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    padding: 10px 24px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 400ms ease, background 0.2s ease;
-  }
-  #replayBtn.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  #replayBtn:hover { background: rgba(255, 255, 255, 0.1); }
 </style>
 </head>
 <body>
   <div id="stage">
-    <!-- Scenes -->
-    <div class="scene" id="titleScene">
-      <div id="title">THE 11-MONTH RUN</div>
-    </div>
 
-    <div class="scene" id="statScene">
-      <div class="stat-inner">
-        <div class="stat-num" id="statNum">0</div>
-        <div class="stat-label" id="statLabel">SONGS RECORDED</div>
+    <!-- ===== FRAMES ===== -->
+    <div class="frame" id="frameTitle">
+      <div class="eyebrow">FILE / 001 &mdash; THE RUN</div>
+      <div class="title-group">
+        <span class="title-num">11</span>
+        <span class="title-word">MONTHS</span>
       </div>
     </div>
 
-    <!-- Persistent overlays -->
-    <div class="overlay-layer" id="grain">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <filter id="noiseFilter">
-          <feTurbulence id="turb" type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" seed="0"/>
-          <feColorMatrix type="saturate" values="0"/>
-        </filter>
-        <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
-      </svg>
+    <div class="frame" id="stat01">
+      <div class="stat-num" id="num01">000</div>
+      <div class="stat-label">SONGS<br>RECORDED</div>
     </div>
-    <div class="overlay-layer" id="scanlines"></div>
-    <div id="dateStamp">SEPT '95 &mdash; SEPT '96</div>
 
-    <!-- Play overlay -->
+    <div class="frame" id="stat02">
+      <div class="stat-num" id="num02">0</div>
+      <div class="stat-label">MOVIES<br>FILMED</div>
+    </div>
+
+    <div class="frame" id="stat03">
+      <div class="stat-num" id="num03">0</div>
+      <div class="stat-label">ALBUMS<br>RELEASED</div>
+    </div>
+
+    <div class="frame" id="stat04">
+      <div class="stat-num" id="num04">0</div>
+      <div class="stat-label">CONTINENTS<br>TOURED</div>
+    </div>
+
+    <div class="frame" id="frameClosing">
+      <div class="closing-group">
+        <div class="closing-line1" id="closingLine1"></div>
+        <div class="closing-divider"></div>
+        <div class="closing-line2"><span class="bn">11</span><span class="bt">&nbsp;MONTHS.</span></div>
+      </div>
+    </div>
+
+    <!-- ===== PERSISTENT OVERLAYS ===== -->
+    <div class="meta" id="metaLeft">TUPAC SHAKUR / SEPT '95 &mdash; SEPT '96</div>
+    <div class="meta" id="metaRight"></div>
+
+    <div class="reg tl"></div>
+    <div class="reg tr"></div>
+    <div class="reg bl"></div>
+    <div class="reg br"></div>
+
+    <!-- ===== PLAY OVERLAY ===== -->
     <div id="playOverlay">
-      <div class="play-btn"><div class="triangle"></div></div>
+      <div class="play-btn"><div class="play-tri"></div></div>
     </div>
   </div>
 
-  <!-- Replay button below the stage -->
-  <button id="replayBtn">&#8635; Replay</button>
-
 <script>
   (function () {
-    var titleScene = document.getElementById("titleScene");
-    var title = document.getElementById("title");
-    var statScene = document.getElementById("statScene");
-    var statNum = document.getElementById("statNum");
-    var statLabel = document.getElementById("statLabel");
+    var stage = document.getElementById("stage");
     var playOverlay = document.getElementById("playOverlay");
-    var replayBtn = document.getElementById("replayBtn");
-    var turb = document.getElementById("turb");
+    var metaRight = document.getElementById("metaRight");
+    var closingLine1 = document.getElementById("closingLine1");
+
+    var frames = {
+      title: document.getElementById("frameTitle"),
+      s1: document.getElementById("stat01"),
+      s2: document.getElementById("stat02"),
+      s3: document.getElementById("stat03"),
+      s4: document.getElementById("stat04"),
+      closing: document.getElementById("frameClosing")
+    };
 
     var STATS = [
-      { target: 150, label: "SONGS RECORDED" },
-      { target: 3,   label: "MOVIES FILMED" },
-      { target: 2,   label: "ALBUMS RELEASED" },
-      { target: 2,   label: "CONTINENTS TOURED" }
+      { el: document.getElementById("num01"), value: 150 },
+      { el: document.getElementById("num02"), value: 3 },
+      { el: document.getElementById("num03"), value: 2 },
+      { el: document.getElementById("num04"), value: 2 }
     ];
 
     var timers = [];
     var rafId = null;
+
+    // Wrap each digit in a BrandNumbers span (letters/punctuation stay as-is)
+    function wrapDigits(str) {
+      return str.replace(/[0-9]/g, function (d) {
+        return '<span class="bn">' + d + '</span>';
+      });
+    }
+
+    // Closing line 1: digits in BrandNumbers, em-dashes in monospace
+    closingLine1.innerHTML = wrapDigits("150 — 3 — 2 — 2");
+
+    function setCounter(text) {
+      metaRight.innerHTML = wrapDigits(text);
+    }
 
     function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
     function clearTimers() {
@@ -254,23 +318,49 @@
       if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
     }
 
-    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+    function showFrame(key) {
+      Object.keys(frames).forEach(function (k) {
+        frames[k].classList.toggle("active", k === key);
+      });
+    }
 
-    // ---- VHS grain flicker: regenerate seed every ~100ms ----
-    setInterval(function () {
-      turb.setAttribute("seed", Math.floor(Math.random() * 1000));
-    }, 100);
+    function hideAllFrames() {
+      Object.keys(frames).forEach(function (k) {
+        frames[k].classList.remove("active");
+      });
+    }
 
-    function countUp(target, duration) {
-      var start = null;
+    // Scramble: 80ms pause -> 600ms scramble (swap ~every 45ms) -> snap to final
+    function runScramble(el, finalValue) {
+      var digits = String(finalValue).length;
+      var finalText = String(finalValue);
+      el.textContent = "0".repeat(digits);
+
+      var startTs = null;
+      var lastSwap = -Infinity;
+
       function frame(ts) {
-        if (start === null) start = ts;
-        var p = Math.min((ts - start) / duration, 1);
-        statNum.textContent = Math.round(easeOutCubic(p) * target);
-        if (p < 1) {
+        if (startTs === null) startTs = ts;
+        var elapsed = ts - startTs;
+
+        if (elapsed < 80) {
+          rafId = requestAnimationFrame(frame);
+          return;
+        }
+        var se = elapsed - 80;
+        if (se < 600) {
+          if (ts - lastSwap >= 45) {
+            lastSwap = ts;
+            var s = "";
+            for (var i = 0; i < digits; i++) {
+              s += Math.floor(Math.random() * 10);
+            }
+            el.textContent = s;
+          }
           rafId = requestAnimationFrame(frame);
         } else {
-          statNum.textContent = Math.round(target);
+          el.textContent = finalText;
+          rafId = null;
         }
       }
       rafId = requestAnimationFrame(frame);
@@ -278,59 +368,52 @@
 
     function reset() {
       clearTimers();
-      titleScene.style.opacity = "0";
-      statScene.style.opacity = "0";
-      statNum.textContent = "0";
-      replayBtn.classList.remove("show");
+      hideAllFrames();
+      setCounter("— / 04");
+      STATS.forEach(function (s) {
+        s.el.textContent = "0".repeat(String(s.value).length);
+      });
     }
 
     function play() {
       reset();
-      playOverlay.classList.add("hidden");
+      playOverlay.classList.add("fade-out");
 
-      // ---------- Phase 1: Opening title (0.3s–1.9s) ----------
-      // Fade in at 0.3s, hold 0.8s, fade out 300ms.
-      later(function () { titleScene.style.opacity = "1"; }, 300);
-      // Title fully in ~600ms after start (300 fade) -> 900ms; hold 800ms -> begin fade out at 1600ms.
-      later(function () { titleScene.style.opacity = "0"; }, 1600);
+      // 0 - 0.3s : pause on black (overlays visible, no frame)
 
-      // ---------- Phase 2: Stats one at a time (1.9s–9.1s) ----------
-      // Each stat 1.8s: fade in 200ms -> count 900ms -> hold 500ms -> fade out 200ms.
-      var STAT_START = 1900;
-      var STAT_LEN = 1800;
+      // 0.3 - 1.6s : title frame
+      later(function () { showFrame("title"); }, 300);
+
+      // Stats: each 1.58s (80ms pause + 600ms scramble + 900ms hold)
+      var statKeys = ["s1", "s2", "s3", "s4"];
+      var STAT_START = 1600;
+      var STAT_LEN = 1580;
 
       STATS.forEach(function (s, i) {
         var base = STAT_START + i * STAT_LEN;
-
-        // Set content + fade in
         later(function () {
-          statLabel.textContent = s.label;
-          statNum.textContent = "0";
-          statScene.style.opacity = "1";
+          showFrame(statKeys[i]);
+          setCounter("0" + (i + 1) + " / 04");
+          runScramble(s.el, s.value);
         }, base);
-
-        // Begin count-up after fade-in (200ms)
-        later(function () {
-          countUp(s.target, 900);
-        }, base + 200);
-
-        // Fade out at base + 200(fade) + 900(count) + 500(hold) = base + 1600
-        later(function () {
-          statScene.style.opacity = "0";
-        }, base + 1600);
       });
 
-      // ---------- Phase 3: End (9.1s+) ----------
-      // Last stat fades out at 1900 + 3*1800 + 1600 = 9100ms; +200 fade done = 9300ms.
-      // Brief hold on black, then replay button.
-      var endTime = STAT_START + (STATS.length - 1) * STAT_LEN + 1600 + 200; // 9300
+      // 7.92 - 9.42s : closing frame
+      var closingAt = STAT_START + STATS.length * STAT_LEN; // 7920
+      later(function () { showFrame("closing"); }, closingAt);
+
+      // ~9.42s : end -> fade play overlay back in for replay
       later(function () {
-        replayBtn.classList.add("show");
-      }, endTime + 500);
+        hideAllFrames();
+        setCounter("— / 04");
+        playOverlay.classList.remove("fade-out");
+      }, closingAt + 1500);
     }
 
     playOverlay.addEventListener("click", play);
-    replayBtn.addEventListener("click", play);
+
+    // initialise counter
+    setCounter("— / 04");
   })();
 </script>
 </body>
