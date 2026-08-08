@@ -30,3 +30,8 @@ Categorías: `TÍTULO` · `FRAME` · `RESEARCH` · `PRODUCCIÓN` · `CAPTION` ·
 - 2026-08-07 · `PRODUCCIÓN` · Las imágenes con IA tienen que parecer gente común y real (turno de noche, ropa de trabajo, luz normal). Nunca modelos ni estética de publicidad: se nota y arruina el post.
 - 2026-08-07 · `PRODUCCIÓN` · Al poner una cara en un panel, cuidar el encuadre: cara completa, ni cortada ni mal ubicada.
 - 2026-08-07 · `PROCESO` · Si el puente de Apps Script falla en modo caption (no republicado), crear el Google Doc con el conector de Drive en la misma carpeta. El caption nunca queda solo en el chat.
+- 2026-08-08 · `PROCESO` · Toda programación va SIEMPRE a las dos plataformas al mismo horario: Instagram (hustlersnthehoodmedia, canal 6a75d60c99afb443491bec76) y TikTok (hustlersnthehood, canal 6a77ae8599afb4434929eddf). No preguntar cuál.
+- 2026-08-08 · `PROCESO` · En TikTok el criterio de riesgo es más laxo que en IG: ahí puede ir video reposteado sin problema, aunque sea la cuenta principal.
+- 2026-08-08 · `PROCESO` · Buffer: schedulingType solo acepta "automatic" o "notification". El día y hora exactos van en mode: customScheduled + dueAt (ISO UTC). Modos válidos: addToQueue, customScheduled, shareNext, shareNow.
+- 2026-08-08 · `PROCESO` · Buffer: para consultar la cola, los filtros van dentro de filter: { channelIds: [...] }, no sueltos en el input.
+- 2026-08-08 · `PROCESO` · El bloque metadata: { instagram: {...} } es solo para IG. En TikTok se omite.
