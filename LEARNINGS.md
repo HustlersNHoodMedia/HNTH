@@ -46,3 +46,7 @@ Categorías: `TÍTULO` · `FRAME` · `RESEARCH` · `PRODUCCIÓN` · `CAPTION` ·
 - 2026-08-13 · `PROCESO` · El IG de @HustlersNTheHood NO está conectado a Buffer, por decisión del operador (seguridad). Los posts de la cuenta principal se publican a mano. No proponer conectarlo.
 - 2026-08-13 · `PROCESO` · Posts de HNTH → TikTok + X. Videos de Media → TikTok + X + IG de Media. Facebook se suma más adelante.
 - 2026-08-13 · `PROCESO` · La consulta de la cola de Buffer devuelve resultados TRUNCADOS si no se pasa first: 50 y filter: {status: [scheduled]}. Sin eso parece que la cola está vacía cuando no lo está.
+- 2026-08-13 · `RESEARCH` · El crudo tiene que ser ANTERIOR a la versión viral. Si una cuenta chica publicó DESPUÉS de que el video ya explotó, es otro reposteador, no la fuente. Comparar fechas de publicación siempre, antes de darlo por original.
+- 2026-08-13 · `RESEARCH` · Caption en tercera persona ("Man from X helps elderly woman...") = el que subió NO es el protagonista. Primera persona o parentesco explícito = probable fuente real.
+- 2026-08-13 · `PRODUCCIÓN` · Nunca usar el avatar de un perfil como cara del protagonista sin confirmar que el titular de la cuenta ES la persona en pantalla. Publicar la cara equivocada es un dato falso y lo detectan en los comentarios.
+- 2026-08-13 · `PRODUCCIÓN` · Si la cara del protagonista no está confirmada, no va NINGUNA cara real. Va imagen IA coherente con lo que el video sí muestra (tono de piel, ropa, escenario, hora del día), en estilo foto tomada de casualidad por un testigo — nunca posada ni de modelo.
