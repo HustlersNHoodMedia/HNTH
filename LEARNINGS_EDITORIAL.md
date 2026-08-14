@@ -63,3 +63,17 @@ Memoria del sistema editorial de Hustlers N The Hood. Se lee al empezar cada cha
 - 2026-08-14 · `PRODUCCIÓN` · Split screen y círculo no necesitan referencia propia: son una división geométrica de la misma zona de imagen. Handle, logo, degradado, titular y chip no se mueven entre variantes.
 - 2026-08-14 · `TÍTULO` · Cuando el protagonista es famoso y la historia existe POR la fama, el nombre va PRIMERO y en ROJO. La regla de "no abrir con celebridad" se midió sobre tapas donde el nombre era adorno. Prueba: sacar el nombre y leer la frase — si no queda nada, el nombre es el gancho.
 - 2026-08-14 · `PRODUCCIÓN` · Mirar el video CUADRO POR CUADRO antes de escribir el titular, no una impresión general. Caso Usher: el titular decía que un empleado le sostuvo la puerta; lo que pasa es que Usher la abre él mismo, se frena, y hace venir al empleado a sostenerla. Post completamente distinto.
+- 2026-08-14 · `RESEARCH` · El barrido de TikTok es la primera parada, no las webs: el operador rechazó una tanda de candidatos que salían solo de portales
+- 2026-08-14 · `RESEARCH` · El filtro de fecha de la búsqueda de TikTok está caído del lado de ellos: hay que filtrar recencia después, sobre volumen (de ~580 videos, 15 pasaron 100k views con menos de 21 días)
+- 2026-08-14 · `FRAME` · No construir el frame desde la caja de comentarios: el frame sale de lo que pasó, los comentarios solo marcan el tono
+- 2026-08-14 · `TÍTULO` · Imagen única = revelación total. Los títulos que retienen son para carrusel; en imagen única el título cuenta setup, giro y remate (130-190 chars, como los que rindieron)
+- 2026-08-14 · `TÍTULO` · Nunca "kid" para un joven que trabaja: riesgo de que el bot lo lea como trabajo infantil, y además lo achica. Usar "young man"
+- 2026-08-14 · `TÍTULO` · "One day" suena a cuento infantil y mata la tensión: anclar en tiempo real ("two weeks ago", "every morning at 8:30")
+- 2026-08-14 · `TÍTULO` · El nombre de la empresa (FedEx) es dato de caption, no de tapa: ocupa lugar y resta impacto
+- 2026-08-14 · `FORMATO` · El canvas es 1080x1260. Trabajar sobre 1350 desplaza el degradado y el bloque de marca, y se corrige a ojo sin converger
+- 2026-08-14 · `FORMATO` · El SWIPE LEFT es el asset `assets/SWIPE-LEFT.png` (223x43, x=429, y=1169). Recortarlo de un post publicado dio 270x52 con fondo negro pegado
+- 2026-08-14 · `FORMATO` · La itálica se inclina y se centra LÍNEA POR LÍNEA. Inclinar el bloque entero corre el texto (centro medido en 521 en vez de 540)
+- 2026-08-14 · `FORMATO` · Cuando el operador pide más zoom, saltar de una: pasos del 15% no se notan y queman rondas
+- 2026-08-14 · `PROCESO` · Los frames del video se sacan bajando el mp4 al contenedor vía api.apify.com y ffmpeg; sirve para reencuadrar y para armar slides
+- 2026-08-14 · `PROCESO` · Banana Pro como "mejora de calidad" sobre foto real reinterpreta la cara y reencuadra, además del SynthID. El operador lo aprobó igual para esta tapa y pidió conservar las dos versiones
+- 2026-08-14 · `PROCESO` · Entregar una sola carpeta con nombres numerados (01-COVER, 02, 03..., 06-CAPTION) para que se descargue en orden
