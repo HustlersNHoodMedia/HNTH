@@ -77,3 +77,9 @@ Memoria del sistema editorial de Hustlers N The Hood. Se lee al empezar cada cha
 - 2026-08-14 · `PROCESO` · Los frames del video se sacan bajando el mp4 al contenedor vía api.apify.com y ffmpeg; sirve para reencuadrar y para armar slides
 - 2026-08-14 · `PROCESO` · Banana Pro como "mejora de calidad" sobre foto real reinterpreta la cara y reencuadra, además del SynthID. El operador lo aprobó igual para esta tapa y pidió conservar las dos versiones
 - 2026-08-14 · `PROCESO` · Entregar una sola carpeta con nombres numerados (01-COVER, 02, 03..., 06-CAPTION) para que se descargue en orden
+- 2026-08-14 · `PRODUCCIÓN` · Cuando el operador pide más zoom en un panel, dar un salto GRANDE (cortar al menos 40% del ancho de una vez). Mover el recorte de a poco no se nota en pantalla y costó cuatro rondas para algo de una.
+- 2026-08-14 · `PRODUCCIÓN` · El centrado del sujeto en su panel se MIDE en el render y se reporta, no se estima a ojo.
+- 2026-08-14 · `PRODUCCIÓN` · Elegir el frame teniendo en cuenta dónde cae el bloque de handle+logo, para que no quede sobre una zona clara o un elemento importante de la foto.
+- 2026-08-14 · `PRODUCCIÓN` · Banana Pro NO es un enhance: regenera. En una prueba cambió la mandíbula del protagonista, el color y las costuras de una mochila, y le agregó tapa a un vaso. Para subir calidad el default es UPSCALE PURO, que no toca la cara ni dispara la etiqueta. Banana Pro solo si el operador lo pide y va a mirar el resultado.
+- 2026-08-14 · `PRODUCCIÓN` · Si se usa Banana Pro: pasar cada imagen por separado, rearmar la tapa con las imágenes en la misma posición y encuadre, y entregar SIEMPRE las dos versiones (real y mejorada). Nunca borrar la de frames reales.
+- 2026-08-14 · `PRODUCCIÓN` · La etiqueta de IA de Meta NO apareció en una tapa con paneles pasados por Banana Pro. Un solo caso no alcanza para concluir: la detección es inconsistente y puede aparecer después. Pendiente de confirmar en varios posts.
