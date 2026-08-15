@@ -121,3 +121,15 @@ Las entradas `SIN RESOLVER` son reintentables: registran lo ya probado para no r
 - 2026-08-15 · `PROCESO` · CERRAR EL CIRCUITO: el sistema aprendía de las correcciones pero no de los resultados. Ahora hay rutina de revisión de rendimiento (en las instrucciones): scrapear los últimos 18 posts, comparar contra la mediana de 4.510, y anotar solo lo accionable. likesCount -1 = el operador ocultó los likes = flop, es la fila más valiosa de la tabla.
 - 2026-08-15 · `MEDIDO` · Revisión del 15/08 sobre 12 posts recientes: un carrusel del 10/08 hizo 31.864 likes = 7,07x la mediana, y un video del 08/08 hizo 21.752 = 4,82x. Cuatro posts quedaron bajo 0,6x y uno con likes ocultos. Pendiente: estudiar qué frame y estructura usó el de 7x.
 - 2026-08-15 · `MEDIDO` · Un post del 13/08 hizo solo 1.465 likes pero 201 comentarios: tasa del 13,7%, muy alta. Según la Jugada del Reempaquetado eso significa que la audiencia estaba aportando — posible oportunidad desaprovechada. Revisar los comentarios de los posts con esa proporción.
+- 2026-08-15 · `FRAME` · Un post nunca puede asumir que la audiencia ya vio la noticia anterior: el frame "la continuación" no funciona. Si hay dos hechos (el video y la reacción), van combinados en un solo post que se entiende desde cero
+- 2026-08-15 · `TÍTULO` · Cada línea tiene que cerrar sola. Un dato suelto al final ("el estado le dio una A") sin decir qué pasó con eso queda en el aire y pierde impacto
+- 2026-08-15 · `TÍTULO` · La ambigüedad no genera curiosidad, resta: "sus alumnos vinieron por él" no dice nada; "se enojaron y lo negaron" sí
+- 2026-08-15 · `TÍTULO` · Un llanto, una reacción o un gesto siempre van con su causa pegada en la misma frase, si no queda flotando
+- 2026-08-15 · `TÍTULO` · Decir exactamente qué falló, en lenguaje llano: "escribir cuatro palabras para terminar una oración". Construcciones como "left four words blank in a sentence" confunden en vez de golpear
+- 2026-08-15 · `TÍTULO` · "No pudieron" y "no quisieron" no son lo mismo: elegir el que dice la fuente, y cuando la incapacidad es el fondo del asunto, reforzarla ("still couldn't")
+- 2026-08-15 · `TÍTULO` · Palabras del sistema educativo de EEUU que el lector tiene que traducir (seniors) se reemplazan por las llanas (graduating students)
+- 2026-08-15 · `PROCESO` · Antes de entregar hay que mirar la tapa y preguntarse si está bien o hay que rehacerla — cara cortada, tapada por el degradado o por el titular es motivo de rehacer, no de entregar y esperar la corrección
+- 2026-08-15 · `PROCESO` · Chequear el Instagram de la cuenta (últimos ~30 posts) ANTES de proponer historias: Sykes ya estaba publicado y lo propuse igual
+- 2026-08-15 · `PROCESO` · Los reels de Instagram se bajan con apify/instagram-scraper (videoUrl) → run que lo empuja al repo → ffmpeg local. Da frames mejores que la foto de cualquier medio
+- 2026-08-15 · `PROCESO` · X rechaza más de 280 caracteres: para ese canal va una versión corta (título + hashtag); TikTok lleva el caption completo
+- 2026-08-15 · `FORMATO` · Validado: la mutación de Buffer con `assets: [{ image: { url } }]` en JPEG entra bien en TikTok y en X
