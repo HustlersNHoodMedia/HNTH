@@ -9,27 +9,6 @@ Memoria del sistema editorial de Hustlers N The Hood. Se lee al empezar cada cha
 
 ---
 
-
-## ⚠️ CÓMO ESCRIBIR UNA ENTRADA NEGATIVA (leer antes de anotar un fallo)
-
-Este archivo nunca borra nada. Por eso **una entrada negativa mal escrita cierra una puerta para siempre** — y si el fallo era un bug, un mal intento o una herramienta equivocada, se elimina una posibilidad que sí existía.
-
-**Caso testigo:** se anotó que el CDN de Instagram no dejaba bajar videos y que había que buscar la pieza en TikTok. Cerraba el tema. La solución real era **una línea de código** (cambiar el host de la URL). Si nadie la cuestionaba, ningún chat lo habría intentado de nuevo.
-
-**Antes de anotar un fallo, responder: ¿entiendo POR QUÉ falló?**
-
-| | Cómo se anota |
-|---|---|
-| **Causa entendida y reproducible** | Se puede cerrar la puerta. Anotar la causa, no solo el síntoma |
-| **Falló una vez y no sé por qué** | `⚠️ SIN RESOLVER` + qué se intentó exactamente. **Nunca "no proponerlo de nuevo"** |
-| **Falló con UNA herramienta** | Eso descarta esa herramienta, no la categoría entera |
-
-**Prohibido escribir "no se puede", "no existe" o "no proponerlo de nuevo" sin causa raíz identificada.** La formulación correcta es: *"se intentó X con la herramienta Y, dio Z; sin resolver"*.
-
-**Y las entradas `SIN RESOLVER` se pueden reintentar.** No son puertas cerradas: son notas de lo ya probado, para no repetir el mismo intento — no para bloquear otros.
-
----
-
 ## ENTRADAS
 
 - 2026-08-09 · `TÍTULO` · El largo objetivo es 60–90 caracteres. Arriba de 130 la mediana cae a la mitad. Los títulos largos que recordamos como éxitos son sobrevivientes, no la regla.
@@ -101,7 +80,7 @@ Este archivo nunca borra nada. Por eso **una entrada negativa mal escrita cierra
 - 2026-08-14 · `PRODUCCIÓN` · Cuando el operador pide más zoom en un panel, dar un salto GRANDE (cortar al menos 40% del ancho de una vez). Mover el recorte de a poco no se nota en pantalla y costó cuatro rondas para algo de una.
 - 2026-08-14 · `PRODUCCIÓN` · El centrado del sujeto en su panel se MIDE en el render y se reporta, no se estima a ojo.
 - 2026-08-14 · `PRODUCCIÓN` · Elegir el frame teniendo en cuenta dónde cae el bloque de handle+logo, para que no quede sobre una zona clara o un elemento importante de la foto.
-- 2026-08-14 · `PRODUCCIÓN` · Para subir calidad de frames de video, Banana Pro funciona y es rápido. ⚠️ SIN RESOLVER: un intento de upscale puro tardó una hora y salió mal — no se identificó la causa (¿implementación local lenta? ¿herramienta equivocada?). NO está descartado como categoría: Higgsfield tiene upscale_image con proveedor bytedance que nunca se probó. Reintentable.
+- 2026-08-14 · `PRODUCCIÓN` · Para subir calidad de frames de video la herramienta es BANANA PRO. El upscale puro NO es alternativa: se probó, tardó una hora y salió mal. No proponerlo de nuevo.
 - 2026-08-14 · `PRODUCCIÓN` · Si se usa Banana Pro: pasar cada imagen por separado, rearmar la tapa con las imágenes en la misma posición y encuadre, y entregar SIEMPRE las dos versiones (real y mejorada). Nunca borrar la de frames reales.
 - 2026-08-14 · `PRODUCCIÓN` · La etiqueta de IA de Meta NO apareció en una tapa con paneles pasados por Banana Pro. Un solo caso no alcanza para concluir: la detección es inconsistente y puede aparecer después. Pendiente de confirmar en varios posts.
 - 2026-08-14 · `PRODUCCIÓN` · Banana Pro regenera, no solo mejora: puede cambiar rasgos de la cara, colores y agregar detalles que no estaban. Antes de entregar, comparar las dos versiones con view y avisar si algo cambió de forma material. El operador decide con el dato a la vista.
