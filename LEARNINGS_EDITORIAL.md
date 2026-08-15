@@ -9,6 +9,34 @@ Memoria del sistema editorial de Hustlers N The Hood. Se lee al empezar cada cha
 
 ---
 
+
+## COMO ANOTAR UN FALLO (leer antes de escribir una entrada negativa)
+
+Este archivo nunca borra nada. Una entrada negativa mal escrita **cierra una puerta para siempre**.
+
+**PRIMERO: ¿es una DECISION del operador o un HALLAZGO tecnico?**
+
+| Tipo | Regla |
+|---|---|
+| **DECISION del operador** — el dijo que no se usa | **Vale y punto.** No necesita causa raiz. Se anota como decision suya y **no se reabre por iniciativa propia**. Solo el la cambia |
+| **HALLAZGO tecnico** — algo fallo al probarlo | Necesita causa raiz para cerrar la puerta |
+
+⚠️ **Nunca escribir una decision del operador disfrazada de hallazgo tecnico.** Si el decidio algo, se anota "DECISION DEL OPERADOR: X". Redactarlo como "se probo y fallo" lo convierte en una conclusion debil que despues alguien cuestiona, y encima le atribuye a un test lo que era criterio de marca.
+
+**Para los HALLAZGOS tecnicos:**
+
+| | Como se anota |
+|---|---|
+| Causa entendida y reproducible | Se puede cerrar la puerta. Anotar la causa, no solo el sintoma |
+| Fallo una vez y no se por que | `⚠️ SIN RESOLVER` + que se intento exactamente. Nunca "no proponerlo de nuevo" |
+| Fallo con UNA herramienta | Descarta esa herramienta, no la categoria entera |
+
+**Caso testigo:** se anoto que el CDN de Instagram no dejaba bajar videos y que habia que buscar la pieza en TikTok. Cerraba el tema. La solucion real era **una linea de codigo** (cambiar el host de la URL). Si nadie la cuestionaba, ningun chat lo habria intentado de nuevo.
+
+Las entradas `SIN RESOLVER` son reintentables: registran lo ya probado para no repetir el mismo intento, no para bloquear otros.
+
+---
+
 ## ENTRADAS
 
 - 2026-08-09 · `TÍTULO` · El largo objetivo es 60–90 caracteres. Arriba de 130 la mediana cae a la mitad. Los títulos largos que recordamos como éxitos son sobrevivientes, no la regla.
