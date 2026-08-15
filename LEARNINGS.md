@@ -13,6 +13,27 @@ Categorías: `TÍTULO` · `FRAME` · `RESEARCH` · `PRODUCCIÓN` · `CAPTION` ·
 
 ---
 
+
+## ⚠️ CÓMO ESCRIBIR UNA ENTRADA NEGATIVA (leer antes de anotar un fallo)
+
+Este archivo nunca borra nada. Por eso **una entrada negativa mal escrita cierra una puerta para siempre** — y si el fallo era un bug, un mal intento o una herramienta equivocada, se elimina una posibilidad que sí existía.
+
+**Caso testigo:** se anotó que el CDN de Instagram no dejaba bajar videos y que había que buscar la pieza en TikTok. Cerraba el tema. La solución real era **una línea de código** (cambiar el host de la URL). Si nadie la cuestionaba, ningún chat lo habría intentado de nuevo.
+
+**Antes de anotar un fallo, responder: ¿entiendo POR QUÉ falló?**
+
+| | Cómo se anota |
+|---|---|
+| **Causa entendida y reproducible** | Se puede cerrar la puerta. Anotar la causa, no solo el síntoma |
+| **Falló una vez y no sé por qué** | `⚠️ SIN RESOLVER` + qué se intentó exactamente. **Nunca "no proponerlo de nuevo"** |
+| **Falló con UNA herramienta** | Eso descarta esa herramienta, no la categoría entera |
+
+**Prohibido escribir "no se puede", "no existe" o "no proponerlo de nuevo" sin causa raíz identificada.** La formulación correcta es: *"se intentó X con la herramienta Y, dio Z; sin resolver"*.
+
+**Y las entradas `SIN RESOLVER` se pueden reintentar.** No son puertas cerradas: son notas de lo ya probado, para no repetir el mismo intento — no para bloquear otros.
+
+---
+
 ## ENTRADAS
 
 - 2026-08-07 · `TÍTULO` · La tapa solo puede prometer lo que el video publicado entrega. Un "then explained why" cuyo payoff está en otro video del perfil es clickbait y se paga en comentarios.
