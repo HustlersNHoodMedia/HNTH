@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RPM Calculator — Estimated Earnings by Niche</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --bg-2: #0f1530;
+    --card: #131a3a;
+    --card-2: #1a2350;
+    --text: #e9ecf8;
+    --muted: #9aa3c7;
+    --accent: #6ee7b7;
+    --accent-2: #60a5fa;
+    --warn: #fbbf24;
+    --border: rgba(255,255,255,0.08);
+    --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 10% -10%, #1a2350 0%, transparent 60%),
+                radial-gradient(1000px 500px at 110% 110%, #0e2a4d 0%, transparent 60%),
+                var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 0 0 8px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header p { color: var(--muted); margin: 0; font-size: 15px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--card), var(--card-2));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  .card h2 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  label.field {
+    display: block;
+    margin-bottom: 18px;
+  }
+  label.field > span.lbl {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  select, input[type="number"] {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  select:focus, input[type="number"]:focus {
+    border-color: var(--accent-2);
+    background: rgba(255,255,255,0.06);
+  }
+
+  .slider-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  input[type="range"] {
+    flex: 1;
+    accent-color: var(--accent-2);
+  }
+
+  .views-display {
+    font-size: 22px;
+    font-weight: 600;
+    min-width: 130px;
+    text-align: right;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rpm-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  .rpm-info {
+    background: rgba(96,165,250,0.08);
+    border-left: 3px solid var(--accent-2);
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .rpm-info strong { color: var(--text); }
+
+  .result-block {
+    text-align: center;
+    padding: 18px 12px;
+    background: rgba(110,231,183,0.06);
+    border: 1px solid rgba(110,231,183,0.15);
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+  .result-block .lbl {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+  .result-block .val {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-top: 4px;
+  }
+  .result-block .sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .breakdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .breakdown .item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+  .breakdown .item .k {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .breakdown .item .v {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 24px;
+  }
+
+  .preset-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .preset {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .preset:hover {
+    background: rgba(96,165,250,0.15);
+    border-color: var(--accent-2);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RPM Calculator</h1>
+      <p>Estimate creator earnings from views, by niche</p>
+    </header>
+
+    <div class="grid">
+      <!-- Inputs -->
+      <section class="card">
+        <h2>Inputs</h2>
+
+        <label class="field">
+          <span class="lbl">Niche</span>
+          <select id="niche"></select>
+          <div class="rpm-info" id="nicheInfo"></div>
+        </label>
+
+        <label class="field">
+          <span class="lbl">Views</span>
+          <div class="slider-row">
+            <input type="range" id="viewsSlider" min="0" max="7" step="0.01" value="4" />
+            <div class="views-display" id="viewsDisplay">10,000</div>
+          </div>
+          <div class="preset-row">
+            <button class="preset" data-views="1000">1K</button>
+            <button class="preset" data-views="10000">10K</button>
+            <button class="preset" data-views="100000">100K</button>
+            <button class="preset" data-views="1000000">1M</button>
+            <button class="preset" data-views="10000000">10M</button>
+          </div>
+        </label>
+
+        <label class="field">
+          <span class="lbl">RPM Override (optional)</span>
+          <div class="slider-row">
+            <input type="range" id="rpmSlider" min="0" max="60" step="0.5" value="0" />
+            <div class="views-display" id="rpmDisplay" style="min-width:110px;">Auto</div>
+          </div>
+          <div class="rpm-range">
+            <span>$0 (use niche avg)</span>
+            <span>$60</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- Results -->
+      <section class="card">
+        <h2>Estimated Earnings</h2>
+
+        <div class="result-block">
+          <div class="lbl">Total Estimated Revenue</div>
+          <div class="val" id="totalEarnings">$0</div>
+          <div class="sub" id="totalSub">based on niche average</div>
+        </div>
+
+        <div class="breakdown">
+          <div class="item">
+            <div class="k">Low</div>
+            <div class="v" id="lowEarnings">$0</div>
+          </div>
+          <div class="item">
+            <div class="k">Average</div>
+            <div class="v" id="avgEarnings">$0</div>
+          </div>
+          <div class="item">
+            <div class="k">High</div>
+            <div class="v" id="highEarnings">$0</div>
+          </div>
+        </div>
+
+        <div class="breakdown" style="margin-top:14px;">
+          <div class="item">
+            <div class="k">Per 1K Views</div>
+            <div class="v" id="per1k">$0</div>
+          </div>
+          <div class="item">
+            <div class="k">Per Day @ Current</div>
+            <div class="v" id="perDay">$0</div>
+          </div>
+          <div class="item">
+            <div class="k">Per Month</div>
+            <div class="v" id="perMonth">$0</div>
+          </div>
+        </div>
+
+        <div class="footer">
+          RPM = Revenue per 1,000 views. Estimates only — actual earnings vary by CTR, watch time, geography, season, and platform.
+        </div>
+      </section>
+    </div>
+  </div>
+
+<script>
+  // Niche → typical YouTube RPM ranges (USD)
+  const NICHES = [
+    { id: "finance",      name: "Finance & Investing",   low: 15, avg: 29, high: 50 },
+    { id: "insurance",    name: "Insurance",             low: 20, avg: 38, high: 60 },
+    { id: "business",     name: "Business & Marketing",  low: 10, avg: 18, high: 30 },
+    { id: "realestate",   name: "Real Estate",           low: 10, avg: 17, high: 25 },
+    { id: "tech",         name: "Technology & Software", low:  5, avg: 10, high: 18 },
+    { id: "education",    name: "Education & How-To",    low:  8, avg: 13, high: 20 },
+    { id: "automotive",   name: "Automotive",            low:  4, avg:  8, high: 14 },
+    { id: "health",       name: "Health & Fitness",      low:  5, avg:  9, high: 15 },
+    { id: "news",         name: "News & Politics",       low:  3, avg:  7, high: 12 },
+    { id: "diy",          name: "DIY & Crafts",          low:  3, avg:  5, high:  8 },
+    { id: "travel",       name: "Travel",                low:  3, avg:  6, high: 10 },
+    { id: "beauty",       name: "Beauty & Fashion",      low:  3, avg:  6, high: 10 },
+    { id: "food",         name: "Food & Cooking",        low:  2, avg:  5, high:  8 },
+    { id: "lifestyle",    name: "Lifestyle & Vlogs",     low:  2, avg:  4, high:  7 },
+    { id: "sports",       name: "Sports",                low:  2, avg:  4, high:  7 },
+    { id: "pets",         name: "Pets & Animals",        low:  2, avg:  3, high:  6 },
+    { id: "gaming",       name: "Gaming",                low:  1, avg:  3, high:  5 },
+    { id: "entertainment",name: "Entertainment",         low:  1, avg:  2, high:  5 },
+    { id: "music",        name: "Music",                 low:  1, avg:  2, high:  4 },
+    { id: "kids",         name: "Kids & Family",         low:  1, avg:  2, high:  4 },
+  ];
+
+  const $ = (id) => document.getElementById(id);
+  const nicheSel    = $("niche");
+  const nicheInfo   = $("nicheInfo");
+  const viewsSlider = $("viewsSlider");
+  const viewsDisp   = $("viewsDisplay");
+  const rpmSlider   = $("rpmSlider");
+  const rpmDisp     = $("rpmDisplay");
+
+  // Populate niche dropdown
+  NICHES.forEach(n => {
+    const opt = document.createElement("option");
+    opt.value = n.id;
+    opt.textContent = n.name;
+    nicheSel.appendChild(opt);
+  });
+  nicheSel.value = "finance";
+
+  // Logarithmic mapping for views slider: 0 → 0, 1 → 100, 7 → 10M
+  function sliderToViews(s) {
+    if (s <= 0) return 0;
+    return Math.round(Math.pow(10, s));
+  }
+  function viewsToSlider(v) {
+    if (v <= 1) return 0;
+    return Math.log10(v);
+  }
+
+  function fmtNum(n) {
+    return n.toLocaleString("en-US");
+  }
+  function fmtMoney(n) {
+    if (n >= 1_000_000) return "$" + (n / 1_000_000).toFixed(2) + "M";
+    if (n >= 10_000)    return "$" + (n / 1000).toFixed(1) + "K";
+    if (n >= 1000)      return "$" + (n / 1000).toFixed(2) + "K";
+    if (n >= 100)       return "$" + n.toFixed(0);
+    return "$" + n.toFixed(2);
+  }
+
+  function currentNiche() {
+    return NICHES.find(n => n.id === nicheSel.value) || NICHES[0];
+  }
+
+  function compute() {
+    const niche  = currentNiche();
+    const views  = sliderToViews(parseFloat(viewsSlider.value));
+    const override = parseFloat(rpmSlider.value);
+    const useOverride = override > 0;
+    const rpm = useOverride ? override : niche.avg;
+
+    viewsDisp.textContent = fmtNum(views);
+    rpmDisp.textContent = useOverride ? ("$" + override.toFixed(2)) : "Auto";
+
+    nicheInfo.innerHTML =
+      `<strong>${niche.name}</strong> — typical RPM: ` +
+      `$${niche.low}–$${niche.high} (avg <strong>$${niche.avg}</strong>)`;
+
+    const earnAt = (r) => (views / 1000) * r;
+    const total = earnAt(rpm);
+    const low   = earnAt(niche.low);
+    const avg   = earnAt(niche.avg);
+    const high  = earnAt(niche.high);
+
+    $("totalEarnings").textContent = fmtMoney(total);
+    $("totalSub").textContent = useOverride
+      ? `using custom RPM of $${override.toFixed(2)}`
+      : `based on ${niche.name} avg RPM ($${niche.avg})`;
+
+    $("lowEarnings").textContent  = fmtMoney(low);
+    $("avgEarnings").textContent  = fmtMoney(avg);
+    $("highEarnings").textContent = fmtMoney(high);
+
+    $("per1k").textContent    = "$" + rpm.toFixed(2);
+    // Treat the current "views" as monthly total to project a daily/monthly view
+    $("perDay").textContent   = fmtMoney(total / 30);
+    $("perMonth").textContent = fmtMoney(total);
+  }
+
+  // Wire up events
+  nicheSel.addEventListener("change", compute);
+  viewsSlider.addEventListener("input", compute);
+  rpmSlider.addEventListener("input", compute);
+
+  document.querySelectorAll(".preset").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const v = parseInt(btn.dataset.views, 10);
+      viewsSlider.value = viewsToSlider(v);
+      compute();
+    });
+  });
+
+  compute();
+</script>
+</body>
+</html>
