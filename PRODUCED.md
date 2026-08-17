@@ -19,6 +19,7 @@
 
 | Fecha | Cuenta | Estado | Fuente | Qué es |
 |---|---|---|---|---|
+| 2026-08-17 | MEDIA | ENTREGADO | reana_blessed_n_highly_favored (IG) | VIDEO mosaico: baleado y atropellado a los 18, sin sensibilidad de la cintura para abajo, vuelve a pararse |
 | 2026-08-17 | MEDIA | ENTREGADO | savlife550 (TikTok) | VIDEO mosaico: sale de prisión y sorprende a su hermanita a la salida del colegio — programado 3 canales 18/08 00:00Z |
 | 2026-08-17 | HNTH | ENTREGADO | savlife550 (TikTok) | Sale tras 15 años preso y va directo a buscar a su hermana al colegio |
 | 2026-08-17 | HNTH | ENTREGADO | FOX 5 Atlanta | Derrick Moore, entra a la correntada por una nena de 10 |
