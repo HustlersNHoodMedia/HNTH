@@ -12,8 +12,10 @@ Lista viva. **El analista la actualiza cada corrida**: suma las que descubre, ma
 
 | Cuenta | Plataforma | Por qué está acá | Última revisión |
 |---|---|---|---|
-| `raphousetv` | IG | Faceless de clips virales. Más cerca de HNTH Media que de la principal, pero es buen termómetro de qué historia está pegando | 2026-08-16 |
-| `theneighborhoodtalk` | IG | Grande, repostea mucho. Sirve como radar de qué explotó, nunca como fuente de material (viene con su marca) | 2026-08-16 |
+| `theneighborhoodtalk` | IG | **La más útil hoy.** Tapa de texto limpio con UN solo hecho, y la mecánica del segundo post "Update:" sobre la misma historia horas después. Mismo tema que raphousetv el mismo día: 32.482 vs 3.769 likes | 2026-08-17 |
+| `raphousetv` | IG | Termómetro de qué historia está pegando y contraejemplo medido de tapa cargada (collage + marcas de agua). Volumen ~7 posts en 15h, mediana 3.650. Sus estáticas rinden más que sus reels | 2026-08-17 |
+| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. Todo reel, cero tapas. Mide clarísimo que la duración corta gana: 10,5s = 4,2% de like rate contra 1,6% en los de 51-59s | 2026-08-17 |
+| `humansofny` | IG | Fuera de nuestra cultura, **solo formato**. Carrusel APAISADO 1080x720 (uno hizo 257.047 likes) y reels de una persona hablando a cámara de 45-155s. Los dos son formatos que no tocamos | 2026-08-17 |
 
 ---
 
