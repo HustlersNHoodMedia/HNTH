@@ -185,3 +185,10 @@ Las entradas `SIN RESOLVER` son reintentables: registran lo ya probado para no r
 - 2026-08-17 · `TÍTULO` · El número concreto NO es opcional. En el título de las flores el $28 se había caído en una ronda intermedia y el operador lo restauró en la versión final: "his first paycheck" es genérico, "$28" es el post entero.
 - 2026-08-17 · `TÍTULO` · Dos oraciones cortas le ganan a una larga unida por AND. La segunda aterriza sola en vez de arrastrarse detrás de una coma.
 - 2026-08-17 · `TÍTULO` · Un título SIN remate le gana a uno con un remate inventado. En el de las flores fallaron dos intentos de cierre, no había motivo verificable, y la versión final salió limpia.
+- 2026-08-17 · `CAPTION` · 🚨 ANTES de escribir cualquier caption, leer los últimos 24 publicados de la cuenta con apify/instagram-scraper. El manual describe el tono; los posts SON el tono. Tres borradores seguidos fueron rechazados por bitácora hasta que se leyeron los reales.
+- 2026-08-17 · `CAPTION` · Nunca abrir con fecha ni estructura de bitácora. Se abre en la escena o en el número más duro. Las fechas van adentro de la frase, jamás encabezando un bloque.
+- 2026-08-17 · `CAPTION` · Los datos duros entran como fragmentos con ritmo, no como renglones de registro. Y el cierre es una línea humana, nunca un dato administrativo.
+- 2026-08-17 · `CAPTION` · Colocar el detalle para que la conexión la haga el lector, no afirmarla. Ej: que miró a su gerente guardar las flores cae justo antes de que aparezca el ramo — el caption nunca dice "por eso".
+- 2026-08-17 · `CAPTION` · El nombre del protagonista aparece al menos UNA vez, aunque el título use un descriptor.
+- 2026-08-17 · `CAPTION` · La última línea antes del hashtag es SIEMPRE el crédito: "Via: <cuenta>" sin arroba, con (TikTok) entre paréntesis si corresponde, o el medio. Reemplaza la regla anterior de no acreditar noticias.
+- 2026-08-17 · `RESEARCH` · ✅ El sistema detectó saturación de lane solo: avisó que ya se habían publicado dos ahogamientos por correntada en cuatro días, ambos por debajo o apenas encima de la mediana, antes de sacar un tercero. Ese chequeo hay que hacerlo siempre antes de producir.
