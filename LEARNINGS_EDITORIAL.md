@@ -37,6 +37,20 @@ Las entradas `SIN RESOLVER` son reintentables: registran lo ya probado para no r
 
 ---
 
+
+### Cuando una entrada resulta FALSA: se BORRA
+
+La regla de "nunca borrar" protege las **correcciones y preferencias del operador**. NO protege diagnosticos tecnicos que despues resultan equivocados.
+
+**Si se comprueba que una entrada era falsa, se elimina del archivo.** No se deja con una correccion abajo: quedan dos entradas contradiciendose y cualquier chat puede agarrar la equivocada.
+
+**Caso real:** se anoto que las sesiones programadas tienen el repo bloqueado y que habia que escribir por Apify. Era falso — GitHub estaba caido ese dia y el dia anterior una tarea programada habia escrito perfecto. Esa entrada habria hecho que todos los chats evitaran GitHub, que es la base del sistema, por una razon inexistente.
+
+**Antes de anotar un diagnostico tecnico:** verificar la causa. Ante un 403 o un fallo de red, revisar el estado del servicio (githubstatus.com y equivalentes) antes de concluir que es un permiso o una limitacion.
+
+
+---
+
 ## ENTRADAS
 
 - 2026-08-09 · `TÍTULO` · El largo objetivo es 60–90 caracteres. Arriba de 130 la mediana cae a la mitad. Los títulos largos que recordamos como éxitos son sobrevivientes, no la regla.
