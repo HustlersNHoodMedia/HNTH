@@ -294,3 +294,25 @@ La regla de "nunca borrar" protege las **correcciones y preferencias del operado
 - 2026-08-18 · `TITULO` · El molde entra ~180 caracteres en 8 lineas a cuerpo 66. Un titular de 200 obliga al auto-fit a bajar el cuerpo y la tapa deja de parecerse a la referencia. Si el titular no entra, SE ACORTA EL TITULAR, no se achica la letra. Metodo: probar 4 o 5 variantes reales en el render y quedarse con la que da capH 48 y pitch 71 exactos.
 - 2026-08-18 · `FOTO` · En un split, la foto de la derecha tiene que mostrar a la persona MIRANDO Y EN BUEN ESTADO. Puse un frame de el de perfil, con la boca abierta, sin que se entienda que iba caminando ni que estuviera bien. El operador: "el esta mirando a otro lado, no se ve claro que esta andando en bici ni nada contento". El par que funciona es peor-momento / mejor-momento, los dos con la cara de frente.
 - 2026-08-18 · `FOTO` · Un frame de stream en movimiento casi nunca sirve para un panel: la persona sale de perfil, hablando, con los ojos entrecerrados. Para el panel "esta bien" conviene una foto de prensa posada aunque sea de otro dia del arco.
+
+## 🚨 MOLDE DE LA TAPA — MEDIDO SOBRE REFERENCE-carousel.png (2026-08-18)
+El manual de produccion tiene MAL cuatro numeros del molde. Estos son los medidos, y son los que valen.
+Cualquier chat que vaya a renderizar una tapa usa ESTA tabla, no la del manual.
+
+| elemento | manual (MAL) | MEDIDO en la referencia |
+|---|---|---|
+| degradado arranca | y=518 | **y=485** (alpha 0) |
+| degradado negro pleno | y=644 | **y=705** |
+| handle @HustlersNTheHood | y 478-513 | **texto en y 499-516**, ancho 198 |
+| logo | y 526-579, width 203px | y 526-579, **ancho 153** (el PNG del repo ya viene recortado) |
+| hueco handle -> logo | no figura | **10px** |
+| cuerpo del titular | 57px | **66px** (altura de mayuscula 48) |
+| interlineado | 63px | **71px** (line-height 1.076) |
+| primera linea del titular | y=596 | y=596, 8 lineas, ultima termina en 1139 |
+
+- 2026-08-18 · `PRODUCCION` · 🚨 CAUSA RAIZ DE CUATRO CORRECCIONES SEGUIDAS EN LA MISMA TAPA: media ALGUNAS cosas sobre la referencia (el titular, la curva del degradado) y otras las saque de la tabla del manual (posicion del handle y del logo). Mezclar las dos fuentes garantiza que la tapa no se parezca. SE MIDE TODO SOBRE LA REFERENCIA O NADA.
+- 2026-08-18 · `PRODUCCION` · 🚨 Y PEOR: mové el degradado 65px hacia arriba por mi cuenta (de 485 a 420) para resolver un problema de contraste del logo rojo sobre una foto oscura, y despues cambie las fotos y nunca lo volvi a bajar. Quedo el degradado comiendose la foto 65px antes y terminando 85px antes. SI HAY QUE DESVIARSE DEL MOLDE POR UNA FOTO, SE DICE Y SE VUELVE ATRAS CUANDO CAMBIA LA FOTO. Un ajuste temporal sin anotar se convierte en el molde nuevo por accidente.
+- 2026-08-18 · `PRODUCCION` · El contraste del handle y del logo NO se arregla moviendo el degradado: se arregla eligiendo el recorte de la foto. En la referencia el handle blanco cae sobre una remera blanca y se lee flojo tambien. Es asi el molde.
+- 2026-08-18 · `FOTO` · Alejar un recorte un 8% no se nota. Ya estaba anotado para el zoom in ("cortar al menos 40% de una vez") y aplica igual para el zoom out. Si el operador pide alejar y la fuente no da mas, HAY QUE DECIRLO, no entregar un cambio invisible y esperar que pase.
+- 2026-08-18 · `FOTO` · La foto del hospital de Isaiah Thomas es una selfie de celular de 642x922 con un recuadro de texto quemado en y 70-155. El recorte limpio maximo es (36,160,605,922). Mas alla de eso no hay imagen: si se lo quiere mas chico en el panel hace falta OTRA foto, no otro recorte.
+- 2026-08-18 · `PROCESO` · El detector de rojo para medir el logo se contamina con el antialias del texto blanco (2 a 8 pixeles sueltos por fila). Filtrar filas con menos de 10 pixeles rojos antes de sacar el bounding box, o el logo mide 20px de mas hacia arriba.
