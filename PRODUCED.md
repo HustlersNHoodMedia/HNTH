@@ -19,7 +19,7 @@
 
 | Fecha | Cuenta | Estado | Fuente | Qué es |
 |---|---|---|---|---|
-| 2026-08-18 | HNTH | ENTREGADO | NBC10 / NY Post | Isaiah "Humble Zay" Thomas: lo atropellaron en el dia 34 y termino las 3.000 millas, llave de la ciudad 17/08. Tapa THOMAS-KEY: split hospital con collar cervical + el sonriendo con la llave |
+| 2026-08-18 | HNTH | ENTREGADO | NBC10 / NY Post | Isaiah "Humble Zay" Thomas: lo atropellaron en el dia 34 y termino las 3.000 millas, llave de la ciudad 17/08. Tapa THOMAS: split hospital con collar cervical + el sonriendo con la llave |
 | 2026-08-18 | HNTH | DESCARTADO | - | Version THOMAS-SPLIT de esa misma historia: el panel izquierdo era un frame de stream, la cara no se reconocia y el cartel quedaba cortado en "CA FO". Rehecha, carpeta vieja a la papelera |
 | 2026-08-18 | HNTH | DESCARTADO | raphousetv / worldstar | Nieto alimenta al abuelo dos veces por dia y descubre que le cortaron la medicacion a la mitad: no existe fuente original ni desenlace verificable, solo agregadores |
 | 2026-08-18 | HNTH | DESCARTADO | DPSCD Detroit | "Perfect Attendance Pays" $100 semanales: el programa arranco en enero 2026, no es fresco, y hay una investigacion por robo de gift cards |
