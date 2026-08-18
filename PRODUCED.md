@@ -19,7 +19,8 @@
 
 | Fecha | Cuenta | Estado | Fuente | Qué es |
 |---|---|---|---|---|
-| 2026-08-18 | HNTH | ENTREGADO | NBC10 / CBS Philly | Isaiah "Humble Zay" Thomas: lo atropellaron en el dia 34 y termino las 3.000 millas, llave de la ciudad 17/08. Tapa THOMAS-SPLIT (split screen) |
+| 2026-08-18 | HNTH | ENTREGADO | NBC10 / CBS Philly | Isaiah "Humble Zay" Thomas: lo atropellaron en el dia 34 y termino las 3.000 millas, llave de la ciudad 17/08. Tapa THOMAS-CIRCLE (foto unica + circulo con inserto) |
+| 2026-08-18 | HNTH | DESCARTADO | - | Version THOMAS-SPLIT de esa misma historia: el panel izquierdo era un frame de stream, la cara no se reconocia y el cartel quedaba cortado en "CA FO". Rehecha, carpeta vieja a la papelera |
 | 2026-08-18 | HNTH | DESCARTADO | raphousetv / worldstar | Nieto alimenta al abuelo dos veces por dia y descubre que le cortaron la medicacion a la mitad: no existe fuente original ni desenlace verificable, solo agregadores |
 | 2026-08-18 | HNTH | DESCARTADO | DPSCD Detroit | "Perfect Attendance Pays" $100 semanales: el programa arranco en enero 2026, no es fresco, y hay una investigacion por robo de gift cards |
 | 2026-08-18 | HNTH | DESCARTADO | adorequeen32 (TikTok) | Joven autista que camina 4 millas a FedEx en Goose Creek: es la MISMA historia de Lenard ya publicada el 14/08 |
