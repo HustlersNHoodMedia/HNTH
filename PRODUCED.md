@@ -50,3 +50,5 @@
 | 2026-08-19 | HNTH | DESCARTADO | nerdynerdash (TikTok) | Chico contento con zapatillas nuevas: video de reaccion, test de tension vacio — sin obstaculo no hay historia HNTH. Producido dos veces por error, carpeta a la papelera. NO PUBLICAR |
 | 2026-08-19 | HNTH | DESCARTADO | tiffydixxy (TikTok) | Daxton/Branson: producido y entregado por error — familia fuera de la cultura de la cuenta (mismo motivo que Royal Cothrun el 19/08). Carpeta a la papelera. NO PUBLICAR |
 | 2026-08-19 | HNTH | EN CURSO | Puck News / Vulture / THR / BI | VALUE CAROUSEL: Ryan Coogler y el deal de Sinners (reversion de derechos a 25 anios, first-dollar gross, final cut). 6 slides | HOOK: THE MAN WHO DIRECTED BLACK PANTHER, CREED AND SINNERS MADE HOLLYWOOD $2.4 BILLION... | carrusel de valor |
+| 2026-08-19 | HNTH | EN CURSO | uribe_jr13 (TikTok) | 29 anos, primero de su familia en ir a college, termina su RN degree solo en su cuarto (83x indice, fresco 11/08) |
+| 2026-08-19 | HNTH | CANDIDATO | menamonroe (TikTok) | Primera de su familia en graduarse, llevo a su familia en avion al exterior por primera vez (19/08, video con 429 al bajar, reintento pendiente) |
