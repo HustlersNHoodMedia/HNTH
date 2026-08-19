@@ -47,5 +47,5 @@
 
 ⚠️ **Tres ahogamientos por correntada en una semana.** Ese carril está saturado — los dos publicados quedaron por debajo o apenas encima de la mediana. Esperar antes de sacar otro.
 | 2026-08-19 | HNTH | DESCARTADO | Gilbert Sun News / 12News | Royal Cothrun, 14, ayuda a una mujer de 75 con demencia perdida a 103F: el hecho es de junio, el homenaje del 11/08, familia fuera de la cultura de la cuenta, y la cuenta ya publico una llave de la ciudad el 18/08 |
-| 2026-08-19 | HNTH | ENTREGADO | nerdynerdash (TikTok) | Carrusel 3 img (v2: frames Banana Pro, titular rehecho). Tapa: A YOUNG MAN'S FAMILY WRAPPED UP A PAIR OF NEW SHOES FOR HIM. THE LOOK ON HIS FACE WHEN HE OPENED THE BOX HAD THE WHOLE HOUSE ON THEIR FEET CELEBRATING WITH HIM. |
+| 2026-08-19 | HNTH | DESCARTADO | nerdynerdash (TikTok) | Chico contento con zapatillas nuevas: video de reaccion, test de tension vacio — sin obstaculo no hay historia HNTH. Producido dos veces por error, carpeta a la papelera. NO PUBLICAR |
 | 2026-08-19 | HNTH | DESCARTADO | tiffydixxy (TikTok) | Daxton/Branson: producido y entregado por error — familia fuera de la cultura de la cuenta (mismo motivo que Royal Cothrun el 19/08). Carpeta a la papelera. NO PUBLICAR |
