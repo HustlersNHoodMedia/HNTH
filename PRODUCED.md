@@ -25,6 +25,7 @@
 | 2026-08-18 | HNTH | DESCARTADO | DPSCD Detroit | "Perfect Attendance Pays" $100 semanales: el programa arranco en enero 2026, no es fresco, y hay una investigacion por robo de gift cards |
 | 2026-08-18 | HNTH | DESCARTADO | adorequeen32 (TikTok) | Joven autista que camina 4 millas a FedEx en Goose Creek: es la MISMA historia de Lenard ya publicada el 14/08 |
 | 2026-08-18 | HNTH | DESCARTADO | cashdabo (TikTok) | "Compro su casa a los 18": la cuenta es una fabrica de clips de stream, el material es troleo en vivo, no hay historia |
+| 2026-08-19 | MEDIA | ENTREGADO | brandon.tyann (IG) | VIDEO mosaico: tio de 92 con el Lincoln que compro en 1980; panel inferior imagen IA (Banana Pro) del mismo hombre con el auto — programado 19/08 11 AM ET |
 | 2026-08-18 | MEDIA | ENTREGADO | dreprada (IG) | VIDEO mosaico: le hizo cosquillas a la abuela a los 6, a los 35 ella sigue peleando el abrazo — programado 11 AM ET |
 | 2026-08-18 | MEDIA | ENTREGADO | kriceeg_ (IG) | VIDEO mosaico: papa de 87 viaja en Amtrak a ver a su hermano de 90 en Connecticut — programado 2 PM ET |
 | 2026-08-18 | MEDIA | ENTREGADO | heey_im.kve (IG) | VIDEO mosaico: hija le agrega el apellido del hombre que la crio para la graduacion — programado 7 PM ET |
