@@ -3,7 +3,11 @@
 **Leer ANTES de elegir un candidato.** Cada chat que produce algo lo anota acá. Sin esto, dos chats del mismo Project trabajan la misma historia sin saberlo — ya pasó.
 
 **Formato:** una línea por pieza.
-`YYYY-MM-DD | CUENTA | ESTADO | fuente | qué es`
+`YYYY-MM-DD | CUENTA | ESTADO | fuente | qué es | TÍTULO USADO | formato`
+
+🚨 **El TÍTULO USADO es obligatorio.** Es lo único que le permite al analista semanal cruzar rendimiento contra redacción y aprender qué funciona. Sin él, los likes dicen que un post anduvo bien pero no por qué. Copiarlo textual, tal como quedó en la tapa.
+
+**El FORMATO también:** imagen única, portada+imagen, carrusel de historia, carrusel de valor. Cada estructura tiene su propia lógica de título y su propia mediana.
 
 **Estados:** `EN CURSO` (alguien lo está armando ahora) · `ENTREGADO` (está en el Drive) · `PUBLICADO` · `DESCARTADO` (con el motivo)
 
