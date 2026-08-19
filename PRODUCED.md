@@ -47,3 +47,5 @@
 
 ⚠️ **Tres ahogamientos por correntada en una semana.** Ese carril está saturado — los dos publicados quedaron por debajo o apenas encima de la mediana. Esperar antes de sacar otro.
 | 2026-08-19 | HNTH | DESCARTADO | Gilbert Sun News / 12News | Royal Cothrun, 14, ayuda a una mujer de 75 con demencia perdida a 103F: el hecho es de junio, el homenaje del 11/08, familia fuera de la cultura de la cuenta, y la cuenta ya publico una llave de la ciudad el 18/08 |
+| 2026-08-19 | HNTH | EN CURSO | nerdynerdash (TikTok) | Hermano menor recibe zapatillas nuevas, alegria pura entre hermanos (7.8M views) |
+| 2026-08-19 | HNTH | EN CURSO | tiffydixxy (TikTok) | Daxton cruza el escenario por el diploma honorario de su hermano fallecido Branson |
