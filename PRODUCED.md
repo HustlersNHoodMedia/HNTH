@@ -53,3 +53,5 @@
 | 2026-08-19 | HNTH | DESCARTADO | uribe_jr13 (TikTok) | Enfermero 29 anos primero de su familia: protagonista fuera de la cultura de la cuenta + festejo sin tension visible. TERCER descarte por cultura del dia. Carpeta a la papelera. NO PUBLICAR |
 | 2026-08-19 | HNTH | CANDIDATO | menamonroe (TikTok) | Primera de su familia en graduarse, llevo a su familia al exterior por primera vez (19/08). PENDIENTE: verificar EN FRAMES quien aparece en pantalla antes de tocar cualquier etapa |
 | 2026-08-19 | HNTH | DESCARTADO | menamonroe (TikTok) | Verificado en frames (Arco del Triunfo, familia caminando): encaje cultural OK pero indice 0,3x sin traccion, montaje de festejo, hito declarado en texto y no mostrado. Mismo patron ya anotado: primero-de-la-familia + festejo no es tension suficiente |
+| 2026-08-19 | HNTH | ENTREGADO (V2) | Reuters/AP/WB | Coogler value carousel REHECHO tras correccion: nueva linea de tension (S2/S3/S5 reescritos), 6 slides con foto del protagonista con grade cinematografico, sin fondos de textura. Reemplazado in-place en Drive: COOGLER-SINNERS 2026-08-19 | mismo hook | carrusel de valor |
+
