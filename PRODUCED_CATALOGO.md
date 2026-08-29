@@ -8,3 +8,4 @@ Registro de piezas del formato Catálogo Premium (carruseles 3:4, canvas 2160x28
 |---|---|---|---|---|
 | 2026-08-25 | CATALOGO-90S | Catálogo de nostalgia | (pieza 1, prototipo del formato) | ENTREGADO |
 | 2026-08-28 | SAMUEL-MONROE-JR | Homenaje / etapas de vida (fotos reales de archivo, cero IA sobre su cara) | (no se llego a definir) | **DESCARTADO** — decision del operador: la ventana de oportunidad ya habia pasado. NO se produjo ni se publico. Lo que SI queda del intento: la formula de tratamiento con ref-color (ver LEARNINGS_CATALOGO) y el asset `assets/ref-color-nipsey-crenshaw.png`. |
+| 2026-08-28 | MARATHON-CLOTHING | Repaso de marca / el camino hasta aca — como Nipsey arranco The Marathon y como Blacc Sam la puso al hombro y la escalo | (por definir en Etapa C) | EN CURSO |
