@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!--
+  HNTH — TEMPLATE DE TAPA. CONGELADO.
+  Medidas de la tabla de §3 de la Mecánica, medidas sobre assets/REFERENCE-carousel.png.
+  🚨 NADA DE ESTE ARCHIVO SE EDITA. Solo se reemplazan los huecos {{...}}:
+     {{FOTO}}        url de la imagen (o las dos, en la variante split)
+     {{OBJPOS}}      object-position del recorte, ej: 50% 35%
+     {{HANDLE}}      @HustlersNTheHood  /  @HustlersNTheHoodMedia
+     {{TITULO}}      el título, con <span class="r"> </span> alrededor de las frases rojas
+     {{CHIP}}        bloque del chip SWIPE LEFT, o vacío si no es carrusel
+  Si algo del layout parece necesitar un cambio, se avisa al operador: no se toca acá.
+
+  RENDER A 2x: el viewport es 1080x1260 (coordenadas CSS) y se renderiza con deviceScaleFactor 2,
+  asi el PNG sale 2160x2520. TODAS las medidas de este archivo y de la tabla de §3 son CSS px:
+  en el PNG a 2x aparecen al DOBLE. El QC numerico divide por 2 antes de comparar.
+-->
+<style>
+@font-face{font-family:'Marsden';src:url('Marsden-Ex-Heavy.ttf') format('truetype');font-weight:900;font-style:normal}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1260px;overflow:hidden;background:#000}
+
+/* ---------- EL LIENZO ---------- */
+.cover{position:relative;width:1080px;height:1260px;background:#000}
+
+/* ---------- CAPA 1 — LA FOTO (abajo de todo) ---------- */
+.foto{position:absolute;top:0;left:0;width:1080px;height:700px;overflow:hidden;z-index:1}
+.foto img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* ---------- CAPA 2 — EL FUNDIDO (rampa 518 → 644, 126px. FIJO) ---------- */
+.fade{position:absolute;top:490px;left:0;width:1080px;height:202px;z-index:2;
+      background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,#000 100%)}
+.negro{position:absolute;top:692px;left:0;width:1080px;height:568px;background:#000;z-index:2}
+
+/* ---------- CAPA 3 — BLOQUE DE MARCA ---------- */
+.handle{position:absolute;top:494px;left:0;width:1080px;text-align:center;z-index:3;
+        font-family:'Archivo',Arial,sans-serif;font-style:italic;font-weight:800;
+        color:#fff;font-size:18px;letter-spacing:.4px}
+.logo{position:absolute;top:518px;left:0;width:1080px;text-align:center;z-index:3}
+.logo img{width:151px;height:auto;display:inline-block}   /* escala uniforme, nunca estirar */
+
+/* ---------- CAPA 4 — EL TITULAR ---------- */
+.titulo{position:absolute;top:596px;left:0;width:1080px;padding:0 48px;text-align:center;z-index:4;
+        font-family:'Marsden',Arial,sans-serif;font-style:italic;color:#fff;
+        font-size:66px;line-height:1.076;text-transform:uppercase}
+.r{color:#FF0000}
+
+/* ---------- CHIP ---------- */
+.chip{position:absolute;left:429px;top:1169px;width:223px;height:43px;z-index:4}
+.chip img{width:100%;display:block}
+</style></head>
+<body>
+<div class="cover">
+  <div class="foto"><img src="{{FOTO}}" style="object-position:{{OBJPOS}}"></div>
+  <div class="fade"></div>
+  <div class="negro"></div>
+  <div class="handle">{{HANDLE}}</div>
+  <div class="logo"><img src="HNTH-logo-v3.png"></div>
+  <div class="titulo">{{TITULO}}</div>
+  {{CHIP}}
+</div>
+<script>
+/* AUTO-FIT — solo achica si no entra. Tope 66 = el cuerpo del molde. */
+(function(){
+  function fit(){
+    var h=document.querySelector('.titulo');
+    var TOP=596, LIMITE=1150, avail=LIMITE-TOP, lo=30, hi=66, best=30;
+    for(var i=0;i<22;i++){var m=(lo+hi)/2;h.style.fontSize=m+'px';
+      if(h.getBoundingClientRect().height<=avail){best=m;lo=m}else{hi=m}}
+    h.style.fontSize=Math.floor(best)+'px';
+  }
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){setTimeout(fit,60)})}
+  else{window.addEventListener('load',fit)}
+})();
+</script>
+</body></html>
