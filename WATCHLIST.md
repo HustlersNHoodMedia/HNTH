@@ -12,10 +12,11 @@ Lista viva. **El analista la actualiza cada corrida**: suma las que descubre, ma
 
 | Cuenta | Plataforma | Por qué está acá | Última revisión |
 |---|---|---|---|
-| `raphousetv` | IG | **La más útil hoy.** Contraejemplo estable, medido dos revisiones seguidas: sus estáticas rinden más que sus reels (23-24/08: mediana 3.996 contra 2.290 en 8 posts). Su mejor pieza del día es un carrusel a **2160x2700** — resolución alta en 4:5, que es la vara técnica a mirar. Sigue siendo termómetro de qué historia está pegando | 2026-08-24 |
-| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. **CAMBIÓ desde el 17/08**: ya no es todo reel — sumó estáticas (43.825) y carruseles (53.117) que van a la par o por encima de sus videos. Y la regla de "corto gana" que se les midió el 17/08 no se sostiene: 90s = 49.782 y 66s = 23.007 contra 58s = 6.342. Vale seguirla justamente porque se movió | 2026-08-24 |
-| `theneighborhoodtalk` | IG | **Se dio vuelta.** Abandonó la tapa de texto limpio, que era su mecánica útil: los últimos 8 posts son todos reels y la mediana cayó a ~1.875, contra los 32.482 de la tapa estática medida el 17/08. Queda una revisión más para ver si vuelve a la tapa; si no vuelve, deja de aportar. **Strike 1 de 3** | 2026-08-24 |
-| `humansofny` | IG | Fuera de nuestra cultura, **solo formato**. Se confirma el carrusel APAISADO 1440x960 (257.026 likes) y los reels de una persona a cámara de 45-155s. **Sin material nuevo en esta revisión** — nada de agosto 2026 en la muestra, cadencia baja. **Strike 1 de 3** | 2026-08-24 |
+| `theneighborhoodtalk` | IG | **STRIKE LEVANTADO — volvió a la tapa y es lo único que le funciona.** Medido 31/08 sobre 6 posts de una misma madrugada: sus reels colapsaron a una mediana de **776 likes**, y el único carrusel de la tanda hizo **10.331 con 559 comentarios (5,4%)** — **13x su propia mediana de reel**. La mecánica útil que se le había medido el 17/08 está de vuelta y cargando la cuenta sola. Detalle de formato que importa: lo hace a **720x900**, o sea NO está ganando por resolución. Cadencia altísima: 6 posts en 3 horas | 2026-08-31 |
+| `raphousetv` | IG | **POSIBLE DESPLAZAMIENTO — se dio vuelta contra lo medido el 24/08, hace falta otra semana.** Aquella pasada sus estáticas ganaban (3.996 contra 2.290 de sus reels); el 31/08, sobre 8 posts, es al revés: **reels mediana 4.255 contra estáticas 2.219**. Novedad de formato: sumó estáticas **CUADRADAS 2160x2160** (su mejor estática de la tanda, 4.713) al lado de las 4:5 de siempre. Y sigue siendo motor de DISCUSIÓN, no de aporte — ratios de 22%, 36% y 8,8% en la misma tanda: útil como termómetro de qué historia está peleando la gente, nunca como semilla de cosecha | 2026-08-31 |
+| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. Se confirma lo del 24/08 y se refuerza: su único carrusel de la tanda (**38.463**) le gana a la mediana de sus reels recientes (**20.211**), con 8 posts medidos. Y la regla de "corto gana" queda enterrada con datos nuevos: 42,9s hizo 56.960 y 27,9s hizo 2.895. Tampoco chasea resolución — sus mejores piezas salen a **720x1280** | 2026-08-31 |
+| `humansofny` | IG | Fuera de nuestra cultura, **solo formato**. **Sin material nuevo por segunda revisión seguida**: lo más reciente en la muestra es del 31/07/2026, un mes atrás. Se confirma el carrusel APAISADO 1440x960 (257.035 likes) y que su motor real es el reel vertical LARGO de una persona a cámara: 99s = 544.599 y 155s = 106.098, contra 45s = 107.579. **Strike 2 de 3** | 2026-08-31 |
+| `blackinformationnetwork` | IG | **NUEVA (entra por la vía 1, con evidencia).** No entra por su formato sino porque su sección de comentarios ya funcionó dos veces como semilla del sistema: PRODUCED.md registra un post suyo con **330 comentarios sobre 1.182 likes (28%)** y otro con **518 sobre 6.870 (7,5%)**, los dos usados como señal de conversación. Es donde aterrizan nuestras historias cuando las levanta la prensa negra, así que sirve para las dos cosas: ver quién más agarró la historia, y cosechar. ⚠️ Verificar el TIPO de conversación antes de cosechar — en sus posts políticos el ratio alto es pelea | 2026-08-31 |
 
 ---
 
@@ -31,7 +32,7 @@ No hace falta que el operador las nombre. El analista las encuentra:
 
 **Criterio para que salga:** tres revisiones seguidas sin nada aprovechable.
 
-⚠️ **En la corrida del 24/08 no se sumó ninguna cuenta nueva, y la razón es concreta:** la vía 1 (ver qué páginas grandes levantaron nuestras historias) necesita un barrido POR HISTORIA, no por cuenta, y no se corrió en esta pasada. Queda como el paso pendiente definido para la próxima corrida — no como "no encontré nada".
+⚠️ **El barrido POR HISTORIA sigue sin correrse.** Quedó pendiente el 24/08 y sigue pendiente el 31/08. La razón concreta esta vez: la corrida se fue entera en recuperar los títulos de las 14 tapas (dos rondas de OCR más el rescate por weserv). `blackinformationnetwork` entró por la vía 1 pero desde evidencia ya registrada en PRODUCED.md, no desde un barrido nuevo. **Próxima corrida: arrancar por ahí, no por el final** — tomar las dos historias más fuertes de la quincena (la de Atatiana Jefferson y la de Gary/Houston) y buscar qué cuentas grandes las levantaron.
 
 ---
 
@@ -43,6 +44,8 @@ No hace falta que el operador las nombre. El analista las encuentra:
 - **Lo que evitan**: a veces lo más útil es notar qué NO hacen.
 
 ⚠️ **Páginas fuera de nuestra cultura:** sirven igual, pero solo por el formato. Anotar la mecánica, nunca el tema.
+
+📌 **Patrón que se repite en tres de las cinco (31/08):** ninguna está ganando por resolución. theneighborhoodtalk gana con 720x900, goodnews_movement con 720x1280. La vara técnica del 24/08 (los 2160x2700 de raphousetv) no se sostiene como ventaja — lo que se repite es el CARRUSEL/ESTÁTICA por encima del reel en tres de las cuatro cuentas medidas.
 
 ---
 
