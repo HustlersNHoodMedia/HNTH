@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<!--
+  HNTH CATÁLOGO PREMIUM — TEMPLATE SLIDE / CUERPO. CONGELADO.
+  Canvas 1744x2336. Medidas tomadas pixel por pixel sobre las piezas aprobadas
+  del carrusel The Marathon (1-sep-2026) y verificadas contra render propio.
+
+  NADA DE ESTE ARCHIVO SE EDITA. Solo se reemplazan los huecos {{...}}.
+  Si algo del layout parece necesitar un cambio, se avisa al operador y se frena.
+
+  TRAMPA CONOCIDA (paso 4 veces): con background-clip:text la caja del elemento
+  tiene que ser MAS GRANDE que la letra (line-height holgado + padding lateral),
+  o lo que sobresale se borra en silencio y el glifo queda con el borde plano.
+
+  LA IA GENERA SOLO LA FOTOGRAFIA, limpia, sin una letra ni marca.
+  Y la foto debe traer el TERCIO INFERIOR OSCURO o el degradado no la abraza.
+-->
+<style>
+@font-face{font-family:'BS';src:url('Blunt-semiconit.otf')}   /* titulo tapa + etiqueta */
+@font-face{font-family:'BC';src:url('Blunt-conit.otf')}       /* titulo slide */
+@font-face{font-family:'AR';src:url('Archivo.ttf')}           /* copies */
+@font-face{font-family:'AN';src:url('Anton.ttf')}             /* handle */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1744px;height:2336px;overflow:hidden;background:#000}
+.c{position:relative;width:1744px;height:2336px;background:#000}
+.foto{position:absolute;inset:0;z-index:1}
+.foto img{width:100%;height:100%;object-fit:cover}
+.negro{position:absolute;left:0;width:1744px;background:#000;z-index:2}
+.handle{position:absolute;left:0;width:1744px;text-align:center;z-index:4;
+  font-family:'AN';color:#fff}
+.copy{position:absolute;font-family:'AR';font-weight:700;font-style:italic;
+  line-height:1;color:#fff;z-index:4;white-space:nowrap}
+.chip{position:absolute;border-radius:29px;background:#d40202;z-index:4;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'AR';font-weight:700;font-style:italic;color:#fff;letter-spacing:2px}
+
+/* --- DEGRADADO: arranca 700, negro pleno 1821. Mas temprano que la tapa
+       porque este layout lleva mas texto. Ver §4 del spec --- */
+.fade{position:absolute;left:0;top:700px;width:1744px;height:1121px;z-index:2;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.30) 26%,rgba(0,0,0,.62) 58%,rgba(0,0,0,.88) 84%,#000 100%)}
+/* --- ETIQUETA / ANO: Blunt SEMIcondensada (variante ANCHA), cap 88, ancho 228.
+       line-height 1.9 + padding = la caja tiene que ser mayor que el glifo --- */
+.eyebrow{position:absolute;left:194px;top:1310px;z-index:4;font-family:'BS';font-size:126px;
+  line-height:1.9;padding:0 24px;transform:scaleX(.829);transform-origin:left top;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1200'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.85 0.006' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='1200' height='1200' filter='url(%23b)' opacity='0.20'/></svg>"),linear-gradient(180deg,#ffffff 0%,#efefef 60%,#d8d8d8 100%);
+  background-size:1200px 1200px,100% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+/* --- TITULO: Blunt CONDENSADA (NO la de la tapa). cap 218, pitch 237, scaleX .933 --- */
+.t{position:absolute;font-family:'BC';font-size:311px;line-height:1.02;text-transform:uppercase;
+  left:140px;white-space:nowrap;padding:0 40px;z-index:4;
+  transform:scaleX(.933);transform-origin:left top;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1200'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.85 0.006' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='1200' height='1200' filter='url(%23b)' opacity='0.20'/></svg>"),linear-gradient(180deg,#ffffff 0%,#fcfcfc 30%,#efefef 62%,#dcdcdc 88%,#d4d4d4 100%);background-size:1200px 1200px,100% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 5px 10px rgba(0,0,0,.5))}
+.r{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1200'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='0.85 0.006' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='1200' height='1200' filter='url(%23b)' opacity='0.08'/></svg>"),linear-gradient(180deg,#e00404 0%,#d40202 40%,#c00101 78%,#ac0001 100%);background-size:1200px 1200px,100% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+</style></head><body><div class="c">
+  <div class="foto"><img src="{{FOTO}}" style="object-position:{{OBJPOS}}"></div>
+  <div class="fade"></div>
+  <div class="negro" style="top:1821px;height:515px"></div>
+  <div class="handle" style="top:56px;font-size:36px;letter-spacing:4px">{{HANDLE}}</div>
+
+  <div class="eyebrow">{{ETIQUETA}}</div>
+
+  <!-- TITULO: 2 lineas. tops 1416 / 1653 (pitch 237). -->
+  {{TITULO}}
+
+  <!-- COPY: hasta 3 lineas. tops 1996 / 2065 / 2134. Archivo 51px. -->
+  {{COPY}}
+
+  <div class="chip" style="left:1424px;top:2232px;width:260px;height:56px;font-size:29px">SWIPE LEFT</div>
+</div></body></html>
