@@ -109,3 +109,164 @@ n=1 y no lo pude aislar.
 instagram-scraper resultsLimit 20 proxy estándar · 6 tapas por OCR en una corrida · 5 corridas de
 cheerio contra GitHub · 1 instagram-post-scraper de 5 cuentas para el watchlist · 1 rag-web-browser.
 
+
+---
+
+## CORRIDA 2026-09-14 (12:03 UTC)
+
+**Ventana medida:** 2026-09-07 → 2026-09-14 12:03 UTC.
+**7 posts de @hustlersnthehood en la ventana.** Se excluyen: 1 post pago de un tercero
+(@fbajayden, 49 likes), 1 promo de HNTH Media con link en bio (Tupac, 1.880), y 1 con menos de
+24h (Wendy's, 21,9h — likes ocultos, se anota provisorio). **Quedan 4 piezas editoriales medibles**,
+3 de ellas con likes visibles.
+
+Títulos: 2 recuperados de PRODUCED.md, 4 por OCR de tapa (s-r/google-lens-ocr, una corrida, 4 tapas).
+
+🚨 **ADVERTENCIA DE MÉTODO — leer antes que la tabla.** El scrape de perfil de Instagram devolvió
+un conjunto NO contiguo en las dos corridas de esta sesión (ver CHEQUEO DEL LOOP). Las 4 piezas de
+abajo están confirmadas por dos corridas independientes, pero **la ausencia de un post en el scrape
+no prueba que no se publicó.**
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | título (tal como salió en la tapa) | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|---|---|---|
+| 1 | carrusel | semilla del operador (TikTok @jaynoz_) | A DENTIST WITH LOCS GOT A COMMENT FROM SOMEBODY ELSE IN DENTISTRY: 'YOU ARE A DENTIST? DUDE YOU ARE GHETTO.' HE ANSWERED WITH HIS CLINIC, HIS WHITE COAT AND HIS GRADUATION. FIRST IN HIS FAMILY TO GET THERE. | 20.376 | 2.617 | **12,8%** | 4,5x |
+| 2 | imagen única | **sin fila en PRODUCED** | DABABY OPENED A CHICKEN AND WAFFLES SPOT IN CHARLOTTE AND PUT A $45 WAFFLE ON THE MENU. CORNBREAD WAFFLE, FOUR WINGS, COLLARD GREENS, CANDIED YAMS, MAC AND CHEESE. PEOPLE CALLED IT ROBBERY. HE TOLD THEM TO GO TO WAFFLE HOUSE. | 2.432 | 482 | **19,8%** | 0,54x |
+| 3 | video / reel | **sin fila en PRODUCED** | Harrison Barnes' GAME CHANGING Move *(tapa fuera del molde: el OCR no devuelve handle ni bloque de marca)* | 383 | 3 | 0,8% | 0,08x |
+| 4 | imagen única | IG por cuenta (@blackinformationnetwork → Kentucky Lantern) | A DEVELOPER WANTED TO BUILD A HYPERSCALE DATA CENTER NEXT TO A KENTUCKY TOWN OF A THOUSAND PEOPLE. THE COUNCIL WAS ABOUT TO VOTE. ONE COUNCILWOMAN STOOD UP AND WALKED OUT THE DOOR. WITHOUT HER THERE WAS NO QUORUM, AND THE VOTE NEVER HAPPENED. (242 car) | **OCULTOS** | 31 | n/c | **FLOP** |
+
+**Provisorio, menos de 24h al medir (no entra en ninguna mediana):**
+
+| — | imagen única | RSS TV local / prensa | A MANAGER AT A WENDY'S IN TENNESSEE TIED A NEURODIVERGENT EMPLOYEE TO THE GRILL WITH TRASH BAGS SO HE WOULD STAY PUT WHILE SHE WORKED IN THE BACK. SHE TOLD POLICE IT WAS A TIKTOK TREND. SHE WAS FIRED. | **OCULTOS** | 56 | n/c | flop provisorio |
+
+### MEDIANAS
+
+| corte | n | mediana |
+|---|---|---|
+| piezas editoriales con likes visibles | 3 | **2.432** |
+| imagen única | 2 (1 oculta) | 2.432 y FLOP — **las dos por debajo de 6.571** |
+| carrusel | 1 | 20.376 (2,2x su propia mediana de 9.294) |
+| video / reel | 1 | 383 |
+| semilla del operador | 1 | 20.376 |
+| IG por cuenta | 1 | FLOP |
+| sin fila en PRODUCED | 2 | 1.408 |
+| **barrido de TikTok** | **0** | — (segunda semana consecutiva en cero) |
+| prensa / RSS publicado en la ventana | 0 | — |
+
+Vara de referencia: 4.510. Medianas por estructura del manual: portada+imagen 9.650 · carrusel 9.294 · imagen única 6.571.
+
+**Contraste con la corrida anterior:** 07/09 fueron 14 piezas medibles, mediana 16.097. Esta corrida
+son 4, mediana 2.432. La producción NO cayó (ver CHEQUEO DEL LOOP): cayó lo publicado en Instagram.
+
+### RE-MEDICIÓN DE LA CORRIDA ANTERIOR (las mismas piezas, 7 a 11 días después)
+
+| pieza | likes 07/09 | likes 14/09 | Δ | com. 07/09 | com. 14/09 | ratio hoy |
+|---|---|---|---|---|---|---|
+| Labuzan (Dc0SeMvNv0d) | 39.132 | 46.173 | +18% | 1.898 | 2.321 | 5,0% |
+| Padre/ex-novio (Dcv05SElg-K) | 31.901 | 36.838 | +15% | 2.889 | 3.554 | **9,6%** |
+| Pritchard (Dc61IllBaae) | 26.817 | 41.925 | **+56%** | 737 | 1.191 | 2,8% |
+| Jordan (Dc9EcTxMl2p) | 2.393 | 3.293 | +38% | 194 | 269 | **8,2%** |
+| Nipsey carrusel (Dc4Oj6Clks4) | 5.310 | 7.292 | +37% | 122 | 176 | 2,4% |
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+- **19,8% — https://www.instagram.com/p/DdMPk0QSj54/** (482 sobre 2.432). DaBaby / el plato de $45.
+  **El ratio más alto registrado en este archivo**, y sobre la pieza que peor rindió de las que tienen
+  likes visibles. Es el patrón del Jeep exacto: semilla floja, conversación caliente. Sin cosecha registrada.
+- **12,8% — https://www.instagram.com/p/DdJqGZ4lhrs/** (2.617 sobre 20.376). El dentista. Sin cosecha registrada.
+- **Confirmados de la semana pasada, ya crecidos y todavía sin cosechar:**
+  9,6% https://www.instagram.com/p/Dcv05SElg-K/ (3.554 com.) · 8,2% https://www.instagram.com/p/Dc9EcTxMl2p/ (269 com.)
+- **Fuera de ventana, nunca marcados por ninguna corrida** (aparecieron en el scrape ancho de hoy):
+  **24,8%** https://www.instagram.com/p/DcKF6SrtDfT/ (985 sobre 3.977, 17-ago) ·
+  **22,3%** https://www.instagram.com/p/Dbt3bo-lqXE/ (1.410 sobre 6.323, 06-ago) ·
+  13,3% https://www.instagram.com/p/Db9fUu7shn5/ (253 sobre 1.906, 13-ago)
+
+### HALLAZGOS
+
+**MEDIDO — las piezas siguen creciendo mucho después de la ventana de medición, y crecen DESIGUAL (n=5).**
+Entre +15% y +56% de likes en 7-11 días. El crecimiento desigual reordena el ranking: Pritchard estaba
+3º con 5,9x y hoy está en 9,3x, o sea 2º. El ratio de comentarios, en cambio, se movió poco mientras los
+likes subían (Labuzan 4,9%→5,0%; Pritchard 2,7%→2,8%; padre/ex 9,1%→9,6%). **Consecuencia de método:
+el ratio de comentarios es la señal temprana estable y el conteo de likes no lo es.** Una pieza medida a
+las 48h puede estar a la mitad de su número final.
+
+**MEDIDO — el barrido de TikTok lleva dos semanas en cero, y la causa está anotada y es técnica.**
+Cero piezas aportadas en las dos ventanas. PRODUCED registra CARRIL VACIO o SECO los días 05, 06, 07,
+08, 09 y 13 de septiembre, con las frases quemadas cada vez. Y la fila del 13-sep dice textual que
+**"el filtro PAST_WEEK del actor vino roto (devolvió 2019-2026)"**. Con el filtro de fecha roto, el
+carril no está devolviendo material fresco aunque exista: no es un carril frío, es un instrumento roto.
+
+**MEDIDO — el no-reel volvió a ganar afuera, y esta vez se pudo medir en dos cuentas a la vez.**
+La ventaja del carrusel/estática sobre el reel quedó sin re-testear el 07/09 porque no hubo no-reels
+en la ventana. Esta semana sí los hubo: `theneighborhoodtalk` no-reel (n=3) mediana **4.233** contra
+reel (n=5) mediana **607** — 7x. `goodnews_movement` publicó su primera estática medida: **56.226**,
+contra una mediana de reel de 21.638 — 2,6x. Dos cuentas, misma dirección, misma ventana. n chico
+en las dos: es la segunda medición del efecto, no la confirmación.
+
+**POSIBLE DESPLAZAMIENTO — la regla de la última oración no se sostuvo esta semana; el sujeto de la
+PRIMERA oración separa mejor. NECESITA OTRA SEMANA.**
+El hallazgo del 07/09 decía que los títulos que cierran en consecuencia rinden 3,5x-8,7x y los que
+cierran en cifra o estadística rinden 0,25x-1,0x. Esta semana falla en 2 de 4: Burgin cierra en
+consecuencia pura ("WITHOUT HER THERE WAS NO QUORUM, AND THE VOTE NEVER HAPPENED") y tiene los likes
+ocultos; Wendy's cierra en consecuencia ("SHE WAS FIRED") y también. Lo que sí separa a los cuatro es
+**quién es el sujeto de la primera oración**:
+- #1 dentista (4,5x): abre con el protagonista y el detalle que ES el conflicto, en la tercera palabra
+  ("A DENTIST WITH LOCS"), y el protagonista actúa dentro de la misma oración.
+- #4 Burgin (FLOP): abre con **una empresa** ("A DEVELOPER"). La protagonista humana entra recién en la
+  tercera oración de cuatro, y entra sin nombre ("ONE COUNCILWOMAN").
+- Wendy's (flop provisorio): abre con **la agresora** ("A MANAGER AT A WENDY'S"). La víctima nunca es
+  sujeto de ninguna oración y no tiene nombre.
+- #2 DaBaby (0,54x): abre con el protagonista, pero no hay nadie en riesgo — es una discusión de precio.
+Con 4 casos no se deroga un hallazgo de 14. Queda anotado para cruzar la semana que viene.
+
+**OBSERVACIÓN n=1 — la cuenta publicó un video y es la pieza más floja de la ventana.**
+DdJdIbFO-yP (Harrison Barnes / banco en Iowa), reel, 383 likes y 3 comentarios = 0,08x la vara. Además
+su tapa no usa el molde: el OCR devuelve "Harrison Barnes' GAME CHANGING Move" y no encuentra ni el
+handle ni el bloque de marca. No tiene fila en PRODUCED, así que no se puede atribuir ni carril ni
+decisión. Un solo caso y con dos variables confundidas (formato y molde).
+
+**SIN EXPLICACIÓN, queda abierto.** #2 DaBaby hizo 0,37x la mediana de su propia estructura y a la vez
+el ratio de comentarios más alto que este archivo registró nunca (19,8%). Las dos cosas a la vez en la
+misma pieza. No lo pude aislar con n=1.
+
+### WATCHLIST — lo medido esta corrida
+
+| cuenta | n | mediana | movimiento | qué quedó |
+|---|---|---|---|---|
+| `theneighborhoodtalk` | 8 | **3.336** | 776 → 2.163 → 3.336, tercera suba seguida | Volvieron los no-reels y con eso se re-testeó lo del 31/08: no-reel 4.233 (n=3) vs reel 607 (n=5). Ratios de comentarios extremos: **55,6%** y **49,2%** — motor de debate, no de historia |
+| `goodnews_movement` | 8 | **22.034** | 16.552 → 22.034 | Primera estática medida en la cuenta: **56.226**, 2,6x su mediana de reel. Tercera confirmación de que la duración no predice: 94,7s = 148.279 (su mejor) y 53,1s = 2.685 (su peor) |
+| `raphousetv` | 8 | **4.063** | 3.866/4.541/4.279 → sigue plano | Cuarta medición sin driver de formato: la hipótesis sigue retirada. Motor de discusión confirmado otra vez: 11,8%, 9,4%, 6,9% |
+| `blackinformationnetwork` | 8 | **660** | ~426 → 660 | Segunda revisión seguida sin comentarios cosechables (ratios 0 a 4,4%, ninguno cerca del 8%). **Pero puso la semilla de Burgin/Wofford esta semana vía Kentucky Lantern.** No se le cuenta strike: se le cambia el motivo por el que está en la lista |
+
+### CHEQUEO DEL LOOP
+
+🚨 **EL SCRAPE DE PERFIL DE IG ES POCO CONFIABLE, Y UNA CONCLUSIÓN DE LA CORRIDA ANTERIOR SE CAE CON ESO.**
+Dos corridas independientes hoy (`resultsLimit` 50, y `onlyPostsNewerThan`) devolvieron un conjunto **no
+contiguo**: traen posts del 09-ago al 23-ago y del 11 al 13-sep, y **omiten por completo el 24-ago→03-sep
+y el 05→10-sep**. Se verificó por `directUrls`: los cuatro posts que la corrida del 07/09 midió y que el
+perfil hoy no devuelve **existen y crecieron**. O sea que la ausencia de un post en el scrape de perfil
+no prueba nada.
+→ Con eso, la línea del 07/09 que decía *"Brenda Daurham figura ENTREGADO el 04-sep y no aparece en los
+últimos 20 posts"* **no es evidencia de nada y queda anulada.**
+→ Ruta correcta para las próximas corridas: **anotar el shortCode/URL de Instagram en PRODUCED al
+publicar**, y medir por `directUrls` en vez de por perfil. `resultsLimit: 20` sobre el perfil devuelve
+un subconjunto arbitrario de los ~50 que el actor alcanza, no los 20 más recientes.
+
+- **Volumen: 14 piezas medibles la semana pasada, 4 esta semana.** Pero la producción no cayó: PRODUCED
+  registra alrededor de 20 filas ENTREGADO entre el 07 y el 13-sep. **Seis de ellas dicen literalmente
+  "(SIN PROGRAMAR)"**, por pedido del operador. El Instagram de la cuenta principal se publica a mano.
+  El embudo está entre la entrega y la publicación, no en la producción.
+- **2 de 4 piezas medibles no tienen fila en PRODUCED** (DaBaby, Harrison Barnes). La semana pasada
+  fueron 4 de 14. En proporción empeoró: del 29% al 50%. Sin fila no hay carril atribuible.
+- **El barrido de TikTok no aparece como carril de origen por segunda semana seguida.** Causa técnica
+  anotada arriba.
+- La cuenta publicó **un post pago de un tercero** (@fbajayden, FBA de Amazon, 49 likes y 0 comentarios).
+  Se anota como dato, no como hallazgo: no es una pieza editorial y no entra en ninguna mediana.
+- LEARNINGS_EDITORIAL.md no creció, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+instagram-scraper: 4 corridas con proxy estándar (20 · 50 · 4 directUrls · onlyPostsNewerThan 60) —
+la segunda y la cuarta fueron necesarias porque la primera devolvió un conjunto no contiguo ·
+1 instagram-post-scraper de 4 cuentas para el watchlist · 1 corrida de OCR con 4 tapas ·
+3 corridas de cheerio contra GitHub. Sin proxy residencial.
