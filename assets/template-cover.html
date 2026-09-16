@@ -65,7 +65,7 @@ html,body{width:1080px;height:1260px;overflow:hidden;background:#000}
 (function(){
   function fit(){
     var h=document.querySelector('.titulo');
-    var TOP=596, LIMITE=1150, avail=LIMITE-TOP, lo=30, hi=66, best=30;
+    var TOP=596, LIMITE=1150, avail=LIMITE-TOP, lo=30, hi=100, best=30;  /* MOLDE VIVO p2 (16-sep): crece hasta 100 para llenar titulos cortos */
     for(var i=0;i<22;i++){var m=(lo+hi)/2;h.style.fontSize=m+'px';
       if(h.getBoundingClientRect().height<=avail){best=m;lo=m}else{hi=m}}
     h.style.fontSize=Math.floor(best)+'px';
