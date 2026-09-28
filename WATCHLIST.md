@@ -12,11 +12,11 @@ Lista viva. **El analista la actualiza cada corrida**: suma las que descubre, ma
 
 | Cuenta | Plataforma | Por qué está acá | Última revisión |
 |---|---|---|---|
-| `theneighborhoodtalk` | IG | Mediana 776 (31/08) → 2.163 (07/09) → 3.336 (14/09) → **2.662 (21/09, NO comparable: los 8 posts tenían menos de 12h al medir)**. El 14/09 el no-reel le ganó al reel 7x (4.233 vs 607); el 21/09, inmaduro, no-reel 3.168 (n=2) vs reel 2.662 (n=6). Sigue siendo motor de DEBATE: ratios de 23,4% y 12,6% en las estáticas. Próxima corrida: medir con posts de más de 24h | 2026-09-21 |
-| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato** — pero **esta semana puso la semilla de Gigi** (el 14-sep revivió una historia de 2021 con 53.240 likes; nuestra versión hizo 5.706, 1,3x la vara). Mediana 16.552 → 22.034 → **43.332** (n=6). **La ventaja del no-reel NO se repitió**: su estática hizo 35.776 contra una mediana de reel de 47.821 (0,75x). Van 2 mediciones a favor del no-reel (14/09) y 1 en contra: sin conclusión. La duración sigue sin predecir: 18s hizo 49.991 y 87s hizo 47.821 | 2026-09-21 |
-| `raphousetv` | IG | Hipótesis de formato retirada (cuatro mediciones sin driver). **Sirve como fuente de SEMILLA y termómetro de discusión: esta semana dio dos semillas nuestras** — Treva Harris (4.961, ratio 15,1%) y Boosie (likes ocultos). Mediana 3.666 (n=8, inmaduro <24h). Ratios 18,4%, 16,4%, 13,1%: la gente viene a discutir | 2026-09-21 |
-| `blackinformationnetwork` | IG | Motivo desde el 14/09: fuente de SEMILLA (puso Burgin/Wofford). **Strike 1 bajo ese motivo**: esta semana ninguna semilla llegó a PRODUCED. Mediana 660 → **265** (n=7). Un ratio de 19,2% sobre 286 likes, sin volumen cosechable | 2026-09-21 |
-| `blacknews` | IG | 🆕 **ENTRA el 21/09 como fuente de SEMILLA.** Dos semillas nuestras en una misma semana: Demond Crump / Reign (11Alive, el 15-16/09 → nuestra pieza con likes ocultos) y Coffey / St. Rest #2 (re-levantada el 19/09 → nuestra pieza 4.487 en 20h). Levanta historias viejas y las vuelve actuales: con esa semilla, una historia de 2021-2023 rindió como fresca. Pins de 9.576 a 17.427; posts sueltos con <24h entre 139 y 588 | 2026-09-21 |
+| `blacknews` | IG | 🏆 **La semilla más productiva de la lista.** Entró el 21/09 y en su primera semana completa puso las dos piezas más extremas de la tanda: **Tuskegee (46.277, la más alta del archivo en un mes)** y Teddy Gant (likes ocultos). Van cuatro semillas nuestras en dos semanas. Sus propios posts son chicos (56 a 764 likes; pins de 11.478 a 23.285): **no se la mira por sus números, se la mira por lo que levanta.** Levanta historias viejas y las vuelve actuales | 2026-09-28 |
+| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. Mediana 16.552 → 22.034 → 43.332 → **27.220 (n=9 maduros)**. 🚨 **La hipótesis del no-reel se RETIRA**: estáticas 6.300 (n=2) contra reels 36.554 (n=7), 5,8x a favor del reel. Con el 0,75x del 21/09 van dos mediciones en contra y dos a favor (14/09) — sin driver. La duración sigue sin predecir (quinta medición): 18s hizo 53.375 y 61s hizo 16.444. **Sin semilla esta semana: strike 1 como fuente** | 2026-09-28 |
+| `theneighborhoodtalk` | IG | Mediana 776 (31/08) → 2.163 → 3.336 → 2.662 (21/09) → **no medible (28/09)**. 🚨 **Tercera corrida seguida inmadura**: los 12 posts que devuelve el perfil tienen entre 2h y 14h. El scrape de perfil solo trae lo del día. **Método obligado para la próxima: medir por `directUrls` los shortCodes guardados de esta corrida** (Ddzk9UxzD9T, Ddz1rQ1Jj6E, Ddz55QMJhQu, Ddzx4gIJTCJ, Dd0FptjNAbs, Dd0AjPzsRnd). Sigue siendo motor de DEBATE | 2026-09-28 |
+| `raphousetv` | IG | Hipótesis de formato retirada hace cinco mediciones. Sirve como fuente de SEMILLA y termómetro de discusión. **Inmaduro esta corrida** (los 12 posts con <24h), pero el motor se ve igual: ratios 15,5%, 6,7%, 6,1%, 6,0%. **Sin semilla esta semana: strike 1** (venía de poner dos el 21/09) | 2026-09-28 |
+| `blackinformationnetwork` | IG | Motivo desde el 14/09: fuente de SEMILLA. **Strike 2 de 3**: segunda semana seguida sin llegar a PRODUCED. Mediana 660 → 265 → **671 (n=5 maduros)**. Novedad: primer ratio con volumen real que se le mide — 263 comentarios sobre 1.886 likes (13,9%). Si la próxima corrida tampoco trae semilla, sale | 2026-09-28 |
 
 ---
 
@@ -27,13 +27,15 @@ No hace falta que el operador las nombre. El analista las encuentra:
 1. **Desde los posts que ya detectó el radar.** Cuando una historia explota, mirar qué páginas grandes la levantaron. Las que aparecen seguido, entran a la lista.
 2. **Por búsqueda de formato.** Buscar en TikTok e IG el tipo de pieza que nos interesa y ver qué cuentas la producen bien de forma consistente.
 3. **Las que nos copian.** Si una página grande replicó un post nuestro, es porque mira lo mismo que nosotros. Vale vigilarla.
-4. **Las que ya nos dieron semilla.** Si una cuenta aparece como fuente en PRODUCED dos veces en una semana, entra (así entró `blacknews` el 21/09).
+4. **Las que ya nos dieron semilla.** Si una cuenta aparece como fuente en PRODUCED dos veces en una semana, entra (así entró `blacknews` el 21/09, y en su primera semana completa puso la pieza más alta del mes).
 
 **Criterio para que entre:** que produzca **consistentemente**, no un hit suelto. Y que tenga algo que nosotros no estemos haciendo — si hace exactamente lo mismo, no aporta.
 
 **Criterio para que salga:** tres revisiones seguidas sin nada aprovechable.
 
-⚠️ **El barrido POR HISTORIA sigue sin cerrar, tercera corrida.** Ruta anotada, sin buscador web: cosechar los comentarios de nuestro propio post más fuerte con el scraper de IG y leer los @ que aparecen ahí. Fuente directa ya identificada del lado de la semilla: `@jaynoz_` en TikTok (89.300 fans, el video del dentista hizo 1,8M de plays).
+⚠️ **El barrido POR HISTORIA sigue sin cerrar, cuarta corrida.** Ruta anotada, sin buscador web: cosechar los comentarios de nuestro propio post más fuerte con el scraper de IG y leer los @ que aparecen ahí. **Esta semana hay un candidato nuevo y evidente para esa ruta: Tuskegee (Ddm4EdwM8tV) con 1.147 comentarios.** Fuente directa del lado de la semilla, ya identificada: `@jaynoz_` en TikTok (89.300 fans).
+
+⚠️ **Candidato a entrar, pendiente de una segunda semilla:** `@becauseofthem` (IG) — apareció como fuente de Teddy Gant el 20-sep junto con `blacknews`. Una sola semilla: no entra todavía.
 
 ---
 
@@ -46,7 +48,7 @@ No hace falta que el operador las nombre. El analista las encuentra:
 
 ⚠️ **Páginas fuera de nuestra cultura:** sirven igual, pero solo por el formato. Anotar la mecánica, nunca el tema.
 
-📌 **Lo que se sostiene al 21/09:** ninguna gana por resolución, y la duración de reel no predice nada (cuarta medición). 📌 **Lo que se movió:** la ventaja del no-reel se midió a favor dos veces el 14/09 y en contra una vez el 21/09 (goodnews, 1 estática) — queda abierta. 📌 **Lo nuevo:** tres de las cinco cuentas de la lista pusieron semillas que terminaron en piezas nuestras esta semana (goodnews, raphousetv ×2, blacknews ×2). La lista ya funciona más como carril de origen que como referencia de formato. 📌 **Método:** medir con posts de más de 24h — esta vez tres cuentas tenían todos sus posts recientes con menos de un día.
+📌 **Lo que se sostiene al 28/09:** ninguna gana por resolución, y la duración de reel no predice nada (quinta medición). 📌 **Lo que se cerró:** la ventaja del no-reel queda RETIRADA — 2 mediciones a favor, 2 en contra, ningún driver. 📌 **Lo que se movió:** la lista se partió en dos. `blacknews` funciona como carril de origen y puso la pieza más alta del mes; las otras cuatro no dieron semilla esta semana (tres strikes 1, un strike 2). 📌 **Método, tercera vez anotado y sin resolver:** el scrape de perfil devuelve solo posts del día en las cuentas de alta frecuencia (`theneighborhoodtalk`, `raphousetv`), así que su mediana no es comparable entre semanas. La salida es guardar shortCodes y re-medir por `directUrls`.
 
 ---
 
