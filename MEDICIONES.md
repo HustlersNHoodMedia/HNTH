@@ -452,3 +452,178 @@ de tapa son las dos variables distintas; no la pude aislar.
 instagram-scraper: 4 corridas con proxy estándar (perfil 20 · perfil `onlyPostsNewerThan` · 6 `directUrls` · 5 cuentas
 de watchlist a 8) · 0 OCR (todas las piezas tenían fila en PRODUCED) · 3 corridas de cheerio contra GitHub. Sin proxy
 residencial.
+
+---
+
+## CORRIDA 2026-09-28 (12:02 UTC)
+
+**Ventana medida:** 2026-09-21 12:03 → 2026-09-27 12:02 UTC.
+Se excluyen: 3 pins viejos de video · 4 reels de @HustlersNTheHoodTv (animaciones cross-posteadas, no son piezas
+editoriales: 3.560 · 5.301 · 1.736 · 1.082 + 1.008 con <24h) · 1 pieza con <24h (Crystal Mason, 17,6h — provisoria).
+**Quedan 13 piezas editoriales medibles, 1 con likes ocultos.**
+
+Títulos: **los 13 recuperados de PRODUCED.md** (versión final de cada fila). OCR no hizo falta.
+Edad al medir: entre 24h (Jasper) y 6,9 días (Cressy).
+
+⚠️ **Método, cuarta semana igual:** el scrape de perfil con `resultsLimit` 20 volvió a devolver un conjunto
+incompleto — 13 de las 14 piezas de la ventana (se le cayó Cressy) y ninguna del 18 al 21-sep. Se completó con
+una segunda corrida (`onlyPostsNewerThan` 2026-09-18, 27 posts), que es la que sostiene esta tabla y la
+re-medición. Sin esa segunda corrida faltaba una pieza y toda la re-medición.
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | título (versión final en PRODUCED) | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|---|---|---|
+| 1 | imagen única (grilla real recompuesta IA) | IG por cuenta (`@blacknews` 21-sep + `@tuskegeeuniversity`) | TEN STUDENTS AT TUSKEGEE, THE BLACK COLLEGE BOOKER T. WASHINGTON BUILT IN 1881, WENT FOUR STRAIGHT YEARS WITHOUT A SINGLE GRADE BELOW AN A. ONE OF THEM SAID SHE CRIED THINKING SHE IS HER ANCESTORS' WILDEST DREAM. (212 car) | **46.277** | 1.147 | 2,5% | **10,3x** |
+| 2 | carrusel de 4 (foto real restaurada IA) | prensa (CBS News On The Road / Steve Hartman, 25-sep) | TWIN BROTHERS GREW UP IN RICHMOND SO POOR THEY CARRIED WATER HOME FROM A PARK. AT 12, A DOCTOR TOLD THEM THEIR SICK UNCLE WAS GETTING WHAT HE DESERVED. IN THE HOSPITAL HALLWAY THEY SWORE TO BE BETTER DOCTORS THAN HIM. NOW THEY RUN THE ER BACK HOME. (248 car) | 9.353 | 144 | 1,5% | 2,1x |
+| 3 | carrusel de 4 (frames reales restaurados IA) | prensa / TV local (FOX 5 DC 23-sep) + viral IG `@thegaragegrind` | A DOORDASH DRIVER IN MARYLAND, WILLIAM KOROMA, LOST HIS BRAKES AND TOTALED HIS CAR MID-DELIVERY. FROM THE WRECK HE CALLED THE CUSTOMER: THE FOOD WAS FINE IF HE WANTED TO COME GET IT. THE CUSTOMER FILMED IT, MILLIONS WATCHED, AND THIS WEEK STRANGERS BOUGHT HIM A NEW CAR. (270 car) | 7.415 | 129 | 1,7% | 1,6x |
+| 4 | imagen única (split IA sobre retrato real) | prensa + TV local (WBTV 22-sep + People) | DORIAN JACKSON, 21, THE OLDEST OF EIGHT, WAS KAYAKING WITH HIS LITTLE SISTER WHEN HER KAYAK FLIPPED. SHE HAD A LIFE JACKET. HE DIDN'T. HE WENT IN AFTER HER ANYWAY. NEIGHBORS PULLED HER OUT. HE NEVER CAME BACK UP. (212 car) | 5.706 | 231 | **4,0%** | 1,3x |
+| 5 | imagen única (split IA) | TV local (WWL Louisiana 18-sep + Tulane) | DANIEL CRESSY WANTED TO BE A PILOT, BUT THE FAA TURNED HIM DOWN BECAUSE HE HAD SICKLE CELL. HE WENT THROUGH GENE THERAPY, CHEMO AND SIX WEEKS IN A HOSPITAL BED TO BECOME THE FIRST PERSON IN LOUISIANA CURED OF IT. THIS WEEK THEY SAID YES. (237 car) | 4.415 | 53 | 1,2% | 0,98x |
+| 6 | imagen única | TV local (KHOU 23/24-sep, exclusiva) | A HOUSTON ER NURSE, DIAMOND ROSE, TOOK THREE STRAY BULLETS WALKING OUT OF A CLUB. SHE TIED HER PANTS AROUND HER LEG TO STOP THE BLEEDING AND HAD THE AMBULANCE TAKE HER TO HER OWN ER. ALL SHE COULD THINK ABOUT WAS HER SON. | 4.029 | 46 | 1,1% | 0,89x |
+| 7 | carrusel de 3 (foto real única) | barrido de tracción IG (reel `@mistah_tentoes`, 916 fans, índice 472x) | A SINGLE DAD WAS CAUGHT ON CAMERA PEDALING BOTH HIS SONS DOWN THE STREET ON A TRICYCLE, ONE OF THEM UP ON HIS SHOULDERS. HE DOESN'T HAVE A CAR. THAT TRIKE IS HOW HE GETS THEM EVERYWHERE. (186 car) | 2.060 | 33 | 1,6% | 0,46x |
+| 8 | carrusel de 4 (frames reales restaurados IA) | TV local (FOX 5 Atlanta 21-sep) | A YOUNG FAST-FOOD WORKER IN GEORGIA, ANTONIO GIBSON, SPENT PART OF HIS FIRST $1,000 CHECK BUYING FOOD FOR HIS CO-WORKERS. THEY KNEW HE WAS STILL LOOKING FOR A CAR HE COULD AFFORD, SO HIS BOSS HANDED HIM THE KEYS AND THE TITLE TO A HUMMER. (238 car) | 1.990 | 44 | 2,2% | 0,44x |
+| 9 | carrusel | semilla del operador (link TikTok `@connectwithgrowth`) | A SCHOOL BUS DRIVER MADE UP A HANDSHAKE FOR EVERY KID ON HIS ROUTE. ONE MORNING, EACH OF THEM GOT ON THE BUS WITH A FLOWER FOR HIM. HE HAD TO WIPE HIS EYES BEFORE HE COULD DRIVE. (178 car) | 1.812 | 10 | 0,6% | 0,40x |
+| 10 | imagen única (split IA) | prensa local (The Advocate 24-sep + WBRZ) | AS A KID IN LOUISIANA, TJ MALVEAUX TAUGHT HIMSELF TO CUT HAIR FOR A FEW DOLLARS, THEN WENT DORM ROOM TO DORM ROOM CUTTING LSU ATHLETES. NOW HIS SHOP IS THE OFFICIAL BARBERSHOP OF LSU FOOTBALL, AND ON OCTOBER 1 HE OPENS LOCATION NUMBER FOUR. (240 car) | 1.571 | 28 | 1,8% | 0,35x |
+| 11 | imagen única | prensa / cultura | YE WENT BACK TO THE BLOCK IN SOUTH SHORE WHERE HIS MOTHER RAISED HIM, AND LET HIS WHOLE CREW MAKE BEATS IN HER LIVING ROOM. HE DIDN'T SAY A WORD. HE JUST HELD UP THE NEW STREET SIGN: DR. DONDA WEST WAY. | 1.280 | 21 | 1,6% | 0,28x |
+| 12 | carrusel de 3 (split IA sobre frames reales) | **BARRIDO DE TIKTOK** (keyword 'surprised my dad', MOST_LIKED PAST_WEEK, proxy US → `@aristathebombshell` 21-sep) | A MAN HADN'T SEEN HIS FATHER IN ALMOST 20 YEARS. HIS DAD TOOK A TRAIN IN AND WOKE HIM UP ON THE COUCH. THEY HELD EACH OTHER FOR A MINUTE AND A HALF. (148 car) | 1.255 | 17 | 1,4% | 0,28x |
+| 13 | imagen única (split IA) | IG por cuenta (`@becauseofthem` + `@blacknews` 20-sep) + TODAY.com | TEDDY GANT ALMOST D\*ED THE DAY HE WAS BORN. HIS MAMA TOLD HIM THE STORY WHEN HE WAS 12 AND HE NEVER FORGOT IT. HE LEFT A 70-HOUR-A-WEEK SECURITY JOB TO BECOME A DOULA, FIGHTING TO KEEP MOTHERS ALIVE IN ONE OF THE MOST DANGEROUS PLACES IN AMERICA TO GIVE BIRTH. (v6, 290 car) | **OCULTOS** | 6 | n/c | **FLOP** |
+
+**Provisorio, <24h al medir (no entra en ninguna mediana):** Crystal Mason, carrusel de 3, prensa (KERA / CBS Texas / ACLU) —
+*CRYSTAL MASON, THE TEXAS MOTHER SENTENCED TO 5 YEARS IN PRISON FOR A BALLOT THAT WAS NEVER EVEN COUNTED, SPENT 10 YEARS FIGHTING IT. THIS WEEK TEXAS' HIGHEST CRIMINAL COURT CLEARED HER.* — 4.166 likes / 89 com. (2,1%) a las 17,6h.
+
+### MEDIANAS
+
+| corte | n | mediana |
+|---|---|---|
+| piezas editoriales, solo likes visibles | 12 | **3.045** |
+| piezas editoriales, oculto contado como flop | 13 | **2.060** |
+| imagen única (visibles) | 6 | **4.222** (manual: 6.571) |
+| carrusel (visibles) | 6 | **2.025** (manual: 9.294) |
+| prensa y feeds de cultura (incl. TV sindicada) | 5 | **5.706** |
+| TV local (exclusiva o primera en publicar) | 3 | 4.029 |
+| IG por cuenta (`@blacknews` / `@becauseofthem`) | 2 | 46.277 y FLOP |
+| barrido de tracción IG | 1 | 2.060 |
+| semilla del operador | 1 | 1.812 |
+| **barrido de TikTok** | **1** | **1.255** — primera pieza del carril en cuatro semanas |
+
+**Serie semanal (mediana de visibles · piezas con likes ocultos):**
+07/09 → 16.097 · 1 de 14 | 14/09 (corregida) → 7.525 · 4 de 7 | 21/09 → 4.961 · 3 de 12 | **28/09 → 3.045 · 1 de 13.**
+
+⚠️ **Los ocultos se dieron vuelta:** 3 de 12 la semana pasada, **1 de 13 esta**. La frecuencia de likes ocultos bajó
+mientras la mediana seguía bajando. Son dos señales que venían juntas y esta semana se separaron.
+
+### RE-MEDICIÓN (piezas de ventanas anteriores, mismo scrape ancho)
+
+| pieza | medida antes | hoy | Δ |
+|---|---|---|---|
+| Coffey / St. Rest #2 (Ddg9DmXBr_X) | 4.487 (a las 20h, 21/09) | **9.018** | **+101%** |
+| Sterling K. Brown (DdeKJgSyMuV) | 8.198 (21/09) | 10.470 | +28% |
+| Omarion Calloway (DdfJ9_MhV10) | 2.891 (a las 37h, 21/09) | 3.735 | +29% |
+| Jalen Hurts (DdbvZnfvpmT) | 6.064 (21/09) | 7.146 | +18% |
+| Nipsey carrusel de valor (Dc4Oj6Clks4) | 8.452 (21/09) | 8.793 | +4% |
+| Demond Crump (DdcNxMNBd5O) | OCULTOS | OCULTOS (5 com.) | sin cambio |
+
+**MEDIDO — la maduración es más grande cuanto más joven se midió la pieza (n=5, cuarta confirmación).**
+Coffey se midió a las 20h y **duplicó**; Omarion a las 37h subió 29%; las medidas con días encima subieron 4-28%.
+Consecuencia de método, ya escrita el 14/09 y ahora con el caso más extremo del archivo: **una pieza medida antes
+de las 48h vale la mitad de su número final.** La serie semanal de arriba es comparable entre sí porque todas las
+corridas miden a la misma edad, pero cada número sube después.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+🚨 **NINGUNA pieza de esta ventana pasó el 8%.** El ratio más alto es 4,0% (Dorian Jackson) y la mediana de ratios
+es 1,6%. Es la primera semana de este archivo sin un solo candidato a cosecha.
+
+**MEDIDO — y encaja exactamente con lo que el archivo registró el 21/09: los dos motores no se cruzan.**
+Las 13 piezas de la semana son de vulnerabilidad, rescate o logro. **Ninguna pone a dos personas en conflicto.**
+Las seis piezas que este archivo marcó arriba del 8% en las tres corridas anteriores tenían todas un conflicto entre
+personas (villana, insulto, provocación, disputa de precio, padre contra ex). Sin conflicto no hubo comentarios:
+esta semana no es que se perdieron Repackages, es que **no se produjo material que los genere.**
+
+**Siguen abiertos y sin cosechar, de semanas anteriores (cuarta semana sin ninguna cosecha registrada en PRODUCED):**
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437 com.) · 18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) ·
+15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) · 12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) ·
+9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) · 8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276).
+
+### HALLAZGOS
+
+**MEDIDO — el precio pagado, nombrado DENTRO del título, separa las cuatro de arriba de las cuatro de abajo (4 de 4 contra 4 de 4).**
+Las cuatro mejores nombran algo concreto que el protagonista perdió o pagó: Jasper *"SO POOR THEY CARRIED WATER HOME
+FROM A PARK"* + el desprecio del médico; Koroma *"LOST HIS BRAKES AND TOTALED HIS CAR"*; Dorian *"SHE HAD A LIFE
+JACKET. HE DIDN'T … HE NEVER CAME BACK UP"*; Tuskegee *"FOUR STRAIGHT YEARS WITHOUT A SINGLE GRADE BELOW AN A"*.
+Las cuatro últimas con likes visibles no nombran ningún precio: Malveaux (un negocio que crece), Donda (un homenaje),
+Reunion (una ausencia de 20 años sin causa ni costo), Monteiro (un gesto lindo). Es la compuerta de tensión del
+manual, medida: **1.255-1.571 abajo contra 5.706-46.277 arriba, misma semana y las dos estructuras en los dos grupos.**
+⚠️ Variables confundidas en dos casos: Monteiro es de Brasil (encaje) y Donda tiene famoso.
+
+**MEDIDO — un titular que abre con un COLECTIVO institucional hizo 10,3x, y eso obliga a matizar el hallazgo del 14/09.**
+El 14/09 se anotó que abrir con una institución hunde la pieza (Burgin abría con *"A DEVELOPER"* y quedó oculta).
+Tuskegee abre con *"TEN STUDENTS AT TUSKEGEE, THE BLACK COLLEGE BOOKER T. WASHINGTON BUILT IN 1881"* — colectivo más
+institución, sin ninguna persona nombrada — y es **la pieza más alta que registró este archivo** después de Labuzan.
+La diferencia entre los dos casos no es el colectivo: es **de quién es.** En Burgin la institución era el adversario;
+en Tuskegee es la casa de la audiencia. Par controlado dentro de la misma semana y la misma estructura, los dos sobre
+honrar a alguien: **Tuskegee 46.277 contra Donda 1.280 — 36x.** Tuskegee cierra en *"SHE IS HER ANCESTORS' WILDEST
+DREAM"* y el honor es de gente como el lector; Donda abre con *"YE"* y el honor es de un famoso.
+
+**MEDIDO — el carrusel volvió a rendir por debajo de la imagen única (2.025 contra 4.222), pero el reparto es bimodal.**
+Los seis carruseles se parten en dos grupos sin nada en el medio: 7.415 y 9.353 arriba, 1.255 / 1.812 / 1.990 / 2.060
+abajo. Los dos de arriba son los dos que traen el precio pagado en el título. **La estructura no explica nada acá:
+dentro del mismo formato hay 7x de diferencia**, y la variable que los separa es la misma del hallazgo anterior.
+
+**MEDIDO — el carril de barrido de TikTok volvió a producir después de tres semanas en cero, y su pieza quedó última.**
+Reunion entró por keyword `'surprised my dad'` MOST_LIKED PAST_WEEK con proxy US — la ruta del manual, no una query
+temática — y rindió 1.255 (0,28x). PRODUCED sigue registrando CARRIL VACIO el 24-sep. Es n=1: dice que el instrumento
+puede devolver material, no dice nada todavía sobre el rendimiento del carril.
+
+**MEDIDO — `@blacknews` puso la mejor pieza de la semana como semilla, cinco días después de entrar a la WATCHLIST.**
+Tuskegee (46.277) y Teddy Gant (oculta) salieron los dos de esa cuenta. Entró el 21/09 por haber dado dos semillas;
+esta semana dio otras dos, una de ellas la más alta del archivo en un mes.
+
+**POSIBLE DESPLAZAMIENTO (CUARTA SEMANA) — la regla de la última oración sigue sin separar, y el sujeto de la primera tampoco.**
+El hallazgo del 07/09 (cerrar en consecuencia rinde, cerrar en cifra hunde) falla otra vez: Malveaux cierra en
+*"HE OPENS LOCATION NUMBER FOUR"* (consecuencia) y hace 0,35x; Tuskegee cierra en una cita emocional y hace 10,3x,
+pero también cierran en consecuencia Reunion (0,28x) y Donda (0,28x). El hallazgo del 14/09 (protagonista individual
+en la primera oración) queda refutado por Tuskegee. **Lo que sí separó las dos tandas fue el precio pagado.**
+No se deroga nada con una semana: quedan los tres anotados para cruzar la próxima.
+
+**OBSERVACIÓN — la sospecha del 21/09 sobre las tapas con IA no se sostuvo esta semana.**
+El 21/09 se anotó que 3 de 4 tapas con imagen generada quedaron ocultas. Esta semana **7 de las 13 tapas son
+composiciones de GPT Image 2 sobre fotos reales y 6 están visibles**, incluida la de 46.277 (la grilla de los diez
+retratos reales recompuesta). La única oculta (Teddy Gant) es también composición sobre foto real. No hubo ninguna
+tapa con escena o personaje enteramente inventado, que era el sub-caso exacto del 21/09: **ese sub-caso quedó sin
+testear, y el caso general —IA sobre material real— no muestra penalización.**
+
+**SIN EXPLICACIÓN, queda abierto.** Diamond Rose (4.029, 0,89x) tiene todo lo que las de arriba tienen: protagonista
+nombrada, precio pagado y medido (tres balas, dos extraídas, una que se queda), hijo de por medio y cierre en él.
+Quedó en la mitad de la tabla. Contra Dorian (5.706), que es la misma familia de tema, la única diferencia visible es
+que en Dorian el desenlace es la muerte y acá la protagonista sobrevive. Es n=1 y no lo pude aislar.
+
+### WATCHLIST — lo medido esta corrida
+
+| cuenta | n | mediana | movimiento | qué quedó |
+|---|---|---|---|---|
+| `blacknews` | 1 maduro + 3 pins | 764 (posts propios) | — | 🏆 **Puso la semilla de la pieza más alta del mes** (Tuskegee 46.277) y también la de Teddy Gant (oculta). Sus propios posts son chicos (56 a 764 likes); su valor es como carril de origen, confirmado en su segunda semana |
+| `goodnews_movement` | 9 maduros | **27.220** | 22.034 → 43.332 → 27.220 | **El no-reel volvió a perder, y fuerte: estáticas 6.300 (n=2) contra reels 36.554 (n=7), 5,8x a favor del reel.** Con esto la hipótesis del no-reel va 2 a favor y 2 en contra → se retira. Duración: 18s hizo 53.375 y 61s hizo 16.444 (quinta medición sin relación) |
+| `blackinformationnetwork` | 5 maduros | **671** | 660 → 265 → 671 | Sin semilla en PRODUCED por segunda semana bajo ese motivo: **strike 2 de 3**. Un post con 263 comentarios sobre 1.886 likes (13,9%) — primer ratio con volumen real que se le mide |
+| `theneighborhoodtalk` | 12, todos <24h | no medible | — | **Tercera corrida seguida inmadura** (los 12 posts tenían entre 2h y 14h). El scrape de perfil trae solo lo de hoy. Método para la próxima: guardar shortCodes de esta corrida y medirlos por `directUrls` la semana que viene |
+| `raphousetv` | 12, todos <24h | no medible | — | Inmaduro igual. Motor de discusión otra vez visible aun sin madurar: 15,5%, 6,7%, 6,1%, 6,0%. Ninguna semilla nuestra esta semana |
+
+### CHEQUEO DEL LOOP
+
+- 🏆 **PRODUCED cubre las 13 piezas de la ventana.** Serie de cobertura: 4 de 14 sin fila (07/09) → 2 de 4 (14/09) →
+  0 de 12 (21/09) → **0 de 13**. Segunda semana completa. El análisis de carriles ya no tiene huecos.
+- **El scrape de perfil con `resultsLimit` 20 falló por cuarta semana.** Devolvió 13 de 14 piezas de la ventana y cero
+  del 18 al 21-sep. La ruta de `directUrls` sigue bloqueada porque PRODUCED no anota el shortCode de Instagram al
+  publicar (el IG principal se publica a mano). **Es el mismo pedido por cuarta vez y es el único que haría barata
+  esta medición.**
+- **Volumen: 13 piezas publicadas en 6 días**, contra 12 la semana pasada y 4 la anterior. La producción se sostuvo.
+- **Entregadas y no publicadas en la ventana:** Lisa Leslie (23-sep), Ebony Jones (28-sep, recién entregada),
+  Sheem (EN CURSO 27-sep). Casi todas las filas siguen diciendo "(SIN PROGRAMAR)".
+- **Cuarta semana sin ninguna cosecha de comentarios registrada en PRODUCED.** Seis Repackage acumulados sin tocar.
+- **Barrido de TikTok:** una pieza (Reunion) después de tres semanas en cero; PRODUCED registra CARRIL VACIO el 24-sep.
+- LEARNINGS_EDITORIAL.md no creció, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+instagram-scraper: 3 corridas con proxy estándar (perfil 20 · perfil `onlyPostsNewerThan` 45 · 5 cuentas de watchlist
+a 12) · **0 corridas de OCR** (las 13 piezas tenían fila en PRODUCED) · 3 corridas de cheerio contra GitHub.
+Sin proxy residencial.
