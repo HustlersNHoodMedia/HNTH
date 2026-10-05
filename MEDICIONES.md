@@ -627,3 +627,216 @@ que en Dorian el desenlace es la muerte y acá la protagonista sobrevive. Es n=1
 instagram-scraper: 3 corridas con proxy estándar (perfil 20 · perfil `onlyPostsNewerThan` 45 · 5 cuentas de watchlist
 a 12) · **0 corridas de OCR** (las 13 piezas tenían fila en PRODUCED) · 3 corridas de cheerio contra GitHub.
 Sin proxy residencial.
+
+---
+
+## CORRIDA 2026-10-05 (12:05 UTC)
+
+**Ventana medida:** 2026-09-27 12:02 -> 2026-10-05 12:05 UTC.
+Se excluyen: 4 pins viejos de video (391.730 - 97.209 - 32.541 y el de @TheMovezShow) - 4 reels de @HustlersNTheHoodTv
+(animaciones cross-posteadas, no son piezas editoriales: 5.150 - 3.882 - 2.175 - 1.062) - 1 pieza con <24h (Peyton,
+14,7h — provisoria) - **1 post que NO es de este sistema** (ver abajo).
+**Quedan 11 piezas editoriales medibles, 2 con likes ocultos.**
+
+Titulos: **los 11 recuperados de PRODUCED.md** (version final de cada fila). OCR no hizo falta por tercera corrida.
+Edad al medir: entre 36,5h (Darlene) y 166h (Sheem).
+
+**POST EN EL FEED QUE NO ESTA EN PRODUCED:** `DeCqv4GlqJR` (3-oct 18:08, **6.257 likes / 50 com., 1,39x**) — carrusel
+de pasos para flipear contratos de pre-ejecucion hipotecaria, acredita a `@thebenallgeyer` y **no lleva #HustlersNTheHood**.
+No tiene fila en PRODUCED ni paso por ninguna etapa de este sistema. Queda FUERA de todas las medianas. Se anota porque
+rindio arriba de la mediana de la semana y porque es la primera vez que este archivo encuentra un post en el feed sin origen
+en el registro.
+
+**Metodo, quinta semana:** el scrape de perfil con `resultsLimit` 20 devolvio las 11 piezas de la ventana — primera
+corrida en que alcanza solo. La segunda corrida de control (`onlyPostsNewerThan` 2026-09-26, 45) devolvio **menos**
+(10 items, 6 piezas) y no agrego nada: este parametro no sirve como red de seguridad en esta cuenta.
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | titulo (version final en PRODUCED) | likes | com. | ratio | x4.510 | edad |
+|---|---|---|---|---|---|---|---|---|
+| 1 | carrusel de 2 | prensa y feeds de cultura (theGrio / Complex / WBLS 1-oct) | TISHA CAMPBELL WAS LIVING WITH HER MOM WHEN MARTIN LAWRENCE CAME TO THE DOOR TO ASK HER TO PLAY GINA. SHE TURNED DOWN A SURE 13-EPISODE DEAL AT ANOTHER SHOW TO SAY YES. SHE PLAYED GINA FOR FIVE SEASONS. (202 car) | **18.994** | 150 | 0,8% | **4,21x** | 85h |
+| 2 | carrusel de 5 | barrido de traccion (semilla TikTok del propio protagonista) | A YOUNG MAN WHO GREW UP ON SECTION 8 MOPPED HOSPITAL FLOORS WHILE HE WAS IN NURSING SCHOOL. NOW HE WORKS IN THE ER, AND HE JUST BOUGHT HIS MOM A HOUSE OF HER OWN. (162 car) | 9.442 | 187 | 2,0% | 2,09x | 166h |
+| 3 | imagen unica | prensa local (ceremonia MFR Alabama 24-sep) | A FIREFIGHTER IN ALABAMA JUST MADE LIEUTENANT IN THE SAME DEPARTMENT WHERE HER FATHER WAS A CAPTAIN. SHE IS THE FIRST WOMAN TO GET THAT RANK THERE IN 24 YEARS. (159 car) | 7.745 | 87 | 1,1% | 1,72x | 157h |
+| 4 | carrusel de 7 (**REPACKAGE**) | **cosecha de comentarios** (semilla TikTok `@pinkkiwi.mp3`, 16.900 com.) | A WOMAN POSTED THAT SHE FINALLY GOT HER GED. THOUSANDS ANSWERED WITH THEIR OWN. THE MOST LIKED REPLY: MARRIED AT 17, GED AT 41, AND NOW WORKING ON A PHD. (153 car) | 7.340 | 105 | 1,4% | 1,63x | 137h |
+| 5 | carrusel de 3 | prensa y feeds de cultura (StoryCorps / Nashville) | A HOSPITAL JANITOR IN TENNESSEE SAW A WOMAN CRYING IN THE HALLWAY. DEMENTIA HAD TAKEN HER MOM'S VOICE THAT MORNING. AFTER HIS SHIFT HE FOUND HER MOM, HELD HER HAND AND SANG "MY GIRL." HER MOM SANG IT BACK. (205 car) | 6.491 | 91 | 1,4% | 1,44x | 112h |
+| 6 | imagen unica | prensa y feeds de cultura (Forbes / podcast) | DRUSKI GOT REJECTED BY NETFLIX, AMAZON AND FX. HE PUT MILLIONS OF HIS OWN MONEY INTO HIS SHOWS AND DROPPED THEM FREE ON YOUTUBE. NOW HE SAYS IT'S A BIDDING WAR. (160 car) | 5.168 | 46 | 0,9% | 1,15x | 142h |
+| 7 | carrusel de 3 | TV local (WXYZ Detroit 2-oct) | A MOM IN MICHIGAN WAS HOMELESS WITH HER 5 KIDS, SLEEPING IN VACANT HOUSES. SHE WENT BACK, FINISHED HIGH SCHOOL AND GOT THEM A PLACE. (132 car) | 3.452 | 84 | **2,4%** | 0,77x | 46h |
+| 8 | carrusel de 3 | TV local (WSLS Roanoke 2-oct) | A WOMAN IN VIRGINIA USED HER FIRST RETIREMENT CHECK TO OPEN A PLACE FOR THE KIDS ON THE STREET EVERYBODY WAS AFRAID OF. WHEN THE LANDLORD TRIED TO SHUT IT DOWN, THOSE KIDS MADE SIGNS. IT'S STILL OPEN. (200 car) | 2.301 | 13 | 0,6% | 0,51x | 37h |
+| 9 | carrusel de 3 | TV local (NewsChannel5 1-oct + fox17 2022) | A COLLEGE STUDENT IN TENNESSEE OPENED A COFFEE SHOP. NOW SHE HIRES THE ADULTS WITH DISABILITIES MOST PLACES TURN AWAY, AND 75 MORE ARE WAITING FOR A JOB. (153 car) | 1.141 | 13 | 1,1% | **0,25x** | 64h |
+| 10 | carrusel de 3 | prensa negra nacional (Black Enterprise 29-sep / Inside Philanthropy) | A TEENAGER FROM THE BRONX KEPT SEEING KIDS HIS AGE IN GHANA SELLING ON THE STREET INSTEAD OF GOING TO SCHOOL. AT 15 HE STARTED PAYING ONE BOY'S TUITION OUT OF HIS ALLOWANCE. TODAY HE IS PUTTING 10 KIDS THROUGH SCHOOL. (216 car) | **OCULTOS** | 30 | n/c | **FLOP** | 118h |
+| 11 | carrusel de 3 | prensa local (St. Louis American 28-sep) | BOXER DEVON ALEXANDER WAS ONE OF THIRTY KIDS AT HIS FIRST GYM. NINE ARE D*AD, NINE WENT TO PRISON, AND HE BECAME A WORLD CHAMPION. NOW HE PAYS OUT OF POCKET TO TRAIN KIDS FROM THE SAME BLOCKS. (189 car) | **OCULTOS** | 5 | n/c | **FLOP** | 94h |
+
+**Provisorio, <24h al medir (no entra en ninguna mediana):** Peyton, carrusel de 3, TV local (fox8live 1-oct) —
+*AN 11-YEAR-OLD IN MISSISSIPPI SPENT 6 MONTHS IN A HOSPITAL BED ASKING TO GO BACK TO SCHOOL. HIS BIG BROTHER GAVE HIM HIS
+STEM CELLS. ONE YEAR LATER HE WALKED BACK INTO THAT HOSPITAL IN A SUIT AND RANG THE BELL.* — 2.001 likes / 24 com. (1,2%) a las 14,7h.
+
+### MEDIANAS
+
+| corte | n | mediana |
+|---|---|---|
+| piezas editoriales, solo likes visibles | 9 | **6.491** |
+| piezas editoriales, oculto contado como flop | 11 | **5.168** |
+| imagen unica (visibles) | 2 | 6.456 (manual: 6.571) |
+| carrusel (visibles) | 7 | 6.491 (manual: 9.294) |
+| **piezas con >=72h al medir** | **6** | **7.542** |
+| **piezas con <72h al medir** | **3** | **2.301** |
+| prensa y feeds de cultura | 3 | 6.491 |
+| prensa local (diario/semanario negro) | 1 visible + 1 oculta | 7.745 - FLOP |
+| prensa negra nacional | 0 visibles | solo FLOP |
+| TV local | 3 | 2.301 |
+| barrido de traccion | 1 | 9.442 |
+| **cosecha de comentarios (Repackage)** | **1** | **7.340** — primera pieza del carril en este archivo |
+
+**Serie semanal (mediana de visibles - piezas con likes ocultos):**
+07/09 -> 16.097 - 1 de 14 | 14/09 (corregida) -> 7.525 - 4 de 7 | 21/09 -> 4.961 - 3 de 12 | 28/09 -> 3.045 - 1 de 13 |
+**05/10 -> 6.491 - 2 de 11.**
+
+**La caida de cuatro semanas se corto: 3.045 -> 6.491 (2,1x).** Los ocultos subieron de 1 a 2 sobre menos piezas
+(de 1 en 13 a 2 en 11). **Volumen: 11 piezas editoriales en 7 dias**, contra 13 la semana pasada.
+
+### RE-MEDICION DE LA VENTANA ANTERIOR
+
+**No se pudo hacer.** El scrape de perfil devolvio solo piezas de esta ventana: ninguna de las 13 de la corrida del 28/09
+volvio en el conjunto, y Crystal Mason (la provisoria de 17,6h de esa corrida) tampoco. La re-medicion necesita
+`directUrls` con los shortCodes, y PRODUCED **sigue sin anotar el shortCode de Instagram al publicar**. Es el mismo pedido
+por **quinta vez** y es lo unico que haria barata esta parte de la medicion. Los 11 shortCodes de esta corrida quedan
+anotados en la tabla de arriba para poder re-medirlos la semana que viene.
+
+### MEDIDO — EL SESGO DE EDAD DE ESTA MEDICION, Y POR QUE ESTA SEMANA CONTAMINA LA LECTURA POR CARRIL
+
+**Las tres piezas mas bajas de la tabla son las tres mas jovenes.** Darlene 37h (0,51x), Shauntelle 46h (0,77x),
+Ellis 64h (0,25x). Spearman entre edad y likes **rho = 0,65 (n=9)**. Mediana de las de >=72h: **7.542**; de las de <72h:
+**2.301** — **3,3x de brecha solo por edad al medir**.
+
+Esto no es nuevo: el archivo ya MIDIO el 28/09, con n=5 y cuatro confirmaciones, que **una pieza medida antes de las 48h
+vale alrededor de la mitad de su numero final** (Coffey duplico entre las 20h y el dia 7). Lo nuevo es la consecuencia
+de metodo: **cuando un carril concentra sus piezas al final de la ventana, ese carril aparece hundido por construccion.**
+
+**Esta semana es exactamente ese caso.** Las tres piezas de TV local son las tres mas jovenes:
+
+| carril | n | mediana | edades |
+|---|---|---|---|
+| prensa y feeds de cultura | 3 | 6.491 | 85h - 112h - 142h |
+| TV local | 3 | 2.301 | 64h - 46h - 37h |
+
+La brecha cruda es 2,8x a favor de prensa. **Es inseparable del sesgo de edad y por lo tanto NO es un hallazgo sobre el
+carril.** Queda anotada como pendiente: la re-medicion de los tres shortCodes de TV local la semana que viene decide si
+hay algo del carril o era solo edad.
+
+**Y esto obliga a mirar con desconfianza toda comparacion por carril de las cuatro corridas anteriores** donde el
+carril ganador fuera tambien el mas viejo. No se deroga nada: queda escrito para cruzar.
+
+### MEDIDO — EL REPACKAGE CORRIO POR PRIMERA VEZ Y RINDIO ARRIBA DE LA MEDIANA
+
+Despues de **cuatro semanas con cero cosechas registradas**, la cosecha de comentarios se ejecuto y la pieza hizo
+**7.340 (1,63x)**, cuarta de once y arriba de la mediana de la semana.
+
+**El mecanismo, para registro:** semilla sin tension propia (una mujer llorando en TikTok con un cartel, `@pinkkiwi.mp3`,
+1,9M plays) -> cosecha de 16.900 comentarios -> carrusel de 7 slides donde cada slide es **el recibo de un comentario real
+con su contador de likes a la vista** (43.9K, 26.8K, 1776, ...) -> el titulo no cuenta la historia de la semilla sino la del
+comentario mas votado: *"THE MOST LIKED REPLY: MARRIED AT 17, GED AT 41, AND NOW WORKING ON A PHD."*
+
+Es n=1, y es el primer numero que este archivo tiene del carril. No dice que el Repackage rinda mas que el resto; dice que
+el carril entrega por encima de la mediana cuando se corre, y que su costo (cosechar comentarios de una semilla ya viral)
+es el mas bajo de todos los carriles.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+**Ninguna pieza de esta ventana paso el 8%. Segunda semana consecutiva.** El ratio mas alto es **2,4%**
+(Shauntelle, 84/3.452) y la mediana de ratios es **1,1%** — mas baja que el 1,6% de la semana pasada.
+
+**MEDIDO — tercera semana que encaja con la observacion del 21/09: los dos motores no se cruzan.**
+Las 11 piezas de la semana son de vulnerabilidad, rescate, logro o decision. **Ninguna pone a dos personas en conflicto.**
+Las seis piezas que este archivo marco arriba del 8% tenian todas un conflicto entre personas. Tercera semana sin material
+que genere conversacion, no tercera semana de Repackages perdidos.
+
+**Siguen abiertos y sin cosechar, de semanas anteriores (QUINTA semana sin ninguna cosecha de estos seis en PRODUCED):**
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437 com.) - 18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) -
+15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) - 12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) -
+9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) - 8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276).
+
+### HALLAZGOS
+
+**MEDIDO — el precio pagado dentro del titulo sigue separando ARRIBA, y las dos excepciones de abajo son las dos piezas jovenes.**
+Segunda medicion del hallazgo del 28/09. Las cinco de arriba nombran algo concreto que el protagonista perdio o pago:
+Tisha *"TURNED DOWN A SURE 13-EPISODE DEAL"*; Sheem *"MOPPED HOSPITAL FLOORS WHILE HE WAS IN NURSING SCHOOL"*;
+GED *"MARRIED AT 17, GED AT 41"*; Wiggins *"DEMENTIA HAD TAKEN HER MOM'S VOICE THAT MORNING ... AFTER HIS SHIFT"*;
+Druski *"REJECTED BY NETFLIX, AMAZON AND FX ... MILLIONS OF HIS OWN MONEY"*. **1,15x a 4,21x, las cinco arriba de 1x.**
+**Pero Shauntelle (*"HOMELESS ... SLEEPING IN VACANT HOUSES"*, 0,77x) y Darlene (*"HER FIRST RETIREMENT CHECK"*, 0,51x)
+tambien traen el precio y quedaron abajo** — y son las dos piezas de 46h y 37h. No se puede decidir con esta tanda si el
+hallazgo falla o si es el sesgo de edad. Queda para la re-medicion.
+
+**MEDIDO — y es el unico caso de la tanda que el sesgo de edad NO explica: la pieza a la que se le quito su unica cifra quedo ultima.**
+Ellis hizo **1.141 (0,25x)**, la mas baja de las once, **teniendo 64h — mas que Darlene (37h) y Shauntelle (46h), que
+quedaron arriba de ella**. Mismo carril que esas dos, mas vieja que las dos, y ultima.
+Es tambien la unica pieza de la ventana a la que se le **saco una cifra concreta del titulo** entre versiones: la v2 decia
+*"OPENED A COFFEE SHOP AND GOT DOWN TO 5 CENTS"* y la v3 corto esa clausula; el titulo publicado abre en
+*"OPENED A COFFEE SHOP"* y no tiene ninguna cifra ni ningun precio. Las otras dos de TV local si tienen precio.
+**Observacion con n=1 y con el orden de edad en contra de la explicacion facil.** No se deroga nada ni se dicta nada: queda
+anotado para cruzar con la proxima pieza a la que se le edite una cifra.
+
+**MEDIDO — par controlado entre famosos, a dos semanas de distancia: 18.994 contra 1.280, 14,8x.**
+Tisha (4,21x, la mas alta de la semana) y Donda/Ye (0,28x, 28/09) son las dos piezas de famoso del archivo reciente, las
+dos de prensa y cultura, las dos sobre el pasado del protagonista. La diferencia visible: el titulo de Tisha tiene una
+**decision con costo** (rechazo un contrato seguro de 13 episodios) y un desenlace (*"SHE PLAYED GINA FOR FIVE SEASONS"*);
+el de Donda es un homenaje sin costo ni desenlace. Sostiene la lectura del precio pagado mas limpiamente que la
+comparacion por carril, porque aca la fama esta en los dos lados.
+
+**MEDIDO — la estructura no explico nada, quinta semana.** Imagen unica **6.456 (n=2)** contra carrusel **6.491 (n=7)**:
+practicamente iguales. Y las medianas del manual (6.571 / 9.294) no se reproducen en ninguna de las cinco corridas de este
+archivo. Dentro del carrusel hay 16x de diferencia (1.141 a 18.994), que es donde esta toda la varianza.
+
+**OBSERVACION — las dos piezas ocultas son las dos de prensa escrita negra, y las dos tienen el ratio mas bajo de la tabla.**
+Owobu (prensa negra nacional, 30 com.) y Devon (prensa local negra, **5 com.**, el mas bajo de las once). Las dos son
+carrusel de 3, las dos pasaron por muchas versiones (Owobu v4, Devon v8). n=2, sin aislar: no hay nada que distinga a estos
+dos carriles de los que rindieron mas alla de que son los dos unicos casos del archivo donde la fuente es prensa escrita
+negra y no TV ni feed de cultura.
+
+**SIN EXPLICACION, queda abierto.** Devon Alexander: ocho versiones de tapa, seis correcciones del operador, el titulo final
+con el precio mas duro de la tanda (*"NINE ARE D*AD, NINE WENT TO PRISON"*) y la pieza quedo oculta con 5 comentarios —
+el engagement mas bajo de las once por un factor de 2,6 contra la siguiente. Tiene todo lo que las de arriba tienen. No lo
+pude aislar.
+
+**POSIBLE DESPLAZAMIENTO (QUINTA SEMANA) — la regla de la ultima oracion sigue sin separar.**
+El hallazgo del 07/09 (cerrar en consecuencia rinde, cerrar en cifra hunde) tampoco separa esta tanda: Tisha cierra en
+consecuencia y hace 4,21x, pero Darlene cierra en consecuencia (*"IT'S STILL OPEN"*) y hace 0,51x, y Ellis cierra en una
+cifra (*"75 MORE ARE WAITING FOR A JOB"*) y hace 0,25x. Quinta corrida sin que la regla de cierre separe nada. **Sigue sin
+derogarse por falta de una tanda limpia de edad, pero ya son cinco.**
+
+### WATCHLIST — lo medido esta corrida
+
+| cuenta | n maduros | mediana | movimiento | que quedo |
+|---|---|---|---|---|
+| `theneighborhoodtalk` | **6 por `directUrls`** | **8.368** | 776 -> 2.163 -> 3.336 -> 2.662 -> no medible -> **8.368** | **EL BUG DE METODO QUEDO MEDIDO.** Los 6 shortCodes guardados el 28/09, medidos a los 7-8 dias: 4.482 / 5.593 / 6.818 / 9.918 / **42.030** / **65.697**, ratios hasta **19,9%**. El scrape de perfil venia informando 2.662 y menos. **Subestimaba esta cuenta por ~3x y despues fallo tres corridas seguidas.** Pedido de metodo de cuatro corridas: RESUELTO y cuantificado |
+| `goodnews_movement` | 9 | **19.983** | 22.034 -> 43.332 -> 27.220 -> 19.983 | Tercera baja consecutiva. Reels siguen dominando. **Sin semilla: strike 2** |
+| `becauseofthem` | 11 | **3.229** | primera medicion | Rango 906 a **44.238**, con 18.772 y 11.630 arriba; ratios hasta 6,6%. **Produce consistentemente.** Pero el criterio del archivo pide dos semillas y sigue con una (Teddy Gant, 20-sep): **no entra todavia**, con la medicion anotada |
+| `blacknews` | 9 | **403** | 764 -> 403 (posts propios) | Puso la pieza mas alta del mes la semana pasada; **esta semana cero semillas: strike 1**. Pins de 13.075 a 27.787 |
+| `blackinformationnetwork` | 6 | **1.062** | 660 -> 265 -> 671 -> 1.062 | **Strike 3 de 3** — tercera semana seguida sin llegar a PRODUCED bajo el motivo "fuente de semilla". Por el criterio escrito en WATCHLIST, sale. Un post con 225 com. sobre 4.344 (5,2%) |
+| `raphousetv` | **0** | no medible | — | **Cuarta corrida inmadura** (los 11 posts tienen entre 7h y 18h). Ahora que el metodo de `directUrls` esta probado, se guardan shortCodes: `DeFSOpPhXGO` - `DeFeP1_u4ap` - `DeGTE_cOJHy` - `DeFM_LqBUhP` - `DeGGiqSBMLs` - `DeGZ_q5jgF-`. Motor de discusion visible aun inmaduro: 17,2% - 10,8% - 10,6% |
+
+**shortCodes de `theneighborhoodtalk` para la proxima re-medicion:** `DeFqy1ohYf7` - `DeFl4OXgwYt` - `DeF00XapzCq` -
+`DeGALJ7MECB` - `DeGFOAkMG41` - `DeFxoOgMxsg`.
+
+### CHEQUEO DEL LOOP
+
+- **PRODUCED cubre las 11 piezas de la ventana.** Serie de cobertura: 4 de 14 sin fila (07/09) -> 2 de 4 -> 0 de 12 ->
+  0 de 13 -> **0 de 11**. Tercera semana completa.
+- **Un post en el feed sin fila en PRODUCED** (`DeCqv4GlqJR`, el de contratos hipotecarios, 6.257 likes). No es del
+  sistema: no lleva el hashtag de la cuenta y acredita a un tercero. Primera vez que aparece uno.
+- **Volumen: 11 piezas en 7 dias**, contra 13 y 12 las dos anteriores. Produccion sostenida, levemente abajo.
+- **BACKLOG DE ENTREGADAS SIN PUBLICAR, y crecio: 7 piezas.** Judge Watson 103 (30-sep) - Tommie Smith (29-sep) -
+  Shaw/rinon (2-oct) - Ms. Pat (2-oct) - Devin Allen v3 (4-oct) - Elliott Hall (4-oct) - Natasha Howard (4-oct).
+  Las cuatro ultimas son de un mismo dia. Casi todas las filas dicen "(SIN PROGRAMAR)".
+- **El barrido de TikTok por hashtag/keyword volvio a cero**: las cuatro corridas de RADAR de la ventana lo registran en 0
+  (361->54->0 - 300->33->0 - 143->0 - 86->0). La unica pieza de carril de traccion de la semana (Sheem) entro por la semilla
+  del propio protagonista, no por barrido.
+- **Cosecha de comentarios: corrio una (GED) y rindio 1,63x.** Los seis Repackage viejos siguen sin tocar, quinta semana.
+- **Ninguna de las cinco cuentas de la WATCHLIST dio semilla esta ventana.** Es la primera corrida en que la lista entera
+  viene en cero como carril de origen.
+- LEARNINGS_EDITORIAL.md no crecio, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+instagram-scraper: 4 corridas con proxy estandar (perfil 20 - perfil `onlyPostsNewerThan` 45 - 6 cuentas de watchlist a 12 -
+6 `directUrls` de re-medicion) - **0 corridas de OCR** (las 11 piezas tenian fila en PRODUCED) - 3 corridas de cheerio
+contra GitHub. Sin proxy residencial.
