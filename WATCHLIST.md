@@ -1,54 +1,71 @@
-# HNTH — PÁGINAS A VIGILAR
+# HNTH — PAGINAS A VIGILAR
 
 Lista viva. **El analista la actualiza cada corrida**: suma las que descubre, marca las que dejaron de servir, corrige handles que cambiaron.
 
-**Para qué sirve:** ver qué formatos y ángulos están funcionando afuera. No para copiar temas — para detectar mecánicas que podamos adaptar.
+**Para que sirve:** ver que formatos y angulos estan funcionando afuera. No para copiar temas — para detectar mecanicas que podamos adaptar.
 
-**Cómo se lee la columna "por qué":** una página puede servir aunque su cultura no sea la nuestra. Si el FORMATO funciona, se adapta.
+**Como se lee la columna "por que":** una pagina puede servir aunque su cultura no sea la nuestra. Si el FORMATO funciona, se adapta.
+
+---
+
+## METODO RESUELTO (05/10/2026) — COMO SE MIDE UNA CUENTA DE ALTA FRECUENCIA
+
+El scrape de perfil **no sirve** para cuentas que postean muchas veces por dia: devuelve solo lo del dia, todo con menos de 24h, y la mediana sale inventada o no sale.
+
+**Quedo medido con `theneighborhoodtalk`:** los 6 shortCodes guardados el 28/09, re-medidos a los 7-8 dias por `directUrls`, dieron **mediana 8.368** (4.482 / 5.593 / 6.818 / 9.918 / 42.030 / 65.697). El scrape de perfil venia informando 2.662 y despues "no medible" tres corridas seguidas. **Subestimaba por ~3x.**
+
+**El procedimiento, entonces:** en cada corrida se GUARDAN los shortCodes que devuelve el perfil, y la mediana de esa cuenta se calcula la semana siguiente midiendo ESOS shortCodes por `directUrls`. La mediana de una cuenta de alta frecuencia siempre va una semana atrasada, y asi es comparable.
 
 ---
 
 ## VIGILANDO
 
-| Cuenta | Plataforma | Por qué está acá | Última revisión |
+| Cuenta | Plataforma | Por que esta aca | Ultima revision |
 |---|---|---|---|
-| `blacknews` | IG | 🏆 **La semilla más productiva de la lista.** Entró el 21/09 y en su primera semana completa puso las dos piezas más extremas de la tanda: **Tuskegee (46.277, la más alta del archivo en un mes)** y Teddy Gant (likes ocultos). Van cuatro semillas nuestras en dos semanas. Sus propios posts son chicos (56 a 764 likes; pins de 11.478 a 23.285): **no se la mira por sus números, se la mira por lo que levanta.** Levanta historias viejas y las vuelve actuales | 2026-09-28 |
-| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. Mediana 16.552 → 22.034 → 43.332 → **27.220 (n=9 maduros)**. 🚨 **La hipótesis del no-reel se RETIRA**: estáticas 6.300 (n=2) contra reels 36.554 (n=7), 5,8x a favor del reel. Con el 0,75x del 21/09 van dos mediciones en contra y dos a favor (14/09) — sin driver. La duración sigue sin predecir (quinta medición): 18s hizo 53.375 y 61s hizo 16.444. **Sin semilla esta semana: strike 1 como fuente** | 2026-09-28 |
-| `theneighborhoodtalk` | IG | Mediana 776 (31/08) → 2.163 → 3.336 → 2.662 (21/09) → **no medible (28/09)**. 🚨 **Tercera corrida seguida inmadura**: los 12 posts que devuelve el perfil tienen entre 2h y 14h. El scrape de perfil solo trae lo del día. **Método obligado para la próxima: medir por `directUrls` los shortCodes guardados de esta corrida** (Ddzk9UxzD9T, Ddz1rQ1Jj6E, Ddz55QMJhQu, Ddzx4gIJTCJ, Dd0FptjNAbs, Dd0AjPzsRnd). Sigue siendo motor de DEBATE | 2026-09-28 |
-| `raphousetv` | IG | Hipótesis de formato retirada hace cinco mediciones. Sirve como fuente de SEMILLA y termómetro de discusión. **Inmaduro esta corrida** (los 12 posts con <24h), pero el motor se ve igual: ratios 15,5%, 6,7%, 6,1%, 6,0%. **Sin semilla esta semana: strike 1** (venía de poner dos el 21/09) | 2026-09-28 |
-| `blackinformationnetwork` | IG | Motivo desde el 14/09: fuente de SEMILLA. **Strike 2 de 3**: segunda semana seguida sin llegar a PRODUCED. Mediana 660 → 265 → **671 (n=5 maduros)**. Novedad: primer ratio con volumen real que se le mide — 263 comentarios sobre 1.886 likes (13,9%). Si la próxima corrida tampoco trae semilla, sale | 2026-09-28 |
+| `theneighborhoodtalk` | IG | **La de numeros mas altos de la lista, y recien ahora se sabe.** Mediana real **8.368** (n=6 por `directUrls`, 7-8 dias de maduracion), con dos piezas de **42.030** y **65.697**. Motor de DEBATE confirmado con volumen: ratios de **19,9% - 18,4% - 13,3%**, los mas altos que este archivo midio a cualquier cuenta. Nunca dio semilla todavia: se la mira por el motor de comentarios, que es el carril de Repackage. **shortCodes guardados para la proxima:** `DeFqy1ohYf7` - `DeFl4OXgwYt` - `DeF00XapzCq` - `DeGALJ7MECB` - `DeGFOAkMG41` - `DeFxoOgMxsg` | 2026-10-05 |
+| `goodnews_movement` | IG | Fuera de nuestra cultura, **solo formato**. Mediana 16.552 -> 22.034 -> 43.332 -> 27.220 -> **19.983 (n=9)**. Tercera baja consecutiva. Los reels siguen dominando (la hipotesis del no-reel quedo retirada el 28/09 y no se reabre). La duracion sigue sin predecir, sexta medicion. **Sin semilla: strike 2 de 3** | 2026-10-05 |
+| `raphousetv` | IG | Fuente de SEMILLA y termometro de discusion. **Cuarta corrida inmadura** (los 11 posts entre 7h y 18h) — ahora se aplica el metodo de arriba. Motor visible aun sin madurar: **17,2% - 10,8% - 10,6%**. **shortCodes guardados para la proxima:** `DeFSOpPhXGO` - `DeFeP1_u4ap` - `DeGTE_cOJHy` - `DeFM_LqBUhP` - `DeGGiqSBMLs` - `DeGZ_q5jgF-`. **Sin semilla: strike 2 de 3** | 2026-10-05 |
+| `blacknews` | IG | Entro el 21/09 y en su primera semana completa puso las dos piezas mas extremas de esa tanda: **Tuskegee (46.277, la mas alta del archivo en un mes)** y Teddy Gant (likes ocultos). **Esta semana cero semillas: strike 1 de 3.** Sus propios posts son chicos (mediana **403**, n=9; pins de 13.075 a 27.787): no se la mira por sus numeros, se la mira por lo que levanta. Levanta historias viejas y las vuelve actuales | 2026-10-05 |
 
 ---
 
-## CÓMO SUMAR PÁGINAS NUEVAS
+## CANDIDATAS (medidas, esperando la segunda semilla)
+
+| Cuenta | Que se le midio | Que falta |
+|---|---|---|
+| `becauseofthem` | IG. **Mediana 3.229 (n=11 maduros)**, rango 906 a **44.238**, con 18.772 y 11.630 arriba. Ratios hasta 6,6%. Produce consistentemente y con numeros reales | Una sola semilla hasta ahora (Teddy Gant, 20-sep, junto con `blacknews`). El criterio pide dos: **no entra todavia**. Si aparece como fuente en PRODUCED una vez mas, entra |
+
+---
+
+## COMO SUMAR PAGINAS NUEVAS
 
 No hace falta que el operador las nombre. El analista las encuentra:
 
-1. **Desde los posts que ya detectó el radar.** Cuando una historia explota, mirar qué páginas grandes la levantaron. Las que aparecen seguido, entran a la lista.
-2. **Por búsqueda de formato.** Buscar en TikTok e IG el tipo de pieza que nos interesa y ver qué cuentas la producen bien de forma consistente.
-3. **Las que nos copian.** Si una página grande replicó un post nuestro, es porque mira lo mismo que nosotros. Vale vigilarla.
-4. **Las que ya nos dieron semilla.** Si una cuenta aparece como fuente en PRODUCED dos veces en una semana, entra (así entró `blacknews` el 21/09, y en su primera semana completa puso la pieza más alta del mes).
+1. **Desde los posts que ya detecto el radar.** Cuando una historia explota, mirar que paginas grandes la levantaron. Las que aparecen seguido, entran a la lista.
+2. **Por busqueda de formato.** Buscar en TikTok e IG el tipo de pieza que nos interesa y ver que cuentas la producen bien de forma consistente.
+3. **Las que nos copian.** Si una pagina grande replico un post nuestro, es porque mira lo mismo que nosotros. Vale vigilarla.
+4. **Las que ya nos dieron semilla.** Si una cuenta aparece como fuente en PRODUCED dos veces en una semana, entra (asi entro `blacknews` el 21/09, y en su primera semana completa puso la pieza mas alta del mes).
 
 **Criterio para que entre:** que produzca **consistentemente**, no un hit suelto. Y que tenga algo que nosotros no estemos haciendo — si hace exactamente lo mismo, no aporta.
 
 **Criterio para que salga:** tres revisiones seguidas sin nada aprovechable.
 
-⚠️ **El barrido POR HISTORIA sigue sin cerrar, cuarta corrida.** Ruta anotada, sin buscador web: cosechar los comentarios de nuestro propio post más fuerte con el scraper de IG y leer los @ que aparecen ahí. **Esta semana hay un candidato nuevo y evidente para esa ruta: Tuskegee (Ddm4EdwM8tV) con 1.147 comentarios.** Fuente directa del lado de la semilla, ya identificada: `@jaynoz_` en TikTok (89.300 fans).
+**El barrido POR HISTORIA sigue sin cerrar, quinta corrida.** Ruta anotada, sin buscador web: cosechar los comentarios de nuestro propio post mas fuerte con el scraper de IG y leer los @ que aparecen ahi. Candidatos para esa ruta, por orden de volumen de comentarios: **Tuskegee (Ddm4EdwM8tV, 1.147 com.)** y **Tisha (Dd-Bj0Flntl, 150 com., la pieza mas alta de esta semana)**. Fuente directa del lado de la semilla, ya identificada y sin usar: `@jaynoz_` en TikTok (89.300 fans).
 
-⚠️ **Candidato a entrar, pendiente de una segunda semilla:** `@becauseofthem` (IG) — apareció como fuente de Teddy Gant el 20-sep junto con `blacknews`. Una sola semilla: no entra todavía.
+**Dato de esta corrida: ninguna de las cuatro cuentas de VIGILANDO dio semilla.** Es la primera corrida en que la lista entera viene en cero como carril de origen. Las cuatro quedan con strike. Si la proxima repite, la lista entera queda sin justificacion como carril y hay que discutir para que se la mide.
 
 ---
 
-## QUÉ MIRAR EN CADA UNA
+## QUE MIRAR EN CADA UNA
 
-- **Formato**: ¿estructura de post que no usamos? ¿largo distinto? ¿otra forma de tapa?
-- **Ángulo**: ¿qué frame le dieron a una historia que nosotros también teníamos?
-- **Ritmo**: ¿cuántas veces por día postean? ¿a qué hora?
-- **Lo que evitan**: a veces lo más útil es notar qué NO hacen.
+- **Formato**: estructura de post que no usamos? largo distinto? otra forma de tapa?
+- **Angulo**: que frame le dieron a una historia que nosotros tambien teniamos?
+- **Ritmo**: cuantas veces por dia postean? a que hora?
+- **Lo que evitan**: a veces lo mas util es notar que NO hacen.
 
-⚠️ **Páginas fuera de nuestra cultura:** sirven igual, pero solo por el formato. Anotar la mecánica, nunca el tema.
+**Paginas fuera de nuestra cultura:** sirven igual, pero solo por el formato. Anotar la mecanica, nunca el tema.
 
-📌 **Lo que se sostiene al 28/09:** ninguna gana por resolución, y la duración de reel no predice nada (quinta medición). 📌 **Lo que se cerró:** la ventaja del no-reel queda RETIRADA — 2 mediciones a favor, 2 en contra, ningún driver. 📌 **Lo que se movió:** la lista se partió en dos. `blacknews` funciona como carril de origen y puso la pieza más alta del mes; las otras cuatro no dieron semilla esta semana (tres strikes 1, un strike 2). 📌 **Método, tercera vez anotado y sin resolver:** el scrape de perfil devuelve solo posts del día en las cuentas de alta frecuencia (`theneighborhoodtalk`, `raphousetv`), así que su mediana no es comparable entre semanas. La salida es guardar shortCodes y re-medir por `directUrls`.
+**Lo que se cerro al 05/10:** el metodo de medicion de cuentas de alta frecuencia (ver arriba) — cuatro corridas pidiendolo, resuelto y cuantificado. **Lo que se sostiene:** ninguna gana por resolucion; la duracion de reel no predice nada (sexta medicion); la ventaja del no-reel sigue retirada. **Lo que se movio:** `theneighborhoodtalk` pasa de "la menos medible" a la de numeros mas altos de la lista y la de mayor motor de comentarios. `blackinformationnetwork` sale por strike 3.
 
 ---
 
@@ -56,4 +73,5 @@ No hace falta que el operador las nombre. El analista las encuentra:
 
 | Cuenta | Motivo | Fecha |
 |---|---|---|
-| `humansofny` | **Strike 3 de 3.** Tercera revisión seguida sin material nuevo: al 07/09 lo más reciente que devuelve el scrape sigue siendo de octubre de 2025. Lo que ya se le midió queda anotado y no hace falta volver: carrusel APAISADO 1440x960 (257.035 likes) y motor real en el reel vertical LARGO de una persona a cámara (99s = 544.599; 155s = 106.098; 45s = 107.579). Si vuelve a publicar, se re-evalúa | 2026-09-07 |
+| `blackinformationnetwork` | **Strike 3 de 3.** Tres revisiones seguidas sin llegar a PRODUCED bajo su motivo declarado ("fuente de semilla"). Lo medido queda anotado y no hace falta volver: mediana 660 -> 265 -> 671 -> **1.062 (n=6)**, posts propios chicos, y un motor de comentarios real pero no excepcional (5,2% con 225 com. sobre 4.344; 13,9% medido el 28/09). Dio una sola semilla en todo el periodo (Nolan Wells, 23-sep). Si vuelve a aparecer como fuente en PRODUCED, se re-evalua | 2026-10-05 |
+| `humansofny` | **Strike 3 de 3.** Tercera revision seguida sin material nuevo: al 07/09 lo mas reciente que devuelve el scrape sigue siendo de octubre de 2025. Lo que ya se le midio queda anotado y no hace falta volver: carrusel APAISADO 1440x960 (257.035 likes) y motor real en el reel vertical LARGO de una persona a camara (99s = 544.599; 155s = 106.098; 45s = 107.579). Si vuelve a publicar, se re-evalua | 2026-09-07 |
