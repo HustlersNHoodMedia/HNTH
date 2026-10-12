@@ -1,0 +1,13 @@
+async (context) => {
+ const Q=["single father of","single dad raising","single mother of five","single mom of","homeless shelter graduated","lived in a shelter now","lived in his car","slept in her car","walks miles to work","walked to work every day","raised by his grandmother","raised by her grandmother","first in his family to","first in her family to","medical school acceptance","became a doctor after","became a nurse after","janitor graduated","custodian earned degree","cafeteria worker","bus driver surprised","coworkers surprised him with a car","community bought him a car","bought his mother a house","bought her mom a house","paid off his mother","foster care aged out","adopted all","took in his siblings","raising his siblings","raising her siblings","former inmate opens","after prison he","released from prison started","dad works two jobs","mom works three jobs","student surprised mom","son surprises mom","daughter surprises dad","teen saved","teen started a business","12-year-old business","barber free haircuts","GoFundMe raised for","stranger paid off","landlord evicted family","evicted family","fired after","worker fired for","hospital bill","delivery driver","Uber driver","DoorDash driver","grandmother graduates","great-grandmother","100th birthday","veteran homeless","laid off father","twins graduated","triplets","quadruplets","HBCU scholarship","full ride scholarship","accepted to every","accepted into 50 colleges","valedictorian homeless","NBA player surprises","rapper surprises","celebrity pays","pays off lunch debt"];
+ const tok=process.env.APIFY_TOKEN; const out=[];
+ const one=async(q)=>{ for(let a=0;a<2;a++){ try{
+   const u='https://news.google.com/rss/search?q='+encodeURIComponent('"'+q+'" when:6d')+'&hl=en-US&gl=US&ceid=US:en';
+   const r=await context.sendRequest({url:u,responseType:'text',timeout:{request:30000}});
+   const b=String(r.body||''); const re=/<item>([\s\S]*?)<\/item>/g; let m; const it=[];
+   while((m=re.exec(b))){const x=m[1]; const g=(t)=>{const k=x.match(new RegExp('<'+t+'[^>]*>([\\s\\S]*?)</'+t+'>'));return k?k[1].replace(/<!\[CDATA\[|\]\]>/g,'').trim():''}; it.push([g('title'),g('pubDate'),g('link'),g('source')]);}
+   out.push({q,items:it}); return; }catch(e){} } out.push({q,err:1}); };
+ for(let i=0;i<Q.length;i+=12){ await Promise.all(Q.slice(i,i+12).map(one)); }
+ await context.sendRequest({url:'https://api.apify.com/v2/key-value-stores/6MicS0YsUGu2QSSiU/records/radar-topics-1012.json?token='+tok,method:'PUT',body:JSON.stringify(out),headers:{'content-type':'application/json'},responseType:'text'});
+ return {n:out.length,items:out.reduce((s,x)=>s+(x.items?x.items.length:0),0)};
+}
