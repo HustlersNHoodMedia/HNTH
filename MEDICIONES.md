@@ -840,3 +840,258 @@ derogarse por falta de una tanda limpia de edad, pero ya son cinco.**
 instagram-scraper: 4 corridas con proxy estandar (perfil 20 - perfil `onlyPostsNewerThan` 45 - 6 cuentas de watchlist a 12 -
 6 `directUrls` de re-medicion) - **0 corridas de OCR** (las 11 piezas tenian fila en PRODUCED) - 3 corridas de cheerio
 contra GitHub. Sin proxy residencial.
+
+---
+
+## CORRIDA 2026-10-12 (12:05 UTC)
+
+**Ventana medida:** 2026-10-05 12:05 -> 2026-10-12 12:05 UTC. Scrape de perfil `resultsLimit` 20.
+Se excluyen: **3 pins viejos de video** (392.772 - 97.270 - 32.814) - **3 piezas con <24h** (ver abajo) -
+**2 cross-posts de `@HustlersNTheHoodTV`** (siguiendo el criterio de la corrida del 05/10: no son piezas
+editoriales de este sistema).
+**Quedan 12 piezas editoriales medibles, 2 con likes ocultos.**
+
+**Titulos: 12 OCR de tapa contra 0 la semana pasada.** Las filas de PRODUCED no se pueden cruzar contra el
+feed porque PRODUCED **sigue sin anotar el shortCode de Instagram al publicar — sexto pedido**. PRODUCED
+registra la programacion a TikTok via Buffer; el posteo a IG es manual y no deja rastro en el registro, asi
+que el unico puente que queda es el OCR. Esta corrida costo **2 corridas de OCR (12 tapas) que la anterior
+no necesito**. Es el unico numero de este archivo que mide el costo de ese pedido.
+
+**Edad al medir:** entre 39h y 160h. Solo 2 piezas por debajo de 72h.
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | titulo (OCR de la tapa publicada) | likes | com. | ratio | x4.510 | edad |
+|---|---|---|---|---|---|---|---|---|
+| 1 | carrusel 4 | barrido de traccion (TikTok @mdmotivator) | A SINGLE DAD OF 3 LIVING IN A SHELTER COULDN'T GET AN APARTMENT WITHOUT A JOB. THE CEO OF LIVE NATION SAW HIS STORY AND CALLED TO OFFER HIM ONE. NOW HIS KIDS HAVE A HOME. | 62.774 | 1.578 | 2,5% | **13,92x** | 88h |
+| 2 | imagen unica | prensa negra (BlackNews 6-oct) | A MOM IN GEORGIA WATCHED HER TWIN SONS WITH AUTISM APPLY FOR JOB AFTER JOB AND GET NOWHERE. SO THE FAMILY CASHED OUT THEIR RETIREMENT AND OPENED A SOUL FOOD RESTAURANT FOR THE TWINS TO WORK IN. NOW THEY NEED PEOPLE TO COME EAT. | 17.942 | 448 | 2,5% | **3,98x** | 140h |
+| 3 | imagen unica | prensa/cultura (TODAY 6-oct) | A SINGLE DAD LOST HIS JOB. THE OWNER OF HIS BREAKFAST SPOT HAD HIM CLEARING TABLES, AND HE SLEPT ON A HOTEL FLOOR FOR 10 MONTHS SO HIS TWO GIRLS GOT THE BEDS. TODAY HE HAS A HOUSE. | 5.554 | 48 | 0,9% | 1,23x | 110h |
+| 4 | carrusel 6 | TV local (WBTV/WSOC Charlotte) | A FATHER IN CHARLOTTE OPENED A BARBERSHOP WITH THE NIL MONEY HIS SON MADE PLAYING COLLEGE BALL... (v2) | 4.966 | 109 | 2,2% | 1,10x | 82h |
+| 5 | carrusel 4 | barrido de traccion (TikTok @brwsports) | COURTNEY WILLIAMS OF THE LYNX WAS PAID $180,000 LAST SEASON. AFTER WNBA PLAYERS WON THEIR NEW DEAL, SHE SIGNED FOR $2.4 MILLION AND BOUGHT HER DAD A HOUSE. SHE CALLS HIM HER NUMBER ONE HYPE MAN. | 4.625 | 64 | 1,4% | 1,03x | 70h |
+| 6 | carrusel 3 | TV local (THV11 Arkansas) | A 12 YEAR OLD IN ARKANSAS WAS PLAYING FOOTBALL AT SCHOOL WHEN A STROKE IN HIS SPINE PARALYZED HIS RIGHT LEG. DOCTORS SAID A WALKER OR A WHEELCHAIR FOR UP TO A YEAR. HE WAS WALKING IN A MONTH, AND NOW HE'S BACK ON THE FIELD. | 4.374 | 134 | 3,1% | 0,97x | 46h |
+| 7 | carrusel 3 | TV local (WMC Memphis) | A MAN IN TENNESSEE GOT ARRESTED FOR SELLING WATER IN THE STREET. THE NEXT DAY CARS WERE ROLLING PAST HIS CORNER HONKING "FREE THE WATERMANE" AND DROPPING OFF CASES OF WATER. THE CHARGE GOT DROPPED. | 3.713 | 34 | 0,9% | 0,82x | 65h |
+| 8 | carrusel 2 | prensa/cultura (LI Herald + CBS NY) | FOR 25 YEARS, A TEACHER IN NEW YORK PROMISED $100 TO ANY STUDENT WHO GOT A PERFECT SCORE ON THE STATE CHEMISTRY EXAM. NOBODY EVER COLLECTED. THIS YEAR A 16-YEAR-OLD DID, AND THE TEACHER DROVE TO HIS HOUSE TO HAND HIM THE $100. | 2.692 | 8 | 0,3% | 0,60x | 157h |
+| 9 | imagen unica | barrido de traccion (TikTok @meyvi778) | A SINGLE MOM SPENT YEARS WORKING EVERY JOB AT THE BOTTOM OF THE HOSPITAL. AIDE, HOME HEALTH, DRAWING BLOOD. ALL OF IT RAISING HER DAUGHTER ALONE. THIS WEEK HER FIRST PAYCHECK AS A NURSE FINALLY HIT, AND SHE CELEBRATED IT WITH HER LITTLE GIRL. | 2.033 | 40 | 2,0% | 0,45x | 133h |
+| 10 | carrusel 2 | barrido de traccion (TikTok @_saywhatmarv) | A SOLDIER MADE IT HOME FROM DEPLOYMENT JUST IN TIME FOR HIS MAMA'S BIRTHDAY. HE WENT STRAIGHT TO THE SCHOOL WHERE SHE WORKS AND WAITED IN THE HALLWAY WITH FLOWERS. | **942** | 3 | 0,3% | **0,21x** | 115h |
+| 11 | carrusel 2 | RSS local (fuente exacta sin anotar) | A MAN IN NORTH CAROLINA STARTED WORKING FOR THE SAME FAMILY FARM WHEN HE WAS 17. HE JUST RETIRED AT 85, HOLDING A PLAQUE THAT SAYS 63 YEARS OF SERVICE. | **OCULTO** | 199 | - | FLOP | 112h |
+| 12 | imagen unica (split) | prensa/cultura (Star Tribune 3-oct) | NATASHA HOWARD HAS WON 3 WNBA TITLES. IT STARTED WITH HER UNCLE PAYING HER $2 TO DRIBBLE A BASKETBALL. SHE SPENT IT ON CANDY, AND HE CAME BACK EVERY DAY TO TEACH HER. | **OCULTO** | 2 | - | FLOP | 160h |
+
+**shortCodes de esta corrida, para re-medir la semana que viene por `directUrls`:**
+`DePyV03llGe` (David) - `DeKIf6gM66P` (Loganville) - `DeNZcaGyw4p` (Ron) - `DeQZUiRjK1P` (Mack) -
+`DeRrGXNFtp2` (Courtney) - `DeUP9LbFsG_` (Engram) - `DeSOqXKlqE0` (Watermane) - `DeIVsgmFsGz` (Jojo) -
+`DeK8CGzOhyZ` (Meyvi) - `DeMz8X7Frhs` (Marv) - `DeNKvG_Fg9f` (Bobby Scott, oculto) - `DeIBMbjM1Ef` (Natasha, oculto).
+
+**Provisorias, <24h al medir (no entran en ninguna mediana):**
+
+- `DeWwTANhnLc` - Darryl Bell / SpaceX, imagen unica, prensa local (SF Chronicle). *A MAN WHO RUNS HIS OWN BARBECUE
+  SPOT IN CALIFORNIA COOKED FOR 425 WORKERS AT ELON MUSK'S SPACEX. SPACEX STILL OWES HIM $70,000. WHEN HE SAID HE
+  MIGHT NEED A LAWYER, THE COMPANY PUT HIS NEXT DINNERS ON HOLD.* - **2.471 likes / 497 com. = 20,1%** a las 21h.
+- `DeXysbeluaH` - Deon Cole, carrusel 2, IG del protagonista. 10.373 / 131 (1,3%) a las 13h.
+- `DeXiBQKN6ND` - Usman Badaru, imagen unica, TV local (WJAR). **Likes ocultos** / 11 com. a las 15,5h.
+  El OCR devuelve el titulo **v1**, el que el lector frio habia marcado y que PRODUCED registra como corregido
+  ("THAT GOT HIM THERE" ambiguo, "NURSING HIGH SCHOOL" ininteligible): *AT 13, A BOY SPENT NIGHTS IN A SHELTER AND
+  IN HIS DAD'S CAR IN PROVIDENCE. NOW HE WORKS THE NIGHT SHIFT AS AN ICU NURSE AT RHODE ISLAND HOSPITAL, AND HE JUST
+  JOINED THE BOARD OF THE NURSING HIGH SCHOOL THAT GOT HIM THERE.* La v2 corregida no es la que salio al feed.
+  Dato, sin conclusion: ocultar likes es una accion del operador, no maduracion.
+
+### CROSS-POSTS DE `@HustlersNTheHoodTV` EN EL FEED PRINCIPAL (fuera de las medianas)
+
+Segunda semana que aparecen, y la serie cambio de escala. Los cuatro de la semana pasada hicieron 5.150 / 3.882 /
+2.175 / 1.062. Esta semana son dos y uno de ellos es la **segunda pieza mas vista del feed**:
+
+| shortCode | fecha | titulo quemado | likes | com. | ratio |
+|---|---|---|---|---|---|
+| `DeLLuFBsHn2` | 7-oct 01:32 | THE COLDEST LESSON ON HOW TO EXPOSE A SNAKE IN YOUR CIRCLE | **26.547** | 414 | 1,6% |
+| `DeU-ECpufos` | 10-oct 20:47 | WHY TOXIC PEOPLE TRY TO VILLAINIZE YOU | 1.184 | 40 | 3,4% |
+
+26.547 contra un maximo de 5.150 la semana anterior, y por encima de **once de las doce** piezas editoriales de
+esta ventana. Ninguno de los dos tiene fila en PRODUCED. n=6 acumulado en dos semanas, varianza enorme
+(1.062 a 26.547): no alcanza para nada todavia. Queda anotado para seguir la serie.
+
+### MEDIANAS
+
+| corte | n | mediana |
+|---|---|---|
+| piezas editoriales, solo likes visibles | 10 | **4.500** |
+| piezas editoriales, oculto contado como flop | 12 | **4.044** |
+| imagen unica (visibles) | 3 | 5.554 |
+| carrusel (visibles) | 7 | 4.374 |
+| piezas con >=72h al medir | 8 visibles | 4.796 |
+| piezas con <72h al medir | 2 | 2.779 |
+| barrido de traccion | 4 | 3.329 |
+| prensa y feeds de cultura | 2 visibles (+1 oculta) | 4.123 |
+| prensa negra | 1 | 17.942 |
+| TV local | 3 visibles (+1 oculta) | 4.374 |
+| cosecha de comentarios (Repackage) | **0** | no corrio |
+
+**Serie semanal (mediana de visibles - piezas con likes ocultos):**
+07/09 -> 16.097 - 1 de 14 | 14/09 -> 7.525 - 4 de 7 | 21/09 -> 4.961 - 3 de 12 | 28/09 -> 3.045 - 1 de 13 |
+05/10 -> 6.491 - 2 de 11 | **12/10 -> 4.500 - 2 de 12.**
+
+La mediana de la semana (**4.500**) cae practicamente exacta sobre la vara historica de **4.510**: 0,998x.
+Es la primera corrida de este archivo que aterriza en la vara. Volumen: **12 piezas editoriales en 7 dias**,
+contra 11 - 13 - 12 las tres anteriores. Produccion estable.
+
+### MEDIDO - SE RESUELVE LA PENDIENTE DEL 05/10 SOBRE TV LOCAL: ERA EDAD, NO CARRIL
+
+La corrida pasada midio TV local en **2.301** contra prensa en **6.491** y dejo escrito que la brecha era
+inseparable del sesgo de edad, porque las tres piezas de TV local eran las tres mas jovenes de la tanda.
+
+Esta semana las tres piezas de TV local tienen 82h, 65h y 46h - mas maduras - y el carril da **4.374**,
+contra **4.123** de prensa y cultura. **La brecha de 2,8x desaparecio y se invirtio levemente.**
+La sospecha del 05/10 queda confirmada: **la brecha por carril de esa corrida era edad al medir, no carril.**
+Primera pendiente de este archivo que se cierra con una medicion nueva en lugar de acumular.
+
+El sesgo de edad en si sigue presente pero mas chato esta semana: >=72h **4.796** contra <72h **2.779** (1,7x,
+contra 3,3x la semana pasada), con n=2 del lado joven. No agrega nada al hallazgo del 28/09; no lo contradice.
+
+### MEDIDO - LAS CUATRO PIEZAS MAS BAJAS DE LA SEMANA SON DE LAS MAS VIEJAS. LA EDAD NO EXPLICA ESTA TANDA
+
+Esto es lo que vuelve util la corrida, porque en las cinco anteriores el sesgo de edad contaminaba toda
+comparacion de titulos. **Esta semana el sesgo corre al reves de lo que haria falta para explicar los numeros bajos:**
+
+| pieza | edad | x4.510 |
+|---|---|---|
+| Natasha (oculta) | 160h | FLOP |
+| Jojo | 157h | 0,60x |
+| Meyvi | 133h | 0,45x |
+| Marv | 115h | 0,21x |
+| Bobby Scott (oculta) | 112h | FLOP |
+| **David (la mas alta)** | **88h** | **13,92x** |
+
+Las cinco piezas de abajo son **mas viejas** que la ganadora, entre 24h y 72h mas. Tuvieron mas tiempo para
+acumular y igual quedaron donde quedaron. **Por primera vez en seis corridas, una diferencia de rendimiento de
+esta tanda se puede discutir sin que la edad sea la explicacion disponible.**
+
+### MEDIDO - LO QUE SEPARA A LAS DOS DE ARRIBA: UNA PUERTA QUE SE CIERRA, NOMBRADA EN LA PRIMERA ORACION
+
+Las dos piezas por encima de 3x nombran, en la **primera oracion**, un **sistema que le dice que no** al
+protagonista - no una adversidad que le paso, sino una puerta que no se abre:
+
+- David **13,92x**: *"COULDN'T GET AN APARTMENT WITHOUT A JOB"* - una trampa cerrada, enunciada antes que nada.
+- Loganville **3,98x**: *"APPLY FOR JOB AFTER JOB AND GET NOWHERE"* - la misma puerta, repetida.
+
+Las otras diez nombran dureza, no negativa: trabajo largo (Meyvi, Bobby Scott), un arresto (Watermane), una
+enfermedad (Engram), una sorpresa feliz (Marv), un logro (Natasha, Courtney). **Ninguna llega a 1,25x.**
+
+Cruza dos carriles distintos (David del barrido de TikTok, Loganville de prensa negra), dos estructuras
+distintas (carrusel 4 e imagen unica) y 52h de diferencia de edad. **n=2 arriba.** No deroga ni reemplaza nada:
+es el candidato a cruzar la semana que viene contra la primera pieza nueva que traiga una negativa explicita.
+
+### MEDIDO - TERCERA MEDICION DEL "PRECIO PAGADO": PREDICE EL TECHO, NO EL PISO
+
+Las tres piezas arriba de 1,20x nombran un precio concreto (vivir en un refugio y no poder alquilar; cobrar la
+jubilacion anticipada; dormir 10 meses en el piso de un hotel). **Las tres arriba de 1x, igual que en 28/09 y 05/10.**
+
+Pero el precio **no separa el medio de la tabla**: Meyvi nombra anos en el fondo del hospital criando sola y hace
+**0,45x**; Bobby Scott nombra 63 anos de servicio y quedo **oculto**; Watermane nombra un arresto y hace **0,82x**.
+Tercera corrida: **el precio en el titulo acompana a las que ganan y no dice nada sobre las que pierden.**
+Se registra asi, con el alcance acotado, no como regla de titulacion.
+
+### OBSERVACION - LAS CUATRO MAS BAJAS CIERRAN EN UN OBJETO CEREMONIAL O UN FESTEJO
+
+Marv cierra en flores en un pasillo (0,21x). Meyvi en un festejo con la hija (0,45x). Jojo en la entrega del
+billete (0,60x). Bobby Scott en una placa (oculto). Las dos de arriba cierran en una consecuencia que le cambia
+la vida a un tercero: *"NOW HIS KIDS HAVE A HOME"* y *"NOW THEY NEED PEOPLE TO COME EAT"*.
+
+**Hay que leerlo con el historial puesto:** la regla de cierre del 07/09 lleva **cinco corridas seguidas sin
+separar** (asi quedo escrito el 05/10, con Darlene cerrando en consecuencia a 0,51x). Esta es **una** semana que
+coincide con una regla que fallo cinco veces. No alcanza para reabrirla. Se anota como lo que es: una coincidencia
+de una tanda, para cruzar.
+
+### MEDIDO - SE CONFIRMA CON CASO POSITIVO LA OBSERVACION DEL 21/09: LOS DOS MOTORES NO SE CRUZAN
+
+Durante cuatro corridas este archivo escribio que la cuenta no producia material de **conflicto entre personas**,
+y que por eso no habia Repackages - "no tres semanas de Repackages perdidos, tres semanas sin material que genere
+conversacion". Hasta ahora era una observacion por ausencia.
+
+**Esta semana salio la primera pieza de conflicto persona-contra-institucion (Bell / SpaceX) y el ratio salto a
+20,1% (497 comentarios en 21h), contra un maximo semanal de 2,4% y una mediana de 1,7%.** Es el ratio mas alto que
+este archivo registro en una pieza propia, por un factor de **8x** sobre el techo de la semana pasada.
+
+El mecanismo queda medido: **una pieza donde una persona identificable esta en conflicto con una institucion
+nombrada produce un orden de magnitud mas de comentarios que una de vulnerabilidad, rescate o logro.** n=1 del lado
+positivo, cuatro semanas del lado negativo. Esto mide conversacion, no likes: la pieza iba 2.471 likes a las 21h.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+| pieza | ratio | com. | link |
+|---|---|---|---|
+| Darryl Bell / SpaceX (<24h) | **20,1%** | 497 | https://www.instagram.com/p/DeWwTANhnLc/ |
+| Bobby Scott (likes ocultos, ratio no calculable) | - | **199** | https://www.instagram.com/p/DeNKvG_Fg9f/ |
+
+Bobby Scott es el patron del Jeep exacto: **pieza que el operador oculto, con la segunda seccion de comentarios
+mas grande de la ventana.** La semilla no tenia tension (una placa por 63 anos), y debajo hay 199 comentarios.
+Ninguna de las dos fue cosechada.
+
+Ninguna otra pieza de la ventana paso el 8%; el techo de las medibles es 3,1% (Engram).
+**Mediana de ratios: 1,7%** - 1,6% (21/09) -> 1,1% (05/10) -> **1,7%**.
+
+**Siguen abiertos y sin cosechar, de semanas anteriores (SEXTA semana):**
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437 com.) - 18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) -
+15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) - 12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) -
+9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) - 8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276).
+
+### OBSERVACION - LA PIEZA QUE EL PROPIO SISTEMA HABIA RECHAZADO SALIO, Y MIDIO 0,21x
+
+PRODUCED registra a Marv como **RECHAZADO POR EL OPERADOR (no publicar)**, con el motivo escrito: material de
+720p, todo de lejos y de espaldas, sin foto buena del protagonista con la madre, y la nota *"esto pasa por hacer
+un post a partir de una reaccion de un video"*. La pieza aparece igual en el feed el 7-oct 16:41 y es
+**la mas baja de la ventana con likes visibles: 942 (0,21x), con 3 comentarios.**
+
+Es el unico caso de este archivo donde un rechazo explicito del sistema tiene despues un numero al lado.
+Como medicion dice una sola cosa y acotada: **el juicio que freno esa pieza coincidio con el resultado.**
+No dice por que - foto mala y titulo sin obstaculo estan los dos presentes y no se pueden separar con n=1.
+
+### MEDIDO - LA ESTRUCTURA NO EXPLICA NADA, SEXTA SEMANA
+
+Imagen unica **5.554 (n=3)** contra carrusel **4.374 (n=7)**. Las medianas del manual (6.571 / 9.294) no se
+reproducen por sexta corrida consecutiva. Dentro del carrusel hay **67x** de diferencia (942 a 62.774): ahi sigue
+estando toda la varianza, y no es la estructura.
+
+### WATCHLIST - lo medido esta corrida
+
+| cuenta | n maduros | mediana | movimiento | que quedo |
+|---|---|---|---|---|
+| `theneighborhoodtalk` | 6 por `directUrls` | **7.993** | 2.662 -> 8.368 -> **7.993** | **El metodo del 05/10 se valida: dos corridas seguidas en el mismo orden de magnitud.** Ratios de esta tanda: 65,5% - 30,3% - 28,2% - 11,9% - 11,9% - 8,2%. El 65,5% (2.292 com. sobre 3.500 likes) es el ratio mas alto que este archivo le midio a cualquier cuenta. **Sin semilla: strike 3** |
+| `raphousetv` | **6 por `directUrls`** | **6.757** | no medible x4 -> **6.757** | **Primera mediana madura en cinco corridas**, por el mismo metodo. Ratios: 17,9% - 10,5% - 6,4% - 3,1% - 2,9% - 2,7%. **Sin semilla: strike 3** |
+| `blacknews` | 0 (todo <24h) | no medible | 403 -> inmaduro | **DIO SEMILLA Y ES LA SEGUNDA PIEZA MAS ALTA DE LA SEMANA**: Loganville Soul Food (6-oct, 17.942, 3,98x). **Strike reseteado.** Sus posts propios siguen chicos (19 a 386 likes a las ~10h) y los pins van de 13.539 a 29.529. Se la mira por lo que levanta, no por sus numeros, y esta semana lo confirmo |
+| `goodnews_movement` | 7 | **32.955** | 43.332 -> 27.220 -> 19.983 -> **32.955** | Corta tres bajas consecutivas. Los reels siguen dominando (un pico de 209.775). **Sin semilla, pero el contador de strikes no aplica:** la cuenta esta declarada en este archivo como "fuera de nuestra cultura, SOLO FORMATO" - nunca iba a dar semilla, y el criterio de salida mide semillas. **El contador mide algo que esta cuenta no puede dar.** Se anota para que el operador decida; el analista no lo resuelve solo |
+| `becauseofthem` (candidata) | - | - | - | Sin aparecer como fuente en PRODUCED esta ventana. Sigue con una sola semilla: **no entra** |
+
+**shortCodes guardados para re-medir la semana que viene por `directUrls`:**
+- `theneighborhoodtalk`: `DeYGSXUsKQX` - `DeX-7wxsrN9` - `DeYK3v4tePX` - `DeX7GFyp7LI` - `DeYDjYxM8EE` - `DeX0DYDpp1h` - `DeX-KhrJORr`
+- `raphousetv`: `DeZIu7RJaY0` - `DeXg4wCPd2s` - `DeYL0NXoDuG` - `DeYPKuVuxyA` - `DeXx87Jhjw5` - `DeXI3fNO85X` - `DeYVYu3uBL9`
+- `blacknews`: `DeYG3uMuEZm` - `DeYGcdOuV1H` - `DeYPSn3O1r4` - `DeYHgBcOqXM` - `DeYHUj4uH6y` - `DeYO2pRuTP5` - `DeYH1xXOInK`
+
+**Cuenta nueva detectada en el scrape, sin pedirla:** `@rhtvmusic` (satelite de RapHouseTV, aparece mezclada en su
+feed). Un post de 11-oct 14:55 midio **33.950 likes / 2.035 com. (6,0%)** - mas alto que cualquier post de
+`raphousetv` en las dos corridas que se le midieron. Tambien aparece `@rhtvgame.ing` (1.237 / 124 = 10,0%).
+Van a CANDIDATAS en WATCHLIST.
+
+### CHEQUEO DEL LOOP
+
+- **Cobertura de PRODUCED: 12 de 12 piezas tienen fila**, pero **ninguna se puede cruzar sin OCR**, porque el
+  registro no guarda el shortCode de IG. Serie de OCR: 6 (07/09) -> 0 -> 0 -> 0 -> 0 -> **12 (12/10)**. El salto no
+  es porque PRODUCED empeoro: es porque esta ventana tiene 12 piezas producidas en cadena, con hasta cuatro
+  versiones de titulo cada una, y **la version que salio al feed no coincide siempre con la ultima del registro**
+  (Usman Badaru es el caso: salio la v1 y el registro termina en v2). Sexto pedido del shortCode.
+- **Volumen: 12 piezas editoriales en 7 dias.** Serie: 14 -> 7 -> 12 -> 13 -> 11 -> **12**. Estable.
+- **Todos los carriles de origen aparecieron**: traccion 4, TV local 4, prensa/cultura 3, prensa negra 1.
+  Es la primera ventana de este archivo sin ningun carril en cero. **Menos uno: la cosecha de comentarios
+  (Repackage) no corrio ni una vez**, contra una la semana pasada que rindio 1,63x.
+- **BACKLOG DE ENTREGADAS SIN PUBLICAR, visible en PRODUCED y ausente del feed:** Leroy Russell / Spice of Life
+  (11-oct) - Patrick Dewayne Smith (12-oct, v3) - Peter Mutabazi (12-oct, carrusel 4) - Freddie Jackson (6-oct,
+  rechazado por el operador, carpeta de Drive sin publicar). Las tres primeras dicen "(SIN PROGRAMAR)".
+  Las 7 del backlog del 05/10 no se pueden verificar: la ventana del feed empieza el 5-oct y son anteriores.
+- **El barrido de TikTok por hashtag/keyword volvio a cero en casi todas las corridas de RADAR de la ventana**
+  (sexta semana con el mismo patron), **pero el carril de traccion igual puso la pieza mas alta del mes** (David,
+  62.774): entro por IG/TikTok de un perfil conocido (`@mdmotivator`), no por barrido de hashtag. Mismo patron que
+  Sheem la semana pasada. **El carril entrega; el barrido por hashtag es lo que no entrega.**
+- LEARNINGS_EDITORIAL.md no crecio, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+
+instagram-scraper: 3 corridas con proxy estandar (perfil 20 - 12 `directUrls` de re-medicion de watchlist -
+4 cuentas de watchlist a 10) - **2 corridas de OCR (12 tapas, ~5 centavos)** - corridas de cheerio contra
+GitHub para leer y escribir. Sin proxy residencial.
