@@ -1095,3 +1095,296 @@ Van a CANDIDATAS en WATCHLIST.
 instagram-scraper: 3 corridas con proxy estandar (perfil 20 - 12 `directUrls` de re-medicion de watchlist -
 4 cuentas de watchlist a 10) - **2 corridas de OCR (12 tapas, ~5 centavos)** - corridas de cheerio contra
 GitHub para leer y escribir. Sin proxy residencial.
+
+---
+
+## CORRIDA 2026-10-19 (12:11 UTC)
+
+**Ventana medida:** 2026-10-12 12:05 -> 2026-10-19 12:11 UTC. Scrape de perfil `resultsLimit` 20.
+Se excluyen: **3 pins viejos de video** (393.336 - 97.250 - 32.976) - **2 piezas con <24h** (ver abajo) -
+**1 cross-post de `@HustlersNTheHoodTV`** (criterio del 05/10 y 12/10: no son piezas editoriales de este sistema).
+**Quedan 14 piezas editoriales medibles, 5 con likes ocultos.**
+
+**Titulos: 9 de PRODUCED + 1 OCR obligado + 4 OCR de verificacion.** PRODUCED **sigue sin anotar el shortCode de
+Instagram al publicar — septimo pedido**. Esta corrida costo **1 sola corrida de OCR (5 tapas, ~2 centavos)**
+contra 2 corridas (12 tapas) la semana pasada, porque las filas de PRODUCED alcanzaron para 9 de 14.
+
+**Edad al medir:** entre 37h y 158h. 3 piezas por debajo de 72h.
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | titulo | likes | com. | ratio | x4.510 | edad |
+|---|---|---|---|---|---|---|---|---|
+| 1 | carrusel 4 | prensa/cultura (Funky Friday IG 13-oct + Fortune 9-oct) | A SINGLE MOM FROM CHICAGO TOLD DISNEY NO WHEN THEY OFFERED HER 13 YEAR OLD $2 MILLION TO SING AS YOUNG SIMBA. SHE ASKED FOR ROYALTIES. HER SON, JASON WEAVER, IS STILL GETTING PAID. (180 car) | 18.647 | 199 | 1,1% | **4,13x** | 65h |
+| 2 | carrusel | **SIN FILA EN PRODUCED** | A MAN REVEALED THAT HIS FATHER LAID OUT A FULLY MATCHED OUTFIT ON HIS BED EVERY SINGLE NIGHT FROM MIDDLE SCHOOL THROUGH HIGH SCHOOL BECAUSE HE WAS COLORBLIND AND USED TO GET MADE FUN OF FOR HIS CLOTHES NOT MATCHING (214 car, OCR) | 11.215 | 255 | 2,3% | **2,49x** | 110h |
+| 3 | carrusel 6 (tapa v3) | barrido de traccion (IG/TikTok @jimmydarts) | A HOMELESS MOM OF THREE GAVE A STRANGER $5 TO BUY BABY FOOD. HE HANDED HER $500 RIGHT THERE, THEN POSTED HER STORY. IN ONE DAY, PEOPLE SENT HER $42,000. (152 car) | 8.338 | 201 | 2,4% | 1,85x | 70h |
+| 4 | carrusel 4 | TV local (FOX 26 Houston 12-oct) | A 9 YEAR OLD WOKE UP FINE FOR SCHOOL AND WAS PARALYZED FROM THE NECK DOWN 10 HOURS LATER. TODAY HE'S IN MED SCHOOL, AND HE WANTS TO WORK AT THE HOSPITAL THAT SAVED HIM. (168 car) | 6.674 | 121 | 1,8% | 1,48x | 158h |
+| 5 | carrusel 3 (tapa v2) | prensa negra (blacknews 9-oct -> WVUE 4-oct) | A WOMAN IN NEW ORLEANS PULLED HER NEIGHBOR OUT OF A FLIPPED CAR ON AN INTERSTATE OVERPASS. THEN SHE WAS HIT BY ANOTHER CAR AND FELL OFF THE SIDE. NOBODY COULD FIND HER UNTIL HER MOTHER SHOWED UP SCREAMING HER NAME, AND SHE ANSWERED, "MA." SHE DIDN'T MAKE IT. (258 car) | 5.090 | **416** | **8,2%** | 1,13x | 37h |
+| 6 | carrusel 3 | TV local (WLBT 14-oct) | 40 FAMILIES IN MISSISSIPPI RENTED THEIR HOMES FOR 19 YEARS, WAITING ON A PROMISE THAT ONE DAY THEY COULD BUY THEM. NOBODY MOVED OUT. THIS WEEK, THE HOUSES FINALLY BECAME THEIRS. (177 car) | 3.635 | 97 | 2,7% | 0,81x | 95h |
+| 7 | carrusel 6 | barrido de traccion (TikTok @mdmotivator) | A MOM WAS ONE DAY FROM GETTING EVICTED AND STILL TRIED TO GIVE ONE OF HER PAINTINGS AWAY FOR FREE. LIL BABY AND MD MOTIVATOR SURPRISED HER WITH A NEW CAR AND A YEAR OF RENT. (173 car) | 3.429 | 54 | 1,6% | 0,76x | 134h |
+| 8 | carrusel 3 | prensa/cultura (Forbes 29-sep + Black Enterprise 4-oct) | IN 1984, A 12-YEAR-OLD BOY WITH A SICK MOM ASKED FOR WORK AT A MISSOURI CONSTRUCTION SITE. THE OWNER PAID HIM $4 AN HOUR TO PICK UP TRASH, AS LONG AS HE STAYED IN SCHOOL. TODAY HIS OWN COMPANIES ARE ON TRACK TO MAKE $1 BILLION THIS YEAR. (237 car) | 2.224 | 33 | 1,5% | **0,49x** | 112h |
+| 9 | carrusel 3 | TV local (WFAA 14-oct) | A 10 YEAR OLD IN TEXAS WAS THE ONLY ONE OF HIS BROTHERS AND SISTERS NOBODY ADOPTED. HE WAITED MORE THAN 6 YEARS FOR A FAMILY. NOW A COUPLE IS MAKING HIM THEIR SON. (163 car) | 1.732 | 15 | 0,9% | **0,38x** | 92h |
+| 10 | carrusel 3 (tapa v2) | TV local (WSB-TV + FOX 5 Atlanta) | AN ATLANTA TEACHER BEAT CANCER TWICE. WEEKS AGO, HE AND HIS DAUGHTER MADE IT OUT OF A CAR FIRE. ON MONDAY HE TOOK HIS NIECE TO SIX FLAGS FOR HER BIRTHDAY, AND A ROLLER COASTER THREW HIM FROM HIS SEAT. HE DIDN'T SURVIVE THIS ONE. | **OCULTO** | 96 | - | FLOP | 46h |
+| 11 | **imagen unica** | IG cultura (TSR IG 14-oct) | THIS WEEK KOUNTRY WAYNE, FATHER OF 10, SAID HE STILL HELPS PAY THE BILLS WHERE HIS KIDS LIVE, EVEN WITH ANOTHER MAN IN THE HOUSE. HIS POINT: ANY MAN CAN LOOK OUT FOR THE HOUSEHOLD HE LIVES IN. | **OCULTO** | 90 | - | FLOP | 88h |
+| 12 | carrusel 4 | barrido de traccion (TikTok @kai.george0) | A WOMAN PAID A REPAIR SHOP $450 TO CLEAN THE 60-YEAR-OLD CAMERA HER LATE GRANDMOTHER LEFT BEHIND. SHE SAYS THEY GAVE HER BACK A DIFFERENT ONE. (142 car) | **OCULTO** | 79 | - | FLOP | 132h |
+| 13 | carrusel 7 | **cosecha de comentarios (Repackage, mecanismo A)** | WOMEN ARE EXPOSING THE CODE NAMES THEY GIVE THE MEN THEY DATE, AND WHY (70 car) | **OCULTO** | 44 | - | FLOP | 41h |
+| 14 | carrusel 4 | TV local (WMAR Baltimore 14-oct) | A SINGLE MOM'S TRANSMISSION BLEW WHILE SHE LIVED, WORKED AND WENT TO SCHOOL IN 3 DIFFERENT COUNTIES. A NONPROFIT GAVE HER A CAR. 20 YEARS LATER SHE SITS ON ITS BOARD AND OWNS A 10,000 SQUARE FOOT EVENT COMPANY. (184 car) | **OCULTO** | 16 | - | FLOP | 117h |
+
+**shortCodes de esta corrida, para re-medir la semana que viene por `directUrls`:**
+`DekPCoZFgnC` (Jason Weaver) - `DefeCf_Fu3K` (Carnell) - `DejwIfLlsXg` (Christina) - `DeaUwrPltAu` (Mariano) -
+`DenPSATFoa_` (Ka'Sheena) - `DehEmsUFnPl` (Yazoo) - `Dec1oN6FjIK` (Lil Baby) - `DefRClRCV5r` (Todd Weaver) -
+`DehVm4cFiUf` (King) - `DemRd7XFpd_` (Hassan, oculto) - `DehkwmLtDAX` (Kountry Wayne, oculto) -
+`DedExKcDLZu` (Kai George, oculto) - `Demz3VIlmC9` (Code Names, oculto) - `DeeqwbPllo3` (Brittny, oculto) -
+`DeozLL9lvMQ` (Germain) - `DeppmizN6hS` (Kevin Hart).
+
+**Provisorias, <24h al medir (no entran en ninguna mediana):**
+
+- `DeppmizN6hS` - **KEVIN HART**, imagen unica, **carril EVERGREEN nuevo (metodo Pubity)**.
+  *KEVIN HART'S MOM HID SIX RENT CHECKS IN HIS BIBLE. EVERY TIME HE ASKED HER FOR MONEY, SHE TOLD HIM TO GO READ IT.
+  HE DIDN'T OPEN IT UNTIL THE EVICTION NOTICE.* (158 car) - **24.101 likes / 194 com. (0,8%) a las 14,7h.**
+  PRODUCED registra ademas la medicion del operador a las ~9h: 15,5K likes (3,4x), 784.835 views, 540.053 viewers,
+  450 reposts, 1,2K guardados, 53 follows.
+- `DeozLL9lvMQ` - **ESCLANETTE GERMAIN**, carrusel 4 (tapa v3), TV local (NBC 10 WJAR 14-oct).
+  *A SINGLE MOM IN MASSACHUSETTS RODE BUSES AND TRAINS FOR HOURS EVERY DAY, WITH HER TODDLER, TO GET TO HER JOB AT
+  FEDEX. HIGH SCHOOL AUTO SHOP STUDENTS SPENT 3 MONTHS FIXING UP A BROKEN-DOWN CAR AND HANDED HER THE KEYS.* (217 car)
+  - 4.126 likes / 49 com. (1,2%) a las 22,6h.
+
+### CROSS-POST DE `@HustlersNTheHoodTV` EN EL FEED PRINCIPAL (fuera de las medianas)
+
+`DektYacNB8L` - 16-oct 23:27 - *"The bag stays loyal"*, animacion - **2.202 likes / 16 com. (0,7%)**.
+Tercera semana de la serie. n=7 acumulado: 1.062 / 1.184 / 2.175 / 2.202 / 3.882 / 5.150 / 26.547. La varianza sigue
+siendo de 25x y el pico de 26.547 sigue siendo un caso solo. Sin fila en PRODUCED, como los seis anteriores.
+
+### MEDIANAS
+
+| corte | n | mediana |
+|---|---|---|
+| piezas editoriales, solo likes visibles | 9 | **5.090** |
+| piezas editoriales, oculto contado como flop | 14 | **2.827** |
+| carrusel (visibles) | **9** | 5.090 |
+| imagen unica (visibles) | **0** | no medible |
+| piezas con >=72h al medir | 6 | 3.532 |
+| piezas con <72h al medir | 3 | **8.338** |
+| prensa y feeds de cultura | 2 | 10.436 |
+| barrido de traccion | 2 visibles (+1 oculta) | 5.884 |
+| prensa negra | 1 | 5.090 |
+| TV local | 3 visibles (+2 ocultas) | 3.635 |
+| IG cultura (TSR) | 0 visibles (1 oculta) | no medible |
+| cosecha de comentarios (Repackage) | 0 visibles (1 oculta) | no medible |
+| sin fila en PRODUCED | 1 | 11.215 |
+
+**Serie semanal (mediana de visibles - piezas con likes ocultos):**
+07/09 -> 16.097 - 1 de 14 | 14/09 -> 7.525 - 4 de 7 | 21/09 -> 4.961 - 3 de 12 | 28/09 -> 3.045 - 1 de 13 |
+05/10 -> 6.491 - 2 de 11 | 12/10 -> 4.500 - 2 de 12 | **19/10 -> 5.090 - 5 de 14.**
+
+La mediana sube de 4.500 a 5.090 (1,13x la vara historica de 4.510). Volumen: **14 piezas editoriales en 7 dias**,
+el maximo desde la primera corrida de este archivo. Serie: 14 - 7 - 12 - 13 - 11 - 12 - **14**.
+
+### MEDIDO - 5 DE 14 PIEZAS CON LIKES OCULTOS: RECORD ABSOLUTO DE ESTE ARCHIVO
+
+Serie de ocultas: 1/14 -> 4/7 -> 3/12 -> 1/13 -> 2/11 -> 2/12 -> **5/14 (36%)**. Es el numero absoluto mas alto que
+registro este archivo y la segunda tasa mas alta despues del 14/09 (4 de 7).
+
+Ocultar likes es una accion del operador, no maduracion - el archivo ya lo dejo escrito el 12/10. Lo que se puede
+medir es **cuales** fueron, y no se concentran en un carril: TV local 2 (Hassan, Brittny), barrido 1 (Kai),
+IG cultura 1 (Kountry Wayne), Repackage 1 (Code Names). Tampoco en una estructura: cuatro carruseles y la unica
+imagen unica de la ventana. Ni en la edad: 41h, 46h, 88h, 117h, 132h.
+
+**Lo que si comparten tres de las cinco:** son las tres piezas de la ventana donde el titulo no promete un gesto ni
+un desenlace, sino un **hecho o una opinion** - una muerte en un parque de diversiones, una acusacion sin confirmar
+contra un taller, y la opinion de un comediante sobre pagar cuentas. Las otras dos (Brittny, Code Names) no encajan
+en esa descripcion. **n=3 de 5, sin grupo de control:** se anota como observacion, no como hallazgo.
+
+### MEDIDO - LAS DOS MAS ALTAS SON LAS UNICAS DOS DONDE EL PADRE O LA MADRE ES EL SUJETO QUE ACTUA
+
+En las nueve piezas visibles, el titulo pone a alguien en el lugar del sujeto que hace algo. En **dos** ese sujeto es
+un padre o una madre y el beneficiario es su hijo. Son las dos mas altas de la semana, y por un margen amplio:
+
+- **Jason Weaver 4,13x**: *"A SINGLE MOM FROM CHICAGO **TOLD DISNEY NO**... SHE ASKED FOR ROYALTIES."* La madre decide.
+- **Carnell 2,49x**: *"HIS FATHER **LAID OUT A FULLY MATCHED OUTFIT** ON HIS BED EVERY SINGLE NIGHT."* El padre actua.
+
+En las otras siete el protagonista del titulo **recibe** (Christina 1,85x, Lil Baby 0,76x, King 0,38x),
+**sufre** (Mariano 1,48x, Ka'Sheena 1,13x) o es un **colectivo** (Yazoo 0,81x, Todd Weaver 0,49x con el chico de 12
+como sujeto). **Ninguna de las siete pasa 1,85x.**
+
+El mecanismo, dicho en terminos de titulacion: **el sujeto de la oracion es el padre, el verbo es la decision que
+tomo, y el hijo aparece como complemento** - no al reves.
+
+**Lo que lo refuerza, y es la provisoria mas fuerte que midio este archivo:** Kevin Hart, *"KEVIN HART'S MOM HID SIX
+RENT CHECKS IN HIS BIBLE"* - misma construccion exacta, la madre como sujeto - **24.101 likes a las 14,7h**, mas que
+ocho de las nueve piezas maduras de la ventana. Y la pieza entregada hoy sin publicar (Shaq / la matricula de su
+madre) es la misma construccion con los roles invertidos: sera el primer test limpio.
+
+**Alcance, y hay que leerlo entero:** n=2 maduras + 1 provisoria. Cruza tres carriles declarados distintos
+(prensa/cultura, sin registro, evergreen) y dos estructuras (carrusel 4, imagen unica). **Pero Carnell no tiene fila
+en PRODUCED, asi que su carril es desconocido y el cruce de carriles se apoya en dos, no en tres.**
+No deroga nada. Es el candidato a cruzar la semana que viene contra Shaq y contra la primera pieza nueva de padre-sujeto.
+
+### MEDIDO - EL NOMBRE DE FAMOSO EN LA TAPA NO PREDICE NADA POR SI SOLO
+
+Dos piezas de esta ventana nombran famosos en la tapa, y estan en los dos extremos:
+**Jason Weaver 4,13x** contra **Lil Baby + MD Motivator 0,76x**. Mismo recurso, 5,4x de diferencia.
+
+Lo que cambia entre las dos es el **rol** del famoso: en una es el hijo al que la decision de su madre le cambio la
+vida; en la otra es el que regala. Coincide con el hallazgo de arriba y se anota junto a el, no como regla aparte.
+
+### MEDIDO - LA EDAD CORRE AL REVES, SEGUNDA SEMANA SEGUIDA EN QUE NO EXPLICA LA TANDA
+
+Piezas con **<72h: mediana 8.338** (n=3). Piezas con **>=72h: mediana 3.532** (n=6). Las jovenes van **2,4x arriba
+de las viejas**, teniendo entre 20h y 120h menos para acumular.
+
+La semana pasada el sesgo de edad ya corria al reves (las cuatro mas bajas eran de las mas viejas). Esta semana lo
+hace mas fuerte y con el corte formal. **Dos corridas seguidas en que la edad no esta disponible como explicacion**
+de las diferencias de rendimiento. El sesgo del 28/09 no queda derogado - queda sin reproducir dos semanas.
+
+### MEDIDO - EL CANDIDATO DEL 12/10 (LA PUERTA QUE SE CIERRA) NO SE REPRODUJO
+
+La corrida pasada dejo escrito, con n=2, que las dos piezas por encima de 3x nombraban en la primera oracion un
+sistema que le dice que no al protagonista. **Esta ventana no trajo ninguna pieza con esa construccion**, asi que
+la hipotesis no tuvo test limpio.
+
+Lo que si aparecio es una variante inversa en la pieza mas alta: **Jason Weaver nombra una institucion (DISNEY) y
+una negativa, pero la negativa la dice el protagonista hacia la institucion**, no al reves. Como dato suelto sugiere
+que lo que mueve es la **negativa con una institucion nombrada del otro lado**, en cualquiera de las dos direcciones.
+**n=3 en dos semanas, dos direcciones distintas.** Queda abierto y reformulado, no cerrado.
+
+### MEDIDO - LA COMPLETITUD DE BEATS EMOCIONALES NO SEPARA, Y LAS QUE PERDIERON NO SON FRIAS
+
+Esta es la pregunta que la tarea pide cruzar, y la respuesta de esta tanda es negativa en los cuatro puntos:
+
+| | Jason 4,13x | Carnell 2,49x | Todd 0,49x | King 0,38x |
+|---|---|---|---|---|
+| quien era la persona | si | si | si | si |
+| que eligio / que le paso | si | si | si | si |
+| como termino | si | si | si | si |
+| causa pegada a la reaccion | si | si | si | si |
+| cierra en consecuencia | si | no (cierra en la causa) | si | si |
+| emocion en la primera oracion | si | **no** (la burla llega al final) | si | si |
+
+**Las dos mas bajas de la semana tienen los cuatro beats, la causa pegada y el cierre en consecuencia.** No son
+titulos frios ni enumeraciones de hechos: King dice *"THE ONLY ONE OF HIS BROTHERS AND SISTERS NOBODY ADOPTED"* y
+Todd Weaver dice *"A 12-YEAR-OLD BOY WITH A SICK MOM"*. La hipotesis de "datos correctos pero contados en frio"
+**no explica esta tanda**, y conviene escribirlo asi antes de que se instale por repeticion.
+
+Y la segunda mas alta **viola** la regla de la emocion en la primera oracion: Carnell abre por el mecanismo (el
+padre eligiendo la ropa) y deja la burla y el daltonismo para el final de un titulo de 214 caracteres. Hizo 2,49x.
+n=1 contra la regla; se anota, no la deroga.
+
+### MEDIDO - EL CIERRE EN CONSECUENCIA SIGUE SIN SEPARAR, Y LA COINCIDENCIA DEL 12/10 NO SE REPITIO
+
+Siete de las nueve visibles cierran en consecuencia, y van de **4,13x a 0,38x**. La regla de cierre del 07/09 lleva
+**seis corridas sin separar**. La corrida pasada habia anotado una coincidencia de una tanda (las cuatro mas bajas
+cerraban en objeto ceremonial o festejo) advirtiendo que no alcanzaba para reabrir la regla. **No se reprodujo:**
+esta semana King y Todd Weaver cierran los dos en consecuencia y son los dos mas bajos. La coincidencia queda cerrada.
+
+### MEDIDO - EL LARGO NO SEPARA, SEPTIMA CORRIDA
+
+180 car -> 4,13x. 163 car -> 0,38x. 152 car -> 1,85x. 237 car -> 0,49x. 258 car -> 1,13x. 214 car -> 2,49x.
+Ni el largo ni el rango 60-90 explican nada en esta tanda. El titulo mas corto de la ventana (70 car, Code Names)
+quedo oculto; el mas largo (258, Ka'Sheena) esta en la mitad de la tabla y tiene el ratio de comentarios mas alto.
+
+### MEDIDO - LA ESTRUCTURA NO EXPLICA NADA, SEPTIMA SEMANA - Y ESTA VEZ NO HAY CON QUE COMPARAR
+
+**Las nueve piezas visibles de la ventana son carrusel.** La unica imagen unica publicada (Kountry Wayne) tiene los
+likes ocultos, y la segunda (Kevin Hart) tiene <24h. No hay n para comparar estructuras esta semana.
+
+Eso en si es un dato de **produccion**, no de rendimiento: la cuenta paso de 3 imagenes unicas sobre 12 (12/10) a
+1 sobre 14, y esa unica quedo oculta. Las medianas del manual (6.571 / 9.294) siguen sin reproducirse por septima
+corrida, ahora por falta de muestra.
+
+### CARRIL NUEVO - EVERGREEN (METODO PUBITY): PRIMERA PIEZA, SIN MADURAR
+
+PRODUCED registra el 18-oct la apertura de un carril que no existia en ninguna corrida anterior de este archivo:
+**evergreen por metodo Pubity** - famoso + gesto familiar con objeto concreto + giro, con la fecha del hecho en la
+caption en vez de en la tapa. No es un barrido de frescura: la historia de Kevin Hart es de una entrevista de 2014.
+
+**Primera pieza: 24.101 likes / 194 com. a las 14,7h**, el arranque mas alto de la ventana por amplio margen.
+Segunda pieza (Shaq / matricula de la madre) entregada hoy, sin publicar.
+
+**n=1. No entra en ninguna mediana y no se concluye nada del carril todavia** - pero es lo que hay que volver a
+medir primero la semana que viene, porque la pieza y el hallazgo de padre-sujeto apuntan al mismo lugar y
+**estan confundidos entre si**: no se puede saber si lo que midio 24.101 fue el carril evergreen, la construccion
+del titulo o la fama de Kevin Hart. Shaq separa una de las tres.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+| pieza | ratio | com. | link |
+|---|---|---|---|
+| Ka'Sheena Daniels | **8,2%** | **416** | https://www.instagram.com/p/DenPSATFoa_/ |
+| Hassan Kariem (likes ocultos, ratio no calculable) | - | 96 | https://www.instagram.com/p/DemRd7XFpd_/ |
+| Kountry Wayne (likes ocultos, ratio no calculable) | - | 90 | https://www.instagram.com/p/DehkwmLtDAX/ |
+| Kai George (likes ocultos, ratio no calculable) | - | 79 | https://www.instagram.com/p/DedExKcDLZu/ |
+
+**Kountry Wayne es el patron del Jeep otra vez, y esta vez el propio sistema abrio la puerta:** la caption cierra con
+*"Ten kids. Is he right?"* - una pregunta de debate explicita - y debajo hay 90 comentarios con los likes ocultos.
+Una pieza que el operador trato como flop tiene la tercera seccion de comentarios mas grande de la ventana.
+No fue cosechada.
+
+**Ninguna otra pieza medible paso el 8%.** Mediana de ratios: **1,8%** - serie 1,6% (21/09) -> 1,1% (05/10) ->
+1,7% (12/10) -> **1,8%**. Tercera corrida consecutiva en el mismo escalon.
+
+**Y el dato que mas dice de esta semana:** el carril de Repackage **si corrio** (Code Names, carrusel 7 del
+mecanismo A sobre un post de TSR con 1.562 comentarios), despues de una semana en cero. **La pieza quedo con los
+likes ocultos.** Primera medicion que tiene este archivo de un Repackage ejecutado, y es negativa. n=1, y la pieza
+tenia 41h al medir: no alcanza para concluir sobre el carril, pero si para dejar de escribir que el carril "no corre".
+
+**Siguen abiertos y sin cosechar, de semanas anteriores (SEPTIMA semana):**
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437 com.) - 20,1% https://www.instagram.com/p/DeWwTANhnLc/ (497) -
+18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) - 15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) -
+12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) - 9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) -
+8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276).
+
+### WATCHLIST - lo medido esta corrida
+
+| cuenta | n maduros | mediana | movimiento | que quedo |
+|---|---|---|---|---|
+| `theneighborhoodtalk` | 7 por `directUrls` | **4.113** | 8.368 -> 7.993 -> **4.113** | **Cae 49% en una semana, tercera medicion por el mismo metodo.** El motor de comentarios se mantiene y es el mas fuerte de la lista: 37,5% (3.170 com. sobre 8.451), 20,2% (6.908 sobre 34.222), 7,4%, 7,0%, 5,5%, 5,0%, 2,2%. **Sin semilla: strike 4** (ver nota del 12/10 sobre que mide el contador) |
+| `raphousetv` | 7 por `directUrls` | **5.156** | 6.757 -> **5.156** | Segunda mediana madura, baja 24%. Ratios: 23,7% - 11,5% - 7,4% - 6,1% - 2,6% - 1,3% - 0,5%. Un post de 43.817 likes en la tanda. **Sin semilla: strike 4** |
+| `blacknews` | **7 por `directUrls`** | **311** | no medible x2 -> **311** | **Primera mediana madura: 311.** Confirma con numero lo que el archivo venia escribiendo sin medirlo: sus posts propios son chicos. **Y volvio a dar semilla: KA'SHEENA DANIELS (1,13x), segunda semana seguida.** Es la unica cuenta de la lista que cumple su motivo declarado. **Strike 0** |
+| `goodnews_movement` | 8 | **24.570** | 27.220 -> 19.983 -> 32.955 -> **24.570** | Vuelve a bajar tras el rebote. Los reels siguen dominando (52.276 - 43.647 - 38.902 - 28.926 arriba; la unica foto del scrape, 8.754, es de las mas bajas). **Octava medicion sin que la duracion prediga nada.** Declarada "solo formato": el contador de strikes le sigue midiendo algo que no puede dar (nota del 12/10, sin resolver) |
+| `becauseofthem` (candidata) | **6** | **5.254** | 3.229 -> **5.254** | Mediana madura arriba de nuestra propia vara. Ratios 0,6% a 4,6%. **Sigue sin aparecer como fuente en PRODUCED:** una sola semilla historica, el criterio pide dos, **no entra** |
+| `rhtvmusic` (candidata) | 2 | 1.057 | n=1 (33.950) -> **n=2 (1.057)** | **Varianza brutal: 33.950 la semana pasada contra 759 y 1.354 esta.** Un post de 18-oct va 14.702 likes / 3.054 com. (**20,8%**) a las 14h. Motor de comentarios real, numeros impredecibles. Sigue como candidata, n insuficiente |
+| `rhtvgame.ing` (candidata) | 0 maduros | - | - | Un post de 18-oct: 3.920 / 73 (1,9%) a las 15h. Sin maduros. n insuficiente |
+
+**Cuenta nueva detectada en el scrape, sin pedirla:** `rap.housetv` (tercer satelite del grupo RapHouseTV que cae
+mezclado en el feed). Un post del 13-oct: **439 likes / 103 com. = 23,5%**. Numeros chicos, ratio altisimo.
+Va a CANDIDATAS con el mismo tratamiento que los otros dos satelites.
+
+**shortCodes guardados para re-medir la semana que viene por `directUrls`:**
+- `theneighborhoodtalk`: `DeqGTFHDblv` - `DeqBxezJ0xM` - `DeqG0Jyv7wl` - `DeqLbbQtVSN` - `DepR1FBPrT8` - `DeqNgVatvNZ` - `DeqAVzapTE6` - `DeqIpvYtqXI`
+- `raphousetv`: `DeqM7v0hOtb` - `DepyXBqoKnY` - `DeqWSt_O1et` - `DepV8T1tBME` - `Dep9EKngSZi` - `Dept8p-NS1U` - `DepdqoHhZwk`
+- `blacknews`: `DemxMGMBnmY` - `Demy20GhZa7` - `DemwOTUBHca` - `Dem0MnjBneI` - `Den14R4Oker`
+- `rhtvmusic`: `DepuYRLJC-a` - `DepSrxJpDA7` - `DeiUHAdMHNA` - `DefN1o8Bt13`
+
+### CHEQUEO DEL LOOP
+
+- **UNA PIEZA PUBLICADA SIN FILA EN PRODUCED, Y ES LA SEGUNDA MAS ALTA DE LA SEMANA.** Carnell Nichols
+  (`DefeCf_Fu3K`, 14-oct 22:35, **11.215 likes, 2,49x**) no aparece en el registro: se buscaron las claves
+  'CARNELL', 'COLORBLIND', 'colorblind' y 'Nichols' sobre el archivo entero y devolvieron **0 filas**. El titulo de
+  esta corrida salio de OCR porque no habia de donde mas sacarlo, y su **carril de origen es desconocido** - por eso
+  el hallazgo principal de esta corrida se apoya en dos carriles verificables y no en tres. Es la primera vez que
+  este archivo encuentra una pieza publicada sin registro.
+- **El shortCode de IG sigue sin anotarse: septimo pedido.** Pero el costo bajo: **1 corrida de OCR (5 tapas)**
+  contra 2 corridas (12 tapas) la semana pasada, porque 9 de 14 titulos salieron de las filas de PRODUCED.
+  Serie de OCR: 6 -> 0 -> 0 -> 0 -> 0 -> 12 -> **5**.
+- **El desfasaje de version del 12/10 NO se repitio.** Las 4 tapas verificadas por OCR coinciden exactamente con la
+  ultima version del registro (Christina v3, Hassan v2, Ka'Sheena v2, Jason Weaver). La semana pasada Usman Badaru
+  habia salido con la v1 teniendo v2 registrada.
+- **Volumen: 14 piezas editoriales publicadas en 7 dias**, maximo del archivo. Serie: 14 - 7 - 12 - 13 - 11 - 12 - **14**.
+- **BACKLOG DE ENTREGADAS SIN PUBLICAR: 7 piezas, y 3 entran en su segunda semana.** Visibles en PRODUCED y
+  ausentes del feed: **Leroy Russell / Spice of Life** (11-oct, 2a semana) - **Patrick Dewayne Smith** (12-oct,
+  2a semana) - **Peter Mutabazi** (12-oct, 2a semana) - **Kai / Uber Translator** (12-oct) -
+  **Sha'Michael Russell** (12-oct) - **Kehlani** (14-oct) - **Knowles-Rowland House / Beyonce y Kelly** (15-oct).
+  En la ventana el sistema **entrego 21 y publico 14**. La brecha crece: la semana pasada eran 4 sin publicar.
+- **Todos los carriles de origen aparecieron, incluida la cosecha de comentarios**, que la semana pasada estaba en
+  cero por primera vez. Segunda ventana consecutiva sin ningun carril vacio.
+- **Lil Jon (18-oct) se publico en el IG de `@hustlersnthehoodmedia`**, por pedido explicito del operador y contra
+  la regla de canal exclusivo de video. No esta en el feed de la cuenta principal y por eso no entra en esta
+  medicion. El propio registro anota la lectura del operador: *"cual es la historia aca? ... esto no funciona"*.
+- LEARNINGS_EDITORIAL.md no crecio, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+
+instagram-scraper: 3 corridas con proxy estandar (perfil 20 - 21 `directUrls` de re-medicion de watchlist -
+6 cuentas de watchlist a 8) - **1 corrida de OCR (5 tapas, ~2 centavos)** - 5 corridas de cheerio contra GitHub para
+leer y escribir. Sin proxy residencial. El token de GitHub se leyo del store de Apify, sin pedirselo al operador.
