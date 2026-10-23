@@ -1,0 +1,6 @@
+async function(context){
+ const jobs=[{"folder": "TARAJI 700 DOLARES SINGLE 2026-10-23", "name": "20261023_taraji_COVER_v3.png", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/e55380612fc192c3f0d3d8bd08d3914fc9e6a46d/qc/20261023_taraji_COVER_v3.png"}, {"folder": "TARAJI 700 DOLARES SINGLE 2026-10-23", "name": "20261023_taraji_CAPTION_v2.txt", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/e55380612fc192c3f0d3d8bd08d3914fc9e6a46d/qc/20261023_taraji_CAPTION_v2.txt"}]; const out=[];
+ const B='https://script.google.com/macros/s/AKfycbz6CPej2P-At1aW5oj_irLeaRXNMvwUgmhH1u-2d490S90nyJci64vpw0Lb_bq2gGnp/exec?key=hnth2026&root=hnth';
+ for(const j of jobs){ try{ const r=await context.sendRequest({url:B+'&url='+encodeURIComponent(j.url)+'&name='+encodeURIComponent(j.name)+'&folder='+encodeURIComponent(j.folder),responseType:'text',throwHttpErrors:false,timeout:{request:90000}}); out.push(j.name+' '+r.statusCode+' '+String(r.body).slice(0,160)); }catch(e){ out.push(j.name+' ERR '+String(e.message).slice(0,80)); } }
+ return {out};
+}
