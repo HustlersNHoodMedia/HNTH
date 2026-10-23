@@ -1,0 +1,6 @@
+async function(context){
+ const jobs=[{"folder": "TIYONNA BETTS NENA BUS CARRUSEL 2026-10-23", "name": "20261023_tiyonna_1_COVER_v3.png", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/59bfa25405d79adecd6a5b9d13d450032922b879/qc/20261023_tiyonna_1_COVER_v3.png"}, {"folder": "WILL SMITH MURO SINGLE 2026-10-23", "name": "20261023_will_COVER_v3.png", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/59bfa25405d79adecd6a5b9d13d450032922b879/qc/20261023_will_COVER_v3.png"}]; const out=[];
+ const B='https://script.google.com/macros/s/AKfycbz6CPej2P-At1aW5oj_irLeaRXNMvwUgmhH1u-2d490S90nyJci64vpw0Lb_bq2gGnp/exec?key=hnth2026&root=hnth';
+ for(const j of jobs){ try{ const r=await context.sendRequest({url:B+'&url='+encodeURIComponent(j.url)+'&name='+encodeURIComponent(j.name)+'&folder='+encodeURIComponent(j.folder),responseType:'text',throwHttpErrors:false,timeout:{request:90000}}); out.push(j.name+' '+r.statusCode+' '+String(r.body).slice(0,160)); }catch(e){ out.push(j.name+' ERR '+String(e.message).slice(0,80)); } }
+ return {out};
+}
