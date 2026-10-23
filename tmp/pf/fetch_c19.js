@@ -4,7 +4,7 @@ const gh=String((await context.sendRequest({url:'https://api.apify.com/v2/key-va
 const U={"ty_c19.mp4": "https://d1l66zlxaqpl1u.cloudfront.net/wp-gray/20261020/6ad7e90b0cba4d202a9bc889/file_1920x1080-5400-v4/file_1280x720-2000-v3_1.mp4"}; const out={};
 for(const [name,u] of Object.entries(U)){
  try{
-  const r=await context.sendRequest({url:u,responseType:'buffer',throwHttpErrors:false,timeout:{request:240000},headers:{'User-Agent':(u.includes('fbsbx')?'Googlebot-Image/1.0':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36'),'Accept':'image/avif,image/webp,image/*,*/*'}});
+  const r=await context.sendRequest({url:u,responseType:'buffer',throwHttpErrors:false,timeout:{request:300000},timeout:{request:240000},headers:{'User-Agent':(u.includes('fbsbx')?'Googlebot-Image/1.0':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36'),'Accept':'image/avif,image/webp,image/*,*/*'}});
   const b=r.rawBody||r.body; const len=b?b.length:0;
   out[name]=r.statusCode+' '+len+' '+(r.headers['content-type']||'');
   if(r.statusCode==200 && len>5000){
