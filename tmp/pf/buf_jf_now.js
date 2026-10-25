@@ -1,0 +1,21 @@
+async function(context){
+const T=process.env.APIFY_TOKEN;const S='https://api.apify.com/v2/key-value-stores/IMS281Dl1YSeVNwmi/records/';
+const g=async k=>{try{const r=await context.sendRequest({url:S+k+'?token='+T,responseType:'text',throwHttpErrors:false});return r.statusCode==200?String(r.body).trim().replace(/"/g,''):''}catch(e){return ''}};
+const key=await g('BUFFER_KEY');const ch=await g('BUFFER_CHANNEL_TIKTOK_HNTH');
+const P=[{"name": "jamiefoxx", "text": "Jamie Foxx was 7 months old when his grandparents adopted him and raised him in Terrell, Texas.
+
+His grandmother, Estelle Talley, sat him at a piano when he was 5 and told him, \"This is how you're going to make your money.\"
+
+She meant it. He took classical lessons for years, played piano at parties around town as a teenager, and that piano got him a scholarship to college.
+
+Decades later, he was up to play Ray Charles in Ray. But Ray had to sign off first. He set up two keyboards side by side in his studio and made Jamie play with him. When Jamie got lost on a Thelonious Monk run, Ray didn't let up: \"Come on, man, it's right under your fingers.\" Jamie found it, and Ray gave him his blessing.
+
+In 2005, Jamie won the Oscar for Best Actor. In his speech, he thanked his grandmother and called her his first acting teacher.
+
+#HustlersNTheHood", "urls": ["https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/ee32c7d774f56cade6292c6269e12760f524612f/qc/20261025_jamiefoxx_tt_1.jpg", "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/ee32c7d774f56cade6292c6269e12760f524612f/qc/20261025_jamiefoxx_tt_2.jpg"]}]; const out={};
+for(const p of P){
+ const assets=p.urls.map(u=>'{ image: { url: '+JSON.stringify(u)+' } }').join(', ');
+ const m='mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: shareNow assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }';
+ try{const r=await context.sendRequest({url:'https://api.buffer.com/graphql',method:'POST',headers:{'Authorization':'Bearer '+key,'Content-Type':'application/json'},body:JSON.stringify({query:m,variables:{text:p.text,channelId:ch}}),responseType:'text',throwHttpErrors:false,timeout:{request:60000}});out[p.name]=String(r.body).slice(0,800)}catch(e){out[p.name]='ERR '+e.message}
+}
+return out;}
