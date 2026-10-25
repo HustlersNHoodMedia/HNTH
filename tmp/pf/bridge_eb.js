@@ -1,0 +1,6 @@
+async function(context){
+ const jobs=[{"folder": "EBRO MICRO ESCOLAR CARRUSEL 2026-10-25", "name": "20261025_ebro_1_COVER.png", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/ea991300561fdc831124ddb0acc1c6e28866c9a0/qc/20261025_ebro_1_COVER.png"}, {"folder": "EBRO MICRO ESCOLAR CARRUSEL 2026-10-25", "name": "20261025_ebro_2.png", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/ea991300561fdc831124ddb0acc1c6e28866c9a0/qc/20261025_ebro_2.png"}, {"folder": "EBRO MICRO ESCOLAR CARRUSEL 2026-10-25", "name": "20261025_ebro_CAPTION.txt", "url": "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/ea991300561fdc831124ddb0acc1c6e28866c9a0/qc/20261025_ebro_CAPTION.txt"}]; const out=[];
+ const B='https://script.google.com/macros/s/AKfycbz6CPej2P-At1aW5oj_irLeaRXNMvwUgmhH1u-2d490S90nyJci64vpw0Lb_bq2gGnp/exec?key=hnth2026&root=hnth';
+ for(const j of jobs){ try{ const r=await context.sendRequest({url:B+'&url='+encodeURIComponent(j.url)+'&name='+encodeURIComponent(j.name)+'&folder='+encodeURIComponent(j.folder),responseType:'text',throwHttpErrors:false,timeout:{request:90000}}); out.push(j.name+' '+r.statusCode+' '+String(r.body).slice(0,160)); }catch(e){ out.push(j.name+' ERR '+String(e.message).slice(0,80)); } }
+ return {out};
+}
