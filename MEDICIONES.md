@@ -1388,3 +1388,296 @@ Va a CANDIDATAS con el mismo tratamiento que los otros dos satelites.
 instagram-scraper: 3 corridas con proxy estandar (perfil 20 - 21 `directUrls` de re-medicion de watchlist -
 6 cuentas de watchlist a 8) - **1 corrida de OCR (5 tapas, ~2 centavos)** - 5 corridas de cheerio contra GitHub para
 leer y escribir. Sin proxy residencial. El token de GitHub se leyo del store de Apify, sin pedirselo al operador.
+
+---
+
+## CORRIDA 2026-10-26 (12:17 UTC)
+
+**Ventana medida:** 2026-10-19 12:11 -> 2026-10-26 12:17 UTC.
+
+🚨 **CORRIDA SIN APIFY. La cuenta dio `Monthly usage hard limit exceeded` en todos los actores**
+(verificado dos veces: `apify/instagram-scraper` y `apify/cheerio-scraper`, mismo error de nivel cuenta).
+Eso dejo sin servicio las tres rutas documentadas a la vez: el scrape de perfil, el OCR de tapas y el acceso
+al repo por cheerio. **El GET directo a GitHub tambien da 403 en tarea programada** (probado contra 12 nombres
+de repo). La corrida se completo por una ruta nueva, y abajo esta lo que esa ruta cambia en la lectura de los numeros.
+
+### RUTA USADA ESTA CORRIDA (y sus limites)
+
+**Metricas:** `og:description` + el JSON embebido de cada pagina de post (`like_count`, `comment_count`,
+`taken_at`), leidos con curl desde el sandbox de Higgsfield. **Sin costo.**
+Verificado contra el propio contador de Instagram: og dice `4,926 likes` y el JSON dice `like_count: 4926`
+en la misma pieza. **El metodo es exacto, no estimado.**
+
+**Grilla de posts:** Playwright con Chromium headless sobre el perfil. **Sin login, Instagram corta la
+paginacion en 12 items** (9 posts + 3 pins). No hay forma de pedir 20 por esta ruta.
+
+🚨 **CONSECUENCIA SOBRE LA VENTANA: esta corrida mide 23 al 25-oct, no los ultimos 7 dias.**
+Las piezas publicadas entre el 19 y el 22-oct no fueron alcanzables y **NO estan en estas medianas**.
+Lo que si se pudo hacer, y compensa en parte: **re-medir los 16 shortCodes que la corrida pasada dejo
+guardados**, que da la ventana anterior ya madura (ver la seccion de MADURACION, que es el hallazgo
+mas util de la corrida).
+
+**Limite que no se pudo sortear:** el backlog de 7 entregadas-sin-publicar que dejo anotado el 19/10 no se
+pudo re-chequear contra el feed del 19 al 22-oct. Queda sin verificar, no resuelto.
+
+🚨 **LOS LIKES OCULTOS NO SE RECUPERAN - Y EL SENTINELA QUEDO IDENTIFICADO.**
+Se probo si el JSON embebido conserva el contador cuando el operador oculta los likes. **No lo conserva:**
+las **5** piezas que el 19/10 quedaron marcadas OCULTO devuelven **todas exactamente `like_count: 3`**
+(Hassan, Kountry Wayne, Kai George, Code Names, Brittny). Es un valor centinela, no un dato.
+**Regla de lectura del metodo, medida: `like_count == 3` significa likes ocultos; cualquier otro valor es real.**
+⚠️ Y el reciproco NO vale: que `og:description` no traiga el prefijo de likes **no** implica oculto
+(Kevin Hart no lo trae y su `like_count` es 51.852, real). El unico indicador de oculto es el 3.
+Esto importa porque sin esa prueba la pieza de Taraji de esta semana se habria anotado FLOP: su meta no trae
+prefijo, su `like_count` es 5.685, y es real.
+
+**Titulos: 8 de 8 salieron de las filas de PRODUCED. Cero OCR.** Serie de OCR: 6 -> 0 -> 0 -> 0 -> 0 -> 12 -> 5 -> **0**.
+**El shortCode de IG sigue sin anotarse en PRODUCED: octavo pedido.** Esta corrida el cruce se hizo por
+protagonista contra la caption, que funciono en las 8, pero solo porque las 8 nombran a la persona en la caption.
+
+### TABLA DE PIEZAS — ventana 23 al 25-oct
+
+| # | estructura | carril de origen | titulo | likes | com. | ratio | x4.510 | edad |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **imagen unica** | evergreen metodo Pubity (barrido propio) | STEPH CURRY'S MOM MADE HIM SIT OUT HIS FIRST MIDDLE SCHOOL GAME BECAUSE HE DIDN'T DO HIS CHORES. THAT'S HOW SHE RAISED A 4-TIME NBA CHAMPION. (139 car, v4) | 20.195 | 113 | 0,6% | **4,48x** | 46h |
+| 2 | **imagen unica** | evergreen metodo Pubity (barrido propio) | TARAJI P. HENSON MOVED TO LA WITH HER SON AND $700. SHE PROMISED HIM SHE'D NEVER GIVE UP. SHE CARRIED THE HARD DAYS SO WELL THAT HE DOESN'T EVEN REMEMBER THEM. (158 car, v4) | 5.685 | 28 | 0,5% | 1,26x | 42h |
+| 3 | carrusel 2 | semilla del operador (IG @twahairbeauty -> ABC7 2016) | AN 11-YEAR-OLD BOY FOUND OUT THE FATHER HE NEVER MET WAS BURIED WITHOUT A HEADSTONE. HE MOWED LAWNS ALL SUMMER TO PAY FOR ONE, AND A MONUMENT COMPANY GAVE IT TO HIM FOR FREE. (173 car) | 4.926 | 32 | 0,6% | 1,09x | 38h |
+| 4 | **imagen unica** | evergreen metodo Pubity (barrido propio) | WILL SMITH'S DAD MADE HIM AND HIS BROTHER BUILD A BRICK WALL AT HIS SHOP. IT TOOK A YEAR AND A HALF. WHEN IT WAS DONE, HIS FATHER TOLD THEM: "DON'T Y'ALL NEVER TELL ME YOU CAN'T DO SOMETHING." (190 car) | 3.689 | 29 | 0,8% | 0,82x | 60h |
+| 5 | carrusel 2 | TV local (Cleveland 19, 20-oct) | A WOMAN IN OHIO FOUND A 6-YEAR-OLD GIRL CRYING ALONE BY A BUSY ROAD AFTER HER SCHOOL BUS DROPPED HER OFF 40 MINUTES EARLY. THE WOMAN DROVE HER HOME TO HER MOM. (158 car) | 3.206 | 61 | **1,9%** | 0,71x | 63h |
+| 6 | carrusel 2 (v5) | evergreen metodo Pubity (barrido propio) | DEION SANDERS' MOM NEVER SAW HIM PLAY A HIGH SCHOOL GAME BECAUSE SHE WAS ALWAYS AT WORK. AS A KID HE PROMISED HER SHE'D NEVER HAVE TO WORK AGAIN. THE DAY HE SIGNED WITH THE FALCONS, HE KEPT HIS WORD. (198 car, v3) | 1.503 | 8 | 0,5% | **0,33x** | 65h |
+
+**Mediana de la ventana: 4.307 (n=6). La semana corrio a 0,96x de la vara de 4.510 — en la vara.**
+
+**Con menos de 24h, fuera del calculo:** JAMIE FOXX (carrusel 2, evergreen) 1.655 / 2 com. a las 16h ·
+ICE CUBE / hijo audicion (carrusel 2, v2, evergreen) 1.592 / 19 com. a las 22h.
+
+🚨 **Y una pieza que no es editorial: `De7GS9rB4Ej`, 25-oct, un REEL promocional de `@paulalex`**
+("quit his job as a police officer thanks to his side hustles"), 2.190 likes / 115 com. a las 20h.
+**Es video en el IG principal y es publicidad, no una pieza de este sistema.** Se excluye de la medicion.
+Dato al margen, porque es medible: su ratio de comentarios (**5,3%**) es el mas alto del feed en la ventana,
+ocho veces el de nuestras piezas editoriales. Se anota como observacion; que hacer con eso es del operador.
+
+### MEDIDO — MADURACION: EL HALLAZGO MAS UTIL DE LA CORRIDA, Y RETIRA EL ENIGMA DE LA EDAD
+
+Los 16 shortCodes guardados el 19/10 re-medidos hoy, contra lo que midieron esa corrida:
+
+| pieza | 19/10 (edad) | hoy (edad) | crecimiento | x4.510 hoy | ratio hoy |
+|---|---|---|---|---|---|
+| **KEVIN HART** | 24.101 (14,7h) | **51.852** (7,6d) | **2,15x** | **11,50x** | 0,6% |
+| Jason Weaver | 18.647 (65h) | 21.191 (9,7d) | 1,14x | 4,70x | 1,0% |
+| Carnell | 11.215 (110h) | 13.840 (11,6d) | 1,23x | 3,07x | 2,0% |
+| Christina | 9.939 (—) | 9.939 (9,9d) | — | 2,20x | 2,4% |
+| Mariano | 6.674 (158h) | 7.302 (13,6d) | 1,09x | 1,62x | 1,7% |
+| Ka'Sheena | 5.090 (37h) | 6.769 (8,6d) | 1,33x | 1,50x | **7,5%** (510 com.) |
+| Germain | — | 6.223 (7,9d) | — | 1,38x | 1,2% |
+| Yazoo | 3.635 (95h) | 4.645 (10,9d) | 1,28x | 1,03x | 2,6% |
+| Lil Baby | 3.429 (134h) | 3.602 (12,6d) | 1,05x | 0,80x | 1,6% |
+| Todd Weaver | 2.224 (112h) | 3.223 (11,6d) | 1,45x | 0,71x | 1,5% |
+| King | 1.732 (92h) | 2.282 (10,8d) | 1,32x | 0,51x | 0,8% |
+
+**Lo medido, con numero:**
+
+1. **Una pieza medida a las ~15h esta a menos de la mitad de su valor de 10 dias** (Kevin Hart, 2,15x de
+   crecimiento). **Eso valida con numero la regla de excluir las de <24h**, que hasta ahora se aplicaba sin medir.
+2. **Pasadas las 24h, el crecimiento es de 1,05x a 1,45x y NO ordena por edad** (37h -> 1,33x; 65h -> 1,14x;
+   92h -> 1,32x; 112h -> 1,45x; 158h -> 1,09x). **Un rango de 1,05 a 1,45 no explica diferencias de 13x.**
+3. 🚨 **Con eso queda retirado el enigma de "la edad corre al reves", abierto el 28/09 y reportado dos
+   corridas seguidas.** No corria al reves: la edad, pasadas las 24h, aporta un factor chico y desordenado.
+   Lo que parecia un sesgo de edad era el ruido de ese factor sobre muestras de n=3 y n=6.
+   **No hace falta otra semana para esto: esta medido sobre 8 piezas con sus dos puntos de medicion.**
+
+⚠️ **Y lo que esto le hace a la tabla de esta semana:** Steph se midio a las 46h. Por el factor de arriba su
+valor de 10 dias cae en el orden de 22.000-29.000. Las comparaciones dentro de una misma corrida siguen siendo
+validas; las comparaciones ENTRE corridas de piezas medidas a edades distintas estaban sesgadas y ahora
+tienen factor.
+
+### MEDIDO — EL CARRIL EVERGREEN NO TIENE MEDIANA MAS ALTA: TIENE MAS VARIANZA
+
+Es la pregunta que el 19/10 dejo abierta con n=1, y ahora hay n=5 maduros del carril y n=10 maduros de los
+carriles de noticia (la ventana anterior, ya madura). Todo a la misma edad aproximada y con el mismo metodo:
+
+| | n | mediana | x4.510 | rango | mediana de ratio de com. |
+|---|---|---|---|---|---|
+| **evergreen (metodo Pubity)** | 5 | **5.685** | **1,26x** | **1.503 a 51.852 (34x)** | **0,56%** |
+| **carriles de noticia** (prensa, TV local, traccion, semilla, Repackage) | 10 | **6.496** | **1,44x** | 2.282 a 21.191 (9,3x) | **1,65%** |
+
+**El carril evergreen puso el techo del archivo (Kevin Hart, 11,50x) y tambien el piso de la semana
+(Deion, 0,33x).** Su mediana queda **por debajo** de la de los carriles de noticia, con **3,7 veces mas
+dispersion** entre su mejor y su peor pieza.
+
+🚨 **Entonces la respuesta a la pregunta del 19/10 ("fue el carril o fue la fama de Kevin Hart?") es: no fue
+el carril.** Cuatro piezas del mismo carril, con el mismo mecanismo (famoso + padre/madre + sacrificio + giro),
+publicadas en la misma semana, van de 0,33x a 4,48x. **El carril no es la variable.** Queda descartada la
+lectura de que el carril sea el motor, y queda abierto que lo sea la construccion del titulo o el tamano de
+la figura. **n=5 contra n=10, una sola ventana madura de cada lado: es la primera comparacion limpia que
+tiene el archivo, no es la ultima palabra.**
+
+### MEDIDO — LA SEPARACION MAS FUERTE DE LA CORRIDA: EL CARRIL EVERGREEN NO GENERA CONVERSACION
+
+| | mediana de ratio | rango |
+|---|---|---|
+| evergreen, 5 maduras | **0,56%** | 0,49% a 0,79% |
+| noticia, 10 maduras | **1,65%** | 0,8% a 7,5% |
+
+**Las cinco piezas del carril evergreen estan por debajo del 0,8%. Ninguna llega al 1%.**
+En los carriles de noticia, 6 de 10 pasan el 1,2% y una llega al 7,5% con 510 comentarios.
+
+**Serie de la mediana de ratio de la cuenta:** 1,6% (21/09) -> 1,1% (05/10) -> 1,7% (12/10) -> 1,8% (19/10)
+-> **0,61%** (esta ventana). Cuatro corridas planas y una caida a un tercio, en la misma semana en que
+**4 de las 6 piezas medidas son del carril evergreen**. La caida y el cambio de carril estan confundidos entre
+si por diseno de la semana, pero la tabla de arriba los separa: medidos por carril a la misma edad,
+la diferencia es de 3x. **MEDIDO, n=5 contra n=10.**
+
+**Y el costo concreto, que es lo que hace que esto importe:** el Repackage Play necesita secciones de
+comentarios para cosechar. **Esta ventana no dejo ninguna pieza sobre el 8%** — es la primera del archivo
+sin ningun candidato a cosecha. No es una semana limpia: es la ausencia de material.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+**De la ventana nueva: ninguna pieza alcanzo el 8%.** La mas alta es TIYONNA (1,9%, 61 com.), la unica
+pieza de persona comun del grupo. La segunda es el reel publicitario de `@paulalex` (5,3%), que no es nuestro.
+
+**De la ventana anterior, ya madura, una paso la vara y hay que mirarla:**
+
+| pieza | ratio hoy | com. hoy | link |
+|---|---|---|---|
+| Ka'Sheena Daniels | **7,5%** | **510** (eran 416) | https://www.instagram.com/p/DenPSATFoa_/ |
+
+**Las 5 piezas con likes ocultos del 19/10, con sus comentarios ya maduros** (likes no recuperables, ver el
+sentinela 3): Kountry Wayne **109** com. (https://www.instagram.com/p/DehkwmLtDAX/) · Hassan Kariem **108**
+(https://www.instagram.com/p/DemRd7XFpd_/) · Kai George **84** (https://www.instagram.com/p/DedExKcDLZu/) ·
+Code Names **59** (https://www.instagram.com/p/Demz3VIlmC9/) · Brittny **16** (https://www.instagram.com/p/DeeqwbPllo3/).
+**Kountry Wayne sigue siendo el patron del Jeep, segunda corrida que se anota sin cosechar.**
+
+**Siguen abiertos y sin cosechar, de semanas anteriores (OCTAVA semana):**
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437 com.) - 20,1% https://www.instagram.com/p/DeWwTANhnLc/ (497) -
+18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) - 15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) -
+12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) - 9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) -
+8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276).
+
+### MEDIDO — LO QUE SIGUE SIN SEPARAR
+
+- **Los cuatro beats emocionales: TERCERA corrida sin separar.** Las 6 piezas de la ventana tienen quien era
+  la persona, que eligio o que le paso, como termino, y la causa pegada a la reaccion en la misma oracion.
+  Van de **4,48x a 0,33x**. Y las dos mas bajas no son frias: Deion nombra una promesa cumplida y Tiyonna
+  una nena de 6 anos llorando sola. **La hipotesis de "datos correctos contados en frio" no explica una
+  tercera ventana seguida.**
+- **La emocion en la primera oracion: las 6 cumplen, y el rango sigue siendo de 13x.** El 19/10 una pieza
+  la violaba e hizo 2,49x. La regla no discrimina en ninguna de las dos direcciones.
+- **El cierre en consecuencia: OCTAVA corrida sin separar.** Steph cierra en consecuencia (4,48x) y Deion
+  cierra en consecuencia (0,33x).
+- **El largo: OCTAVA corrida.** 139 -> 4,48x · 158 -> 1,26x · 173 -> 1,09x · 190 -> 0,82x · 158 -> 0,71x ·
+  198 -> 0,33x. ⚠️ **Esta vez hay correlacion de rangos (rho 0,76, n=6, el mas corto gana y el mas largo
+  pierde).** Pero contradice siete corridas anteriores sin correlacion, n=6 no alcanza, **y esta confundida
+  con la observacion de abajo: la pieza mas corta es tambien la del disparador domestico.**
+  **POSIBLE DESPLAZAMIENTO — hace falta otra semana. El antecedente de siete corridas manda.**
+
+### OBSERVACION — QUE VARIA ENTRE LAS CUATRO PIEZAS DEL MISMO MECANISMO (n=4, UN SOLO CARRIL)
+
+Cuatro piezas evergreen de la misma semana, mismo mecanismo, misma plantilla, de 4,48x a 0,33x. Lo que
+cambia entre ellas es **que nombra la primera oracion como disparador**:
+
+| pieza | que nombra la primera oracion | x4.510 |
+|---|---|---|
+| Steph | una falla domestica chica y universal, con su consecuencia pegada ("didn't do his chores" -> "made him sit out his first game") | **4,48x** |
+| Taraji | una cifra ("$700") | 1,26x |
+| Will | un objeto y una duracion ("a brick wall", "a year and a half") | 0,82x |
+| Deion | una condicion general ("she was always at work") | **0,33x** |
+
+El orden es monotono y las tres que perdieron abren sobre algo en lo que el lector no puede fallar; la que
+gano abre sobre algo que todo lector hizo. ⚠️ **n=4, un solo carril, y el juicio de "concreto" es mio, no
+una medicion.** Se anota con su numero para volver a mirarlo. **No es una regla y no se aplica como tal.**
+
+### OBSERVACION — LA CANTIDAD DE VERSIONES ACOMPANO EL FRACASO (n=2)
+
+- **DEION: cinco versiones** (v2 tapas, v3 titulo, v4 paso a imagen unica, v5 volvio a carrusel 2) y
+  **0,33x, el piso de la ventana.**
+- **TANDA 6 (Sharpe / Biles / Wayans): tres versiones de titulo y el operador las bajo las tres** el 25-oct,
+  por titulos "que no se entienden en una pasada".
+
+Dos casos independientes en una ventana donde el numero de versiones acompano el peor resultado.
+**n=2, observacional.** No dice que rehacer este mal; dice que en estos dos casos el material no mejoro
+con las pasadas. Se anota para contarlo cuando haya mas casos.
+
+### MEDIDO — ESTRUCTURA: PRIMERA VENTANA EN OCHO CON n EN LOS DOS LADOS
+
+| estructura | n | mediana | x4.510 |
+|---|---|---|---|
+| **imagen unica** | 3 | **5.685** | **1,26x** |
+| **carrusel 2** | 3 | **3.206** | **0,71x** |
+
+Despues de siete corridas en que la cuenta publicaba casi solo carrusel, esta ventana tiene 3 y 3.
+**La imagen unica queda arriba**, al reves de las medianas del manual (6.571 imagen unica / 9.294 carrusel).
+⚠️ Confundido: Steph solo empuja el lado de la imagen unica (sin el, 4.687 contra 3.206 — sigue arriba, pero
+con n=2). Y las tres imagenes unicas son evergreen. **POSIBLE DESPLAZAMIENTO — hace falta otra semana.**
+
+### WATCHLIST — lo medido esta corrida
+
+🚨 **Todas estas medianas se midieron con el metodo nuevo** (JSON embebido, exacto) y **no son comparables
+con la serie anterior**, que venia de `directUrls` de Apify. Los movimientos no van todos en la misma
+direccion (dos bajan, cuatro suben), lo que argumenta contra un desfasaje sistematico del metodo, **pero una
+corrida no alcanza para declarar movimiento real. Se leen como NUEVA LINEA DE BASE, no como cambio.**
+
+| cuenta | n maduros | mediana (metodo nuevo) | serie anterior (Apify) | mediana de ratio | que quedo |
+|---|---|---|---|---|---|
+| `theneighborhoodtalk` | 8 | **17.809** | 8.368 -> 7.993 -> 4.113 | **5,6%** | Sigue siendo motor de comentarios: 18,1% - 8,3% - 7,0% - 6,0% - 5,6% - 4,8% - 4,0% - 2,0%, con 3.404 y 2.934 comentarios en dos posts. Nunca dio semilla. **Sin semilla: strike 5** (ver la nota de metodo del 12/10, sin resolver) |
+| `raphousetv` | 7 | **5.960** | 6.757 -> 5.156 | **9,8%** | **La mediana de ratio mas alta de la lista junto con rhtvmusic.** 23,5% - 21,0% - 13,0% - 9,8% - 5,4% - 2,8% - 2,7%. Es la unica cuenta cuya mediana practicamente no se movio con el cambio de metodo (+16%). **Sin semilla: strike 5** |
+| `blacknews` | 5 | **839** | no medible x2 -> 311 | **4,1%** | Posts propios chicos, confirmado por segunda medicion. **Esta ventana NO dio semilla** (la ventana anterior habia dado Ka'Sheena, que hoy madura a 1,50x con el ratio mas alto de la cuenta, 7,5%). **Strike 1** |
+| `goodnews_movement` | 6 | **48.613** | 27.220 -> 19.983 -> 32.955 -> 24.570 | **1,2%** | Numeros de otro orden (146.398 en un post de 22h; 109.417 maduro). **Ratio de comentarios bajisimo: 0,5% a 2,1%** — mucho volumen, poca conversacion, el perfil inverso al de `raphousetv`. Declarada "solo formato": el contador de strikes le sigue midiendo algo que no puede dar (nota del 12/10, **sin resolver en cuatro corridas**) |
+| `becauseofthem` (candidata) | 8 | **4.282** | 3.229 -> 5.254 | **1,7%** | **Baja por debajo de nuestra vara de 4.510.** Ratios 0,7% a 3,2%. **Sigue sin aparecer como fuente en PRODUCED** ninguna de las tres ultimas ventanas; el criterio pide dos semillas, **no entra** |
+| `rhtvmusic` (candidata) | 4 | **5.540** | n=1 (33.950) -> n=2 (1.057) | **9,2%** | **Primera mediana con n=4, y el motor de comentarios mas fuerte medido esta corrida: las CUATRO piezas pasan el 6%** (20,5% - 10,9% - 7,4% - 6,2%). Un post con **90.948 likes y 18.613 comentarios**. Numeros muy dispersos pero la conversacion es consistente |
+| `rhtvgame.ing` (candidata) | 0 | - | - | - | No se le pudo tomar grilla esta corrida (el cupo de 12 items del metodo nuevo se gasto en las seis cuentas de arriba). Sin maduros por tercera corrida |
+| `rap.housetv` (candidata) | 0 | - | - | - | Igual que la anterior: no se le tomo grilla. Entro el 19/10 con n=1 y sigue en n=1 |
+
+**Lectura que el cambio de metodo NO afecta, porque es interna a cada cuenta:** el ratio de comentarios.
+Y ahi hay un reordenamiento claro respecto de lo que el archivo venia escribiendo:
+**`raphousetv` (9,8%) y `rhtvmusic` (9,2%) estan por encima de `theneighborhoodtalk` (5,6%)**, que el archivo
+venia llamando "el motor de comentarios mas fuerte de la lista por un margen amplio" desde el 28/09.
+**MEDIDO, n=7 y n=4 contra n=8, una sola corrida con este metodo.** No deroga nada todavia; es la primera
+vez que las tres se miden con el mismo instrumento en la misma corrida.
+
+**Y el contraste de perfil que queda medido:** `goodnews_movement` tiene la mediana de likes mas alta de la
+lista (48.613) y la de ratio mas baja (1,2%). `raphousetv` tiene 8 veces menos likes y 8 veces mas
+conversacion. Son dos cosas distintas y el archivo las venia mezclando en una sola columna.
+
+**shortCodes guardados para re-medir la semana que viene:**
+- `theneighborhoodtalk`: `De8SV2YRubV` - `De7VYpVPG-h` - `De8dlwdOoit` - `De8baJYJC9n` - `De8Mu-DpQna` - `De8Lm_JNjNZ` - `De7yTaZuqtv` - `De7qiGwtafR` - `De7p0mSH4RQ` - `De8C5xxJVTh` - `De8CMe7Jkjd` - `De79-y5uxF8`
+- `raphousetv`: `De8nPbtEbjT` - `De8hKdQxSt7` - `De8XQI5uPJm` - `De8NRBNB2AN` - `De8EdPjNEd-` - `De79Nn8oE50` - `De7xvRih6mY` - `De7liqhOCg3` - `De7hnahILSv` - `De7bbSINvNP` - `De7TeeCxzwo` - `De7Nf81OyR8`
+- `blacknews`: `De7bqM1h6ci` - `De66dPcx4xD` - `De64s3Lx4M6` - `De5E4DkBjRN` - `De4ceHpRfDP` - `De4azJExldB` - `De4XMwlRnX6` - `De2SqyKBqKd` - `De19UC4RGbx`
+- `rhtvmusic`: `De7tlTNBM84` - `De3b9WLuiA-` - `De0X80CjISy` - `DexrEHBNNom` - `DexRlIIh0PE` - `Dew5AmXp7cE` - `DeujhIipFwY` - `DesqwRVjOJW`
+- `becauseofthem`: `De2dQBXk4Gw` - `Dewq-cVkgLh` - `Deu29F_ElxA` - `DesT6p3EkIs` - `DeryjP7EuYI` - `DemZPkNEmkf`
+- `goodnews_movement`: `De73yAxn5E3` - `De64bsPhnYY` - `De2F7tzle5U` - `De1r2b2FRTk` - `DezShZMO_kY` - `DexGslohSou`
+- **nuestras, para medir maduracion:** `De7hT3BFqwn` (Jamie Foxx) - `De631RfFmpV` (Ice Cube) - `De5NXSalmr2` (Brandon) - `De4OIMrtZi3` (Taraji) - `De4TF9Blo-8` (Steph) - `De2O1tsB8FQ` (Will) - `De2eYVwluP3` (Tiyonna) - `De2QjpPFtaP` (Deion)
+
+### CHEQUEO DEL LOOP
+
+- 🚨 **APIFY AGOTO EL LIMITE MENSUAL Y ESO FRENA LA TAREA, NO SOLO ESTA CORRIDA.** Mientras no se
+  reponga, no hay scrape de perfil (20 posts), no hay OCR de tapas y no hay lectura/escritura del repo por
+  cheerio. El limite es mensual: **si no se levanta, la corrida del 2-nov tiene el mismo techo de 12 items.**
+  Esta corrida salio completa por la ruta nueva, que es gratis, pero **no reemplaza los 20 posts**.
+- **VENTANA INCOMPLETA: se midieron 23 al 25-oct (6 maduras + 2 de <24h), no los 7 dias.** Las piezas del
+  19 al 22-oct no fueron alcanzables. **El volumen de 7 dias no es comparable con la serie**
+  (14 - 7 - 12 - 13 - 11 - 12 - 14 - **n/d**).
+- **8 de 8 titulos salieron de PRODUCED, cero OCR.** Es el mejor resultado de la serie en ese punto.
+  **El shortCode de IG sigue sin anotarse: octavo pedido.** Con el anotado, el techo de 12 items de la ruta
+  nueva dejaria de importar: se mediria por shortCode directo y la ventana volveria a ser de 7 dias completos.
+  **Dejo de ser una comodidad del analista y paso a ser lo que destraba la medicion.**
+- **ENTREGADAS SIN PUBLICAR EN EL FEED, verificable en la ventana 23-25 oct:** **SHAQ / matricula de la madre**
+  (19-oct, **7 dias**, entregada y programada a TikTok) - **J. COLE / 2014 Forest Hills Drive** (23-oct) -
+  **BRONNY JAMES** (24-oct) - **DOLVETT QUINCE** (25-oct) - **EBRO AHMED** (25-oct).
+  ⚠️ **El backlog de 7 piezas que anoto el 19/10 no se pudo re-chequear** (ventana 19-22 oct inalcanzable):
+  queda sin verificar, ni confirmado ni cerrado.
+- **La pieza de Taraji casi se anota FLOP por un artefacto del metodo** y no lo es (5.685, 1,26x). Queda
+  escrita arriba la regla de lectura del sentinela 3 para que la proxima corrida no se coma el error.
+- **Carriles que aparecieron en la ventana:** evergreen (4), semilla del operador (1), TV local (1).
+  **No aparecieron: prensa/cultura, barrido de traccion, cosecha de comentarios.** La cosecha de comentarios
+  habia corrido el 19/10 por primera vez; **volvio a cero.**
+- **Tres piezas producidas y bajadas por el operador en la ventana** (Sharpe, Biles, Wayans), todas de la
+  misma tanda y por el mismo motivo: titulos que no pasan la prueba de una pasada.
+- LEARNINGS_EDITORIAL.md no crecio, y eso es lo correcto.
+
+### COSTO DE LA CORRIDA
+
+**Cero.** Apify no acepto ninguna corrida (limite mensual). Todo se midio con curl y Playwright desde el
+sandbox de Higgsfield, que no consume creditos: **0 corridas de scraper, 0 de OCR, 0 de cheerio.**
+El token de GitHub se leyo del store de Apify (la lectura de key-value store si funciona con el limite
+agotado), sin pedirselo al operador. 47 paginas de post leidas + 7 grillas de perfil.
