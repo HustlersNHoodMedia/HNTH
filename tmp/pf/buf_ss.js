@@ -1,0 +1,18 @@
+async function(context){
+const T=process.env.APIFY_TOKEN;const S='https://api.apify.com/v2/key-value-stores/IMS281Dl1YSeVNwmi/records/';
+const g=async k=>{try{const r=await context.sendRequest({url:S+k+'?token='+T,responseType:'text',throwHttpErrors:false});return r.statusCode==200?String(r.body).trim().replace(/"/g,''):''}catch(e){return ''}};
+const key=await g('BUFFER_KEY');const ch=await g('BUFFER_CHANNEL_TIKTOK_HNTH');
+const q=async(m,v)=>{const r=await context.sendRequest({url:'https://api.buffer.com/graphql',method:'POST',headers:{'Authorization':'Bearer '+key,'Content-Type':'application/json'},body:JSON.stringify({query:m,variables:v||{}}),responseType:'text',throwHttpErrors:false,timeout:{request:60000}});return String(r.body)};
+const out={};
+const L=await q('query { posts(first: 60, input:{organizationId:"6a75d51386d18905e5fbde9e", filter:{channelIds:["'+ch+'"], status:[scheduled]}}) { edges { node { id dueAt text } } } }');
+let sch=[]; try{sch=JSON.parse(L).data.posts.edges.map(e=>({d:e.node.dueAt,t:String(e.node.text||'').slice(0,40)}));}catch(e){out.listerr=L.slice(0,300)}
+out.scheduled=sch;
+if(sch.some(s=>/Serenity Sumler/.test(s.t))){out.skip='dup';return out;}
+if(sch.length>=10){out.skip='limit';return out;}
+const C=["2026-10-28T19:00:00.000Z","2026-10-28T23:00:00.000Z","2026-10-29T14:00:00.000Z","2026-10-29T19:00:00.000Z"]; let due=null;
+for(const c of C){const t=Date.parse(c); const day=c.slice(0,10); const n=sch.filter(s=>String(s.d).slice(0,10)==day).length; const clash=sch.some(s=>Math.abs(Date.parse(s.d)-t)<90*60000); if(!clash&&n<3){due=c;break;}}
+if(!due){out.skip='noslot';return out;}
+const assets=["https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/aa515f6ebb53d22b4c4a1446c12727c724531ae6/qc/20261027_serenity_tt_1.jpg", "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/aa515f6ebb53d22b4c4a1446c12727c724531ae6/qc/20261027_serenity_tt_2.jpg", "https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/aa515f6ebb53d22b4c4a1446c12727c724531ae6/qc/20261027_serenity_tt_3.jpg"].map(u=>'{ image: { url: '+JSON.stringify(u)+' } }').join(', ');
+out.due=due;
+out.create=(await q('mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: customScheduled dueAt: "'+due+'" assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }',{text:"Serenity Sumler was driving home from culinary school in Nashville when she saw a car that had crashed on the interstate. She pulled over.\n\n\"My mom raised me that way,\" she said.\n\nShe was standing next to the car, on the phone with 911, when an SUV spun out, hit the guardrail and pinned her against the wrecked car. Both of her legs and her pelvis were crushed. She spent 31 days at Vanderbilt, part of it in the ICU.\n\nSerenity is 20. When she turned 19, her state health coverage was about to go from $16 to $286 a month. She was already paying for culinary school out of a part-time job, so she went without it. Now there's a $21K hospital bill, and her mama has to help her shower.\n\nHer family started a GoFundMe for her therapy and her bills.\n\n\"I still have my woulda, shoulda, coulda, but at the end of the day, I'm still glad that I helped somebody out, even though I got hurt in the end.\"\n\n#HustlersNTheHood",channelId:ch})).slice(0,500);
+return out;}
