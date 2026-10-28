@@ -14,13 +14,5 @@ for(const c of C){const t=Date.parse(c); const day=c.slice(0,10); const n=sch.fi
 if(!due){out.skip='noslot';return out;}
 const assets=["https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/0332d328c951eeb2ffdc600cddb63deedb153b7e/qc/20261028_oprah_tt_1.jpg"].map(u=>'{ image: { url: '+JSON.stringify(u)+' } }').join(', ');
 out.due=due;
-out.create=(await q('mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: customScheduled dueAt: "'+due+'" assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }',{text:"Oprah's Book Club turned 30 this fall, and the habit behind it goes back to a barbershop in Tennessee.
-
-Vernon Winfrey cut hair for a living. When his daughter came to live with him as a teenager, the house had rules, and one of them was a book every week with a written report to go with it. Grades had a floor too. \"You can't bring C's in this house because you are not a C student,\" he told her.
-
-She kept reading. By 19 she was co-anchoring the evening news. In 1996 she started a book club on her show, and one pick could put a novel on the bestseller list overnight. Publishers called it the Oprah effect.
-
-Oprah has said it plainly: her father saved her. He kept cutting hair for decades and served on the city council. He passed in 2022 at 89, with his daughter by his side.
-
-#HustlersNTheHood",channelId:ch})).slice(0,500);
+out.create=(await q('mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: customScheduled dueAt: "'+due+'" assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }',{text:"Oprah's Book Club turned 30 this fall, and the habit behind it goes back to a barbershop in Tennessee.\n\nVernon Winfrey cut hair for a living. When his daughter came to live with him as a teenager, the house had rules, and one of them was a book every week with a written report to go with it. Grades had a floor too. \"You can't bring C's in this house because you are not a C student,\" he told her.\n\nShe kept reading. By 19 she was co-anchoring the evening news. In 1996 she started a book club on her show, and one pick could put a novel on the bestseller list overnight. Publishers called it the Oprah effect.\n\nOprah has said it plainly: her father saved her. He kept cutting hair for decades and served on the city council. He passed in 2022 at 89, with his daughter by his side.\n\n#HustlersNTheHood",channelId:ch})).slice(0,500);
 return out;}

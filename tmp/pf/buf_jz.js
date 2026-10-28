@@ -14,15 +14,5 @@ for(const c of C){const t=Date.parse(c); const day=c.slice(0,10); const n=sch.fi
 if(!due){out.skip='noslot';return out;}
 const assets=["https://raw.githubusercontent.com/HustlersNHoodMedia/HNTH/0332d328c951eeb2ffdc600cddb63deedb153b7e/qc/20261028_jayz_tt_1.jpg"].map(u=>'{ image: { url: '+JSON.stringify(u)+' } }').join(', ');
 out.due=due;
-out.create=(await q('mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: customScheduled dueAt: "'+due+'" assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }',{text:"Jay-Z is headlining the Super Bowl. The NFL, Apple Music and Roc Nation made it official this week: the Super Bowl LXI halftime show, February 14, 2027, at SoFi Stadium.
-
-It started at a kitchen table in Marcy.
-
-Jay-Z was the youngest of four, raised by his mama, Gloria Carter, after his father left. At night he would bang out drum patterns on that table until his brother and sisters woke up. Most parents would have shut it down. Gloria went and bought him a boombox for his birthday, and he started writing rhymes to the beats.
-
-Since 2019 his company has been the one choosing who gets the halftime stage. Rihanna, Usher, Kendrick. This time he put himself on it.
-
-Gloria still runs the Shawn Carter Foundation, the scholarship fund the two of them started in 2003.
-
-#HustlersNTheHood",channelId:ch})).slice(0,500);
+out.create=(await q('mutation CreatePost($text: String!, $channelId: ChannelId!) { createPost(input: { text: $text channelId: $channelId schedulingType: automatic mode: customScheduled dueAt: "'+due+'" assets: ['+assets+'] }) { ... on PostActionSuccess { post { id dueAt status } } ... on MutationError { message } } }',{text:"Jay-Z is headlining the Super Bowl. The NFL, Apple Music and Roc Nation made it official this week: the Super Bowl LXI halftime show, February 14, 2027, at SoFi Stadium.\n\nIt started at a kitchen table in Marcy.\n\nJay-Z was the youngest of four, raised by his mama, Gloria Carter, after his father left. At night he would bang out drum patterns on that table until his brother and sisters woke up. Most parents would have shut it down. Gloria went and bought him a boombox for his birthday, and he started writing rhymes to the beats.\n\nSince 2019 his company has been the one choosing who gets the halftime stage. Rihanna, Usher, Kendrick. This time he put himself on it.\n\nGloria still runs the Shawn Carter Foundation, the scholarship fund the two of them started in 2003.\n\n#HustlersNTheHood",channelId:ch})).slice(0,500);
 return out;}
