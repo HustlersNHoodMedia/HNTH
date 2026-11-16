@@ -2837,3 +2837,41 @@ grilla de 30 para las 3 de alta frecuencia (0,0389 CU) y grilla de 10 para las o
 girando en 110/111; se leyeron los 65 items devueltos) — **proxy estandar, nunca residencial**; y
 `cheerio-scraper` x4 para leer el repo (0,0017 a 0,0046 CU). **Cero OCR** (19 de 19 titulos de PRODUCED).
 El token de GitHub se leyo del store `IMS281Dl1YSeVNwmi`, sin pedirselo al operador.
+
+---
+
+## CORRIDA 2026-11-16 (22:32 UTC) — pedido del operador: últimos 10 posts
+
+**Ventana:** 12-nov 19:12Z al 15-nov 22:40Z. 10 piezas editoriales maduras (Blacc Sam al límite, 23,9h).
+Fuera del cálculo: Chance (8,5h, 1.380/79), Lil Jon (3,5h, 369/26), $3,500 (2h, 338/391 — más comentarios
+que likes), y el carrusel pago de @thebenallgeyer (402/15). Shares y views: el scraper público no los trae
+en carruseles; solo salen de Insights.
+
+| # | estructura | pieza | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|---|---|
+| 1 | carrusel 2 | T-BOZ / CHASE, LUPUS ("la hija que nunca iba a existir") | **13.166** | 330 | 2,5% | **2,92x** |
+| 2 | carrusel 3 | BLACC SAM / NIPSEY / RESTAURANTE (23,9h) | 6.651 | 129 | 1,9% | 1,47x |
+| 3 | carrusel 2 | JAMES DORSEY, 95, PARTIDA DE NACIMIENTO (raphousetv 19h antes) | 3.179 | 47 | 1,5% | 0,70x |
+| 4 | carrusel 2 | POSITIVE K CUIDA A SU MADRE CON ALZHEIMER | 3.139 | 144 | 4,6% | 0,70x |
+| 5 | carrusel 2 | KIRK / DEBBIE / THUMP (debate familiar) | 2.570 | **636** | **24,7%** | 0,57x |
+| 6 | carrusel 2 | @MONRAEHOU, CASA PARA LA MADRE | 2.550 | 29 | 1,1% | 0,57x |
+| 7 | carrusel 3 | CURRY / AYESHA / ARENAS (beef de podcast) | 581 | 124 | 21,3% | 0,13x |
+| 8 | carrusel 2 | LIONEL RICHIE, 77, "I'M BACK" | OCULTOS | 15 | - | flop |
+| 9 | carrusel | JADAKISS PIENSA VOLVER A ESTUDIAR (Kiss Café) | OCULTOS | 22 | - | flop |
+| 10 | carrusel 2 | SHAQ / LA CADENA DEL NENE | OCULTOS | 3 | - | flop |
+| ref | carrusel 3 | AUSTIN COLLINS, RESCATE DEL ESTANQUE (11ª) | 1.554 | 38 | 2,4% | 0,34x |
+
+**Medianas:** visibles (7) **3.139** (0,70x) · con ocultos como flop (10) **2.560** (0,57x) · 1 de 10 arriba de 4.510.
+**Estructura: 10 de 10 carruseles.** En la corrida del 02-11: imagen única (8) mediana 8.528 (1,89x) vs
+carrusel 3 (2) 3.496 y carrusel 2 con 0 visibles. Las 4 mejores de esa ventana eran imagen única.
+**Serie semanal:** 26/10 4.307 · 02/11 4.294 · **16/11 3.139 (visibles) / 2.560 (todas).**
+
+Lectura medida:
+1. Arriba de la mediana solo la combinación famoso de la cultura + familia + precio pagado (enfermedad,
+   muerte, años): T-Boz. Blacc Sam (hermano muerto de fondo + sueño cumplido) es la segunda.
+2. Debate dentro de una familia (Kirk/Debbie) = comentarios récord (636) con likes bajos. Debate entre
+   famosos sin familia en juego (Curry/Arenas) = comentarios sin likes (0,13x).
+3. Los tres ocultos no tenían nada pagado: un plan hipotético (Jadakiss), una vuelta de salud sin familia
+   (Lionel), un regalo de famoso a un nene anónimo (Shaq).
+4. Sin famoso, el techo es ~3.200 aunque la historia sea fuerte (Dorsey, Monrae, Austin).
+5. Historia ya publicada por una página grande antes que nosotros = 0,70x (Dorsey vs raphousetv 17K).
