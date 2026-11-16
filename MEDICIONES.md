@@ -2399,3 +2399,441 @@ DfgVwaStAms · Dfgj1HsRlYS · DfgeV7PRxPX —
 6 corridas de Apify: `instagram-scraper` x2 (0,0068 + ~0,05 CU, **proxy estandar, nunca residencial**) y
 `cheerio-scraper` x4 (0,0017 a 0,0099 CU). **Cero OCR** (18 de 18 titulos de PRODUCED).
 El token de GitHub se leyo del store `IMS281Dl1YSeVNwmi`, sin pedirselo al operador.
+
+---
+
+# CORRIDA 2026-11-16 (ventana 9-nov a 15-nov)
+
+Fecha anclada con `date` en el contenedor: **2026-11-16 12:03 UTC**. Corte de 24h: 15-nov 12:03 UTC.
+Instrumento: `apify/instagram-scraper`, `resultsLimit: 20`, proxy estandar. Devolvio **20 posts**,
+ventana 9-nov 22:40 a 15-nov 22:40. **Sin solape con la corrida del 09/11**, cuyo ultimo medido fue
+`DfQHbDoFoGY` (carroza). Ningun shortCode se repite entre las dos tandas.
+
+**Titulos: 19 de 19 de PRODUCED, cero OCR. CUARTA corrida seguida sin OCR.**
+El unico objeto del feed sin fila de produccion (`DfxKPq3lnxZ`, @Sweet904) ya traia su tapa OCR-eada
+dentro de la fila de MEDICION del 15-nov, escrita por un chat de produccion. No hizo falta ningun run de OCR.
+
+⚠️ **La columna `TÍTULO USADO` sigue desalineada: tercera corrida con el mismo dato de metodo.** El titular
+viaja dentro del campo ESTADO y el encabezado de la tabla define 5 columnas contra las 7 que documenta la
+cabecera. Los datos estan completos; el parseo por columna devuelve cero.
+⚠️ **Y aparece un dato de metodo NUEVO: la columna de CARRIL se fragmentó.** Esta ventana trae
+`IG cultura`, `IG famosos`, `IG 70 perfiles de famosos`, `IG 59 perfiles legado`, `RSS cultura`, `prensa`,
+`BCK/prensa`, `YouTube entrevistas`, `RSS TV local`, `radar 15-nov`, `radar 16-nov` y tres filas con un
+LINK en lugar del carril. Son 12 etiquetas para los cinco carriles del manual. El agrupamiento de esta
+corrida se hizo mapeandolas a mano. Para el corrector.
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | titulo | likes | com. | ratio | x4.510 | edad | car |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **carrusel 3** | IG por cuenta (TSR 10-nov) | NIPSEY HUSSLE DROVE HIS DAUGHTER EMANI TO SCHOOL EVERY MORNING. SEVEN YEARS AFTER HE PASSED, HIS BROTHER BLACC SAM GAVE HER A BIRTHDAY SURPRISE: AN AMG BENZ OF HER OWN. | **20.802** | 161 | 0,77% | **4,61x** | 118h | **180** |
+| 2 | **carrusel 3** | IG por cuenta (@thediamendfoundation 10-nov) | ROMEO MILLER'S DAUGHTER RIVER ROSE WAS 18 MONTHS OLD WHEN HER DOCTOR SENT THEM STRAIGHT TO THE HOSPITAL: TYPE 1 DIABETES. HIS FAMILY HASN'T HAD A DAY OFF SINCE, AND THIS PAST WEEKEND HE FLEW TO ATLANTA TO STAND UP FOR FAMILIES LIKE HIS. | **15.782** | 339 | 2,15% | **3,50x** | 113h | 237 |
+| 3 | **carrusel 2** | IG por cuenta (TSR 13-nov + Heir Time) | DOCTORS TOLD T-BOZ SHE WOULDN'T LIVE PAST 30 OR EVER HAVE KIDS. THE DAUGHTER THEY SAID WOULD NEVER EXIST JUST FOUGHT THROUGH LUPUS AND LEARNED TO WALK AGAIN. | **12.884** | 317 | 2,46% | **2,86x** | 62h | **155** |
+| 4 | carrusel 3 | prensa y feeds de cultura (Club Shay Shay 4-nov) | WHEN STEPHANIE MILLS WAS PREGNANT, SHE LEARNED HER SON HAD DOWN SYNDROME. SHE TOLD HER DOCTOR THEY WERE GOING TO "ROCK THIS WORLD TOGETHER." TODAY FARAD IS AN AUTHOR, AND HE INTRODUCES HIS MOM ON STAGE. | **10.182** | 157 | 1,54% | **2,26x** | 132h | 209 |
+| 5 | imagen unica | IG por cuenta (BallerAlert + theGrio) | NETFLIX KEPT TURNING DRUSKI DOWN, SO HE PUT HIS OWN MONEY INTO HIS SHOWS. LAST WEEK NETFLIX SIGNED HIM AND BOUGHT THE RIGHTS TO THOSE SAME SHOWS. SATURDAY HE BECAME THE FIRST INTERNET CREATOR TO HOST SNL. | **8.209** | 157 | 1,91% | **1,82x** | 142h | 201 |
+| 6 | imagen unica | IG por cuenta (Netflix Tudum 11-nov) | IN 1996, MONTHS BEFORE TUPAC PASSED, HE INVITED A YOUNG NEW YORK RADIO HOST, ANGIE MARTINEZ, TO HIS HOUSE FOR AN INTERVIEW. SHE AIRED ONLY PART OF IT. FOR 30 YEARS SHE KEPT THE REST TO HERSELF. | 5.387 | 91 | 1,69% | **1,19x** | 109h | 232 |
+| 7 | carrusel 2 | IG por cuenta (thatgrapejuice 11-nov) | LIL' KIM LEFT HOME AT 14 WITH NOWHERE TO GO. BIGGIE HEARD HER RAP ON A BROOKLYN STREET CORNER AND PUT HER ON. 30 YEARS TO THE DAY AFTER HER FIRST ALBUM DROPPED, SHE'S LIGHTING THE EMPIRE STATE BUILDING PINK. | 4.791 | 112 | 2,34% | 1,06x | 94h | 190 |
+| 8 | carrusel 4 | TV local (KSLA 9-nov) | AN 11-YEAR-OLD WATCHED HIS DAD STOP THE CAR, CLIMB AN 18-WHEELER THAT HAD JUST FLIPPED INTO A DITCH AND HELP PULL THE DRIVER OUT. THE KID FILMED THE WHOLE RESCUE: "MY DAD IS A HERO!" | 3.392 | 57 | 1,68% | 0,75x | 137h | 194 |
+| 9 | carrusel 2 | IG por cuenta (ABC13 11-nov vía TNHT) | A MAN BORN ON A PLANTATION IN 1931 SPENT 95 YEARS UNABLE TO PROVE HE EXISTED. THIS WEEK A LAWYER PUT HIS BIRTH CERTIFICATE IN HIS HANDS. | 3.078 | 43 | 1,40% | 0,68x | 45h | **136** |
+| 10 | carrusel 2 | prensa (Atlanta News First **29-oct**) | POSITIVE K GAVE RAP 'I GOT A MAN' IN 1992. FOR YEARS NOW HE'S BEEN CARING FOR HIS MOTHER THROUGH ALZHEIMER'S: 'THIS IS MY ASSIGNMENT IN LIFE.' | 2.824 | 116 | 4,11% | 0,63x | 41h | 139 |
+| 11 | carrusel 2 | IG por cuenta (esta semana) | DEBBIE ALLEN, 76, DANCED WITH KIRK FRANKLIN AND HER SON WENT OFF ON HIM ONLINE. THEN SHE PULLED UP IN THE COMMENTS: 'YOU ARE BEING OVERPROTECTIVE.' | 2.484 | **610** | **24,56%** | 0,55x | 38h | 146 |
+| 12 | imagen unica | IG por cuenta (BallerAlert **17-ago**) | NIPSEY HUSSLE'S FAMILY HAD NETFLIX AND DISNEY AT THE TABLE FOR HIS DOCUMENTARY, WITH OFFERS PAST $20 MILLION. HIS BROTHER BLACC SAM SAID NO, AND THEY'RE PUTTING IT OUT FREE. | 1.816 | 41 | 2,26% | **0,40x** | 157h | 233 |
+| 13 | carrusel 3 | TV local (WLOX/KMOV 6-10 nov) | A DAD IN MISSOURI, AUSTIN COLLINS, WAS DROPPING HIS KIDS AT THE BUS STOP WHEN AN SUV ROLLED INTO A POND WITH A 3-YEAR-OLD GIRL INSIDE. HE JUMPED IN NOT KNOWING HOW DEEP IT WAS, BROKE THE WINDOW WITH A HAMMER SOMEONE HANDED HIM AND PULLED HER OUT. | 1.537 | 38 | 2,47% | **0,34x** | 89h | **246** |
+| 14 | carrusel 2 | prensa (Complex 12-nov) | AT 77, LIONEL RICHIE GOT DIZZY MID-SHOW, SPENT THREE DAYS IN A HOSPITAL AND NEEDED A HEART PROCEDURE. THIS WEEK HE WALKED OUT ON THE VEGAS STAGE: 'I'M BACK.' | **OCULTOS** | 15 | - | - | 61h | 155 |
+| 15 | carrusel 2 | IG por cuenta (@effortless_motors 12-nov) | A BOY WHO GREW UP ON SHAQ'S HIGHLIGHTS MET HIM WHEN HIS DAD'S CAR SHOP DELIVERED HIM A '64 IMPALA. SHAQ PROMISED THE KID A CHAIN. MONTHS WENT BY AND HE THOUGHT IT WASN'T COMING. THEN A BOX SHOWED UP AT HIS DOOR WITH THE CHAIN INSIDE, FULLY ICED OUT. | **OCULTOS** | **3** | - | - | 70h | 243 |
+| 16 | carrusel 2 | IG por cuenta (BallerAlert 10-nov) | JADAKISS / KISS CAFÉ (titular dentro del campo ESTADO, truncado en el registro) | **OCULTOS** | 19 | - | - | 84h | - |
+
+**Con menos de 24h, fuera del calculo:** BLACC SAM / MARATHON BURGER (carrusel 2, semilla del operador /
+One54) 4.578 / 84 a 13,4h · @MONRAEHOU / CASA PARA LA MADRE (carrusel 2, barrido TikTok) 2.325 / 27 a 22,1h ·
+CURRY / AYESHA / GILBERT ARENAS (carrusel 3, IG por cuenta, motor DEBATE) 496 / **103** a 16,3h (**20,77%**).
+
+### PIEZA NO EDITORIAL EN EL FEED (fuera de las medianas)
+
+| pieza | que es | likes | com. | ratio | link |
+|---|---|---|---|---|---|
+| `DfxKPq3lnxZ` | **carrusel de 9 slides @Sweet904 (Uber/Tesla arbitrage)** — NO producido por este sistema, sin fila previa en PRODUCED. Caption de una linea con plug de la cuenta. 20h | 345 | 11 | 3,19% | https://www.instagram.com/p/DfxKPq3lnxZ/ |
+
+🚨 **Y el dato de composicion del feed: esta ventana NO tuvo ningun cross-post de animacion ni ninguna
+pieza QUOTES premium.** Las ventanas del 26/10, 02/11 y 09/11 tuvieron las dos cosas. **Eso cambia la
+lectura de una serie de tres ventanas — ver abajo.**
+
+### MEDIANAS
+
+| corte | n | mediana | x4.510 |
+|---|---|---|---|
+| **piezas editoriales, solo likes visibles** | **13** | **4.791** | **1,06x** |
+| piezas editoriales, oculto contado como flop (0) | 16 | 3.235 | 0,72x |
+| **carrusel 3** | **4** | **12.982** | **2,88x** |
+| **imagen unica** | 3 | **5.387** | **1,19x** |
+| carrusel 4 | 1 | 3.392 | 0,75x |
+| **carrusel 2** | **5** (+3 ocultas) | **3.078** | **0,68x** |
+| IG por cuenta | 9 (+2 oc) | 5.387 | 1,19x |
+| prensa y feeds de cultura | 2 (+1 oc) | 6.503 | 1,44x |
+| TV local | 2 | 2.464 | **0,55x** |
+| barrido TikTok | 0 maduras (1 de <24h: 2.325) | - | - |
+| semilla del operador | 0 maduras (1 de <24h: 4.578) | - | - |
+| cosecha de comentarios (Repackage) | **0** | no corrio | - |
+| mediana de ratio de comentarios (editoriales visibles) | 13 | **2,15%** | - |
+
+**Serie semanal (mediana de visibles - piezas con likes ocultos):**
+07/09 -> 16.097 - 1/14 | 14/09 -> 7.525 - 4/7 | 21/09 -> 4.961 - 3/12 | 28/09 -> 3.045 - 1/13 |
+05/10 -> 6.491 - 2/11 | 12/10 -> 4.500 - 2/12 | 19/10 -> 5.090 - 5/14 | 26/10 -> 4.307 - 0/6 |
+02/11 -> 4.294 - 4/14 | 09/11 -> 4.222 - 1/13 | **16/11 -> 4.791 - 3/16.**
+
+**Volumen de piezas editoriales en el feed:** 14 - 7 - 12 - 13 - 11 - 12 - 14 - 6 - 14 - 16 - **19
+(16 maduras + 3 de <24h). Maximo de la serie, tercer maximo consecutivo.** Mas 1 pieza no editorial:
+20 objetos en el feed, igual que la ventana anterior, pero **con 19 editoriales en vez de 16.**
+
+### MEDIDO - LA MEDIANA SUBE Y CORTA LA MESETA DE TRES SEMANAS
+
+4.307 -> 4.294 -> 4.222 -> **4.791.** Las tres anteriores caian dentro del 2% una de otra; esta esta
+**13,5% arriba de la ultima** y es la primera por encima de la vara historica desde el 19/10.
+⚠️ **Pero con los ocultos contados como 0 la ventana da 3.235, contra 4.165 de la ventana anterior** —
+o sea, por ese corte BAJO. **Las dos lecturas no coinciden, y la razon es exacta: los ocultos pasaron de
+1 de 13 a 3 de 16.** El corte de visibles sube porque las tres piezas que el operador escondio salieron
+del denominador. **Una sola ventana. No se declara desplazamiento de nivel: se anotan los dos numeros.**
+
+### MEDIDO - LOS OCULTOS SUBEN A 3 DE 16 (19%)
+
+Serie: 1/14 -> 4/7 -> 3/12 -> 1/13 -> 2/11 -> 2/12 -> 5/14 -> 0/6 -> 4/14 -> 1/13 -> **3/16.**
+Las tres son **carrusel 2** y las tres son de **IG por cuenta o prensa**: LIONEL RICHIE (15 com.),
+SHAQ / LA CADENA (**3 comentarios, el minimo absoluto de la ventana**) y JADAKISS / KISS CAFÉ (19).
+🚨 **Las tres son del 13-nov, el mismo dia.** PRODUCED registra ese dia siete piezas entregadas y la
+anotacion "TikTok SIN programar, a la espera del OK del operador **tras los rechazos de hoy**".
+**Dato: la tanda de siete piezas del 13-nov puso las tres unicas ocultas de la ventana.** La vara en tanda
+es exactamente lo que la instruccion de tandas dice que no debe bajar. **MEDIDO, una ventana.**
+
+### 🚨 MEDIDO - EL HALLAZGO DE LA VENTANA: FAMOSO + HIJO/HIJA + DIAGNOSTICO + SALIO ADELANTE
+
+Tres piezas de esta ventana tienen exactamente la misma forma de historia:
+
+| pieza | forma | estructura | x4.510 |
+|---|---|---|---|
+| ROMEO MILLER / RIVER ROSE | famoso + hija + diabetes tipo 1 + la familia no paro | carrusel 3 | **3,50x** |
+| T-BOZ / CHASE | famosa + hija + lupus + volvio a caminar | **carrusel 2** | **2,86x** |
+| STEPHANIE MILLS / FARAD | famosa + hijo + sindrome de Down + es autor | carrusel 3 | **2,26x** |
+
+**Son los puestos 2, 3 y 4 de la ventana. Ninguna de las tres tiene los likes ocultos. Mediana 2,86x.**
+Es la primera vez que el archivo tiene tres piezas de la misma forma en una sola ventana, y las tres
+rinden arriba de la mediana. **MEDIDO, n=3, una ventana.**
+
+⚠️ **Y esto es lo que resuelve la lectura de estructura de abajo:** la forma **atraviesa** los dos moldes
+(dos en carrusel 3, una en carrusel 2). Por la regla de separar variables, cuando una mecanica gana en dos
+estructuras **la variable es la mecanica, no la estructura.**
+
+⚠️ Lo que NO dice: no dice que haya que cubrir enfermedad. **Que cubrir es decision del operador.** Lo
+medido es la forma de la historia, con su numero al lado.
+
+### MEDIDO - ESTRUCTURA: SE CORTA LA RACHA DE LA IMAGEN UNICA, Y EL CARRUSEL 3 SE DESPEGA
+
+| estructura | n | mediana | x4.510 | 09/11 | 02/11 | 26/10 |
+|---|---|---|---|---|---|---|
+| **carrusel 3** | **4** | **12.982** | **2,88x** | 4.613 (1,02x), n=4 | 3.496 (0,78x), n=2 | - |
+| imagen unica | 3 | 5.387 | **1,19x** | 5.744 (1,27x), n=4 | 8.528 (1,89x), n=8 | 5.685 (1,26x), n=3 |
+| carrusel 4 | 1 | 3.392 | 0,75x | - | - | - |
+| **carrusel 2** | 5 (+3 oc) | **3.078** | **0,68x** | 1.438 (0,32x), n=4 | no medible | 3.206 (0,71x), n=3 |
+
+1. 🚨 **Se corta la racha de tres ventanas con la imagen unica como la estructura mas fuerte.**
+   Esta ventana el carrusel 3 la pasa 2,4 veces. Y la imagen unica baja por tercera medicion seguida:
+   1,89x -> 1,27x -> **1,19x.** **MEDIDO, tres mediciones en la misma direccion para la baja.**
+2. **Carrusel 3 arriba de carrusel 2 por SEGUNDA ventana seguida:** 3,2 veces el 09/11, **4,2 veces hoy.**
+   **POSIBLE DESPLAZAMIENTO - dos ventanas en la misma direccion.**
+3. ⚠️ **Pero el confundidor es el mismo de la ventana pasada, y hay que decirlo:** 3 de las 4 piezas de
+   carrusel 3 tienen famoso de protagonista y la cuarta (Austin Collins, anonimo) es el **piso visible**
+   de la ventana con 0,34x. Y **las 3 piezas ocultas de la ventana son todas carrusel 2**, lo que hunde
+   ese molde por el lado del denominador. **Saco las piezas de la mecanica del diagnostico y el carrusel 3
+   queda en 2,48x (n=2) contra 0,66x (n=4): la brecha se achica pero no se cierra.**
+   **Falta una ventana donde los dos moldes lleven la misma forma de historia. No se declara regla.**
+4. Las medianas del manual (6.571 imagen unica / 9.294 carrusel) **siguen sin reproducirse: undecima ventana.**
+
+### MEDIDO - FAMOSO vs NO FAMOSO: TERCERA MEDICION INDEPENDIENTE, MISMA DIRECCION
+
+| | n | piezas (x4.510) | mediana |
+|---|---|---|---|
+| **famoso** | 10 (+3 oc) | 4,61x · 3,50x · 2,86x · 2,26x · 1,82x · 1,19x · 1,06x · 0,63x · 0,55x · 0,40x | **1,51x** |
+| NO famoso | 3 | 0,75x · 0,68x · 0,34x | **0,68x** |
+
+**2,2 veces de diferencia.** Reproduce el analisis de 60 posts del 5-nov (famoso 4.042 contra no famoso
+1.520) y la ventana del 09/11 (1,10x contra 0,38x). **MEDIDO, tres mediciones independientes, misma
+direccion.**
+
+🚨 **Y esta ventana cierra el hueco que la anterior dejo abierto.** El 09/11 quedo escrito que el efecto
+era "de MEDIANA, no de techo", porque el techo de esa ventana estaba del lado no famoso (la carroza, 6,27x).
+**Esta ventana el lado famoso se queda con las dos cosas: la mediana (1,51x contra 0,68x) Y el techo
+(4,61x contra 0,75x). Las tres piezas no famosas son los puestos 8, 9 y 13.** La reserva del 09/11 **no
+se reprodujo.** ⚠️ n=3 del lado no famoso: es el n mas chico que tuvo este corte.
+
+### 🚨 MEDIDO - FRESCURA CON EL SUJETO FIJO: EL EXPERIMENTO QUE LA VENTANA REGALO
+
+Tres piezas de esta ventana son de la **misma familia** (Nipsey Hussle / Blacc Sam). El sujeto esta fijo,
+asi que la variable que queda es la edad de la fuente:
+
+| pieza | edad de la FUENTE al publicar | x4.510 |
+|---|---|---|
+| EMANI / AMG (TSR 10-nov) | **1 dia** | **4,61x** |
+| BLACC SAM / MARATHON BURGER (One54 4-nov + clips 9-nov) | 6 dias | 1,02x a 13h (inmaduro) |
+| NIPSEY / FAMILIA RECHAZA +$20M (BallerAlert **17-ago**) | **84 dias** | **0,40x** |
+
+**Mismo apellido, misma audiencia, misma semana: la fresca es el techo de la ventana y la reciclada es el
+piso del grupo.** 11,5 veces de diferencia entre las dos maduras. Es el corte mas limpio que dio esta
+ventana porque **el sujeto no varia.**
+
+Y del mismo lado: **POSITIVE K, con la fuente mas vieja de las piezas sin reciclar (Atlanta News First
+29-oct, 16 dias), midio 0,63x** — el tercer puesto desde abajo entre las visibles. **Las dos piezas con
+fuente de mas de dos semanas son las dos abajo de la mediana.** n=2.
+
+Esto **reproduce** lo que PRODUCED anoto el 5-nov sobre 60 posts ("pierde... anecdotas de famoso muy
+recicladas"). **MEDIDO, dos mediciones, misma direccion.**
+
+⚠️ **Y la saturacion de carril NO explico nada esta vez:** tres piezas del mismo tema en 7 dias, y el
+orden no decae con la repeticion — la del medio es el techo. **Lo que ordena es la frescura de la fuente,
+no cuantas veces se toco el tema.** Dato de metodo para la proxima lectura de saturacion.
+
+### 🚨 MEDIDO - EL MOTOR DEBATE: POCOS LIKES, MUCHISIMA CONVERSACION
+
+Dos piezas de la ventana vienen del motor DEBATE (alguien dijo algo de alguien). Las dos pusieron los
+dos ratios de comentarios mas altos del feed, y las dos estan **abajo** de la mediana de alcance:
+
+| pieza | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|
+| DEBBIE ALLEN / KIRK / THUMP | 2.484 | **610** | **24,56%** | 0,55x |
+| CURRY / AYESHA / ARENAS (16h) | 496 | **103** | **20,77%** | inmaduro |
+
+**24,56% es el ratio editorial mas alto que midio este archivo** (el maximo del 09/11 fue 4,57%; el de la
+serie reciente, 7,2% de Ka'Sheena). **La tercera del ranking de ratio esta en 4,11%: la distancia entre
+el 2do y el 3ro es de 5 veces.** El motor no es gradual, parte el feed en dos.
+
+**MEDIDO, n=2, una ventana.** Y es medible la semana que viene con n real: PRODUCED registra **seis piezas
+mas de motor DEBATE entregadas el 15 y 16-nov** (Chris Brown/manutencion, Keyshawn/Shedeur, Lil Jon,
+Mayweather/deudas, "$3,500 to step out the house"). **Quedan marcadas para la corrida del 23/11.**
+
+### MEDIDO - CARRILES DE ORIGEN: EL CARRIL DE IG SE COMIO LA VENTANA
+
+| carril | n (apariciones) | mediana | x4.510 | 09/11 |
+|---|---|---|---|---|
+| **IG por cuenta** | **12 piezas** (9 visibles + 2 oc + 1 de <24h) | 5.387 | **1,19x** | 1 pieza, 1,10x |
+| prensa y feeds de cultura | 3 (2 vis + 1 oc) | 6.503 | 1,44x | 5 piezas, 1,10x |
+| TV local | 2 | 2.464 | **0,55x** | 3 piezas, 0,38x |
+| barrido TikTok | 1 (de <24h) | - | - | 2 piezas, 0,27x |
+| semilla del operador | 1 (de <24h) | - | - | 2 piezas, 3,59x |
+| cosecha de comentarios | **0** | - | - | 0 |
+
+1. 🚨 **EL BARRIDO DE IG POR CUENTA PASO DE 1 PIEZA A 12 EN UNA SEMANA, Y ES EL 63% DE LA VENTANA.**
+   De las 5 primeras piezas del ranking, 4 son de ese carril; tambien las 3 ocultas. **Trae el techo y
+   trae el piso: con n=12 lo que mide es el nivel de la cuenta, no una ventaja de carril.**
+2. **TV local abajo por SEGUNDA ventana seguida** (0,38x -> 0,55x) con n=3 y n=2. Y sus dos piezas de esta
+   ventana son las dos de protagonista anonimo que rindieron peor. **El 02/11 este carril midio 3,25x con
+   n=5. Las dos lecturas siguen sin resolverse; ahora el lado bajo tiene dos ventanas.**
+3. 🚨 **El barrido TikTok cayo a 1 pieza, y de <24h. Y la semilla del operador, que fue el carril de arriba
+   dos ventanas seguidas (1,37x -> 3,59x), cayo a 1 pieza de <24h.** Los dos carriles que pusieron los
+   techos de las dos ventanas anteriores **casi desaparecieron del feed esta semana.** Dato de composicion.
+4. **La cosecha de comentarios (Repackage) no corrio: QUINTA ventana seguida en cero.** Corrio una sola
+   vez desde el 19/10.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+**Esta ventana dejo DOS piezas arriba del 8%, y las dos son del motor DEBATE:**
+
+| pieza | ratio | com. | alcance | link |
+|---|---|---|---|---|
+| **DEBBIE ALLEN / KIRK FRANKLIN / THUMP** | **24,56%** | **610** | 0,55x | https://www.instagram.com/p/DfvPYZilnIM/ |
+| **CURRY / AYESHA / GILBERT ARENAS** (16h) | **20,77%** | 103 | inmaduro | https://www.instagram.com/p/DfxkTFqFuB8/ |
+
+🚨 **La de Debbie Allen es la cosecha mas limpia que este archivo haya registrado:** semilla ya discutida,
+likes de piso (0,55x) y 610 comentarios de gente opinando sobre si el hijo tenia razon. **Es exactamente
+el perfil del caso del Jeep** (semilla sin tension + conversacion con material propio) que termino en un
+carrusel de 7. **PRODUCED no registra ninguna cosecha de esta pieza.**
+
+**Zona de aviso (4% a 8%), una pieza:** POSITIVE K / ALZHEIMER **4,11%** (116 com., 0,63x)
+https://www.instagram.com/p/Dfu6Hbqlv0R/
+
+🚨 **Y se corta una serie de tres ventanas:** el 26/10, el 02/11 y el 09/11 el ratio mas alto del feed
+principal lo puso una pieza NO editorial (un reel publicitario, dos cross-posts de animacion).
+**Esta ventana el ratio mas alto es editorial — pero la causa es de composicion, no de redaccion: no hubo
+ningun cross-post de animacion ni ningun QUOTES en el feed.** La serie no se rompio por mejora propia;
+el competidor no se presento. **Asi queda escrito.**
+
+**Siguen abiertos y sin cosechar (UNDECIMA semana):**
+22,3% https://www.instagram.com/p/DfDh8DqhyLf/ (Paul Pierce, 173 com. - el mas limpio del backlog) -
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437) - 20,1% https://www.instagram.com/p/DeWwTANhnLc/ (497) -
+18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) - 15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) -
+12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) - 9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) -
+8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276) - 7,5% https://www.instagram.com/p/DenPSATFoa_/ (Ka'Sheena, 547).
+**Mas la nueva, y es la mejor de todas: `DfvPYZilnIM` (Debbie Allen, 610 com., 24,56%).**
+
+### MEDIDO - EL LARGO: UNDECIMA CORRIDA SIN SEPARAR
+
+| car | 136 | 139 | 146 | 155 | 180 | 190 | 194 | 201 | 209 | 232 | 233 | 237 | 246 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| x4.510 | 0,68x | 0,63x | 0,55x | **2,86x** | **4,61x** | 1,06x | 0,75x | 1,82x | **2,26x** | 1,19x | 0,40x | **3,50x** | 0,34x |
+
+**rho = -0,01 con n=13. Cero.** Los tres titulos mas cortos de la ventana (136, 139, 146) son **los puestos
+9, 10 y 11 de 13** — o sea, esta ventana va para el lado OPUESTO al signo que dio el 09/11 (-0,34,
+"mas corto rinde mas"). **El 237 mide 3,50x y el 246 mide 0,34x: el mismo largo con 10 veces de diferencia.**
+🚨 **Undecima corrida en que el largo no separa, y la segunda en que el signo se da vuelta. El antecedente
+manda: el largo no es la variable.**
+
+### MEDIDO - LOS CUATRO BEATS EMOCIONALES: SEXTA CORRIDA SIN SEPARAR
+
+Techo contra piso visible, linea por linea:
+
+| | EMANI / AMG (**4,61x**) | AUSTIN COLLINS (**0,34x**) |
+|---|---|---|
+| quien era la persona | ✅ el padre que la llevaba al colegio | ✅ un papa, nombrado |
+| que eligio / que le paso | ✅ Sam le regalo el auto | ✅ se tiro al agua sin saber la profundidad |
+| que el otro sobrevivio | ✅ "siete años despues de que murio" | ✅ "and pulled her out" |
+| como termino | ✅ el AMG con el moño | ✅ la nena afuera |
+| cita del protagonista | ❌ | ❌ |
+| emocion en la primera oracion | ✅ | ❌ (abre en logistica: dejar a los chicos en la parada) |
+| causa pegada a la reaccion | ✅ | ✅ |
+| cierra en consecuencia | ✅ el objeto | ✅ el rescate |
+
+**El piso cumple 6 de 8 lineas. El techo cumple 6 de 8. Las mismas 6, casi.** La unica diferencia es la
+emocion en la primera oracion — y esa linea ya tiene tres contraejemplos anotados (Prince Jackson 02/11 y
+la carroza 09/11 la violaban y fueron los dos techos). **SEXTA corrida en que la hipotesis de los cuatro
+beats no separa.**
+
+🚨 **Lo que SI separa a estas dos piezas no esta en la lista de beats: es que una es la hija de Nipsey
+Hussle y la otra es un papa de Missouri que nadie conoce.** Es el corte famoso/no famoso, que esta
+ventana midio por tercera vez. **La redaccion de las dos es equivalente; el protagonista no.**
+
+- **El cierre en consecuencia: UNDECIMA corrida sin separar.** Las dos puntas cierran en consecuencia.
+- **"Datos correctos contados en frio": sexta ventana sin explicar nada.** Austin Collins no es frio —
+  tiene una nena de 3 años adentro de un auto hundiendose y un martillo. Es el piso igual.
+
+### WATCHLIST - lo medido esta corrida
+
+🚨 **EL HALLAZGO DE METODO DEL 09/11 QUEDO CERRADO.** Se midieron **los 40 shortCodes guardados** la semana
+pasada (`instagram-scraper` con `directUrls` de post, 40 de 40 devueltos, `ownerUsername` verificado en
+todos) **y** se corrio la grilla fresca con **`resultsLimit: 30` para las tres cuentas de alta frecuencia.**
+**Las tres cuentas que quedaron sin medir el 09/11 estan medidas.** El procedimiento de guardar shortCodes
+funciono exactamente como estaba escrito.
+
+| cuenta | n>=24h | <24h | mediana hoy | 09/11 | ratio hoy | 09/11 | video |
+|---|---|---|---|---|---|---|---|
+| `rhtvmusic` | **10** | 0 | **17.611** (3,90x) | 13.689 | **6,5%** | 6,5% | 9/10 |
+| `goodnews_movement` | 8 | 2 | **17.099** (3,79x) | 14.892 | **1,2%** | 0,9% | 6/8 |
+| `raphousetv` | **18** | 12 | **4.333** (0,96x) | **s/d** | **6,1%** | s/d | 7/18 |
+| `becauseofthem` | **15** | 1 | **4.222** (0,94x) | 6.660 | **1,6%** | 1,6% | 3/15 |
+| `theneighborhoodtalk` | **14** | **26** | **4.003** (0,89x) | **s/d** | **6,6%** | s/d | 11/14 |
+| `rhtvgame.ing` | 10 | 0 | **2.884** (0,64x) | 4.342 | **4,2%** | 3,3% | 3/10 |
+| `rhtvsports` | **9** | 0 | **2.121** (0,47x) | n=1 (866) | **3,3%** | 10,3% | 3/9 |
+| `rap.housetv` | **28** | 11 | **1.144** (0,25x) | **s/d** | **7,8%** | s/d | 13/28 |
+| `blacknews` | **12** | 2 | **619** (0,14x) | 1.920 | **4,7%** | 3,9% | 0/12 |
+| `yktesolid` | 2 | 0 | 6.369 (n=2) | 2.432 | 4,4% | 11,9% | 2/2 |
+| `rhtvstreams` | **1** | 1 | 5.548 (n=1) | **NUEVA** | 3,1% | - | 1/1 |
+
+**Lo que se movio:**
+- 🚨 **`rap.housetv` medida por fin, con n=28, y su ratio es el mas alto de la lista: 7,8%** con la mediana
+  mas baja de todas (1.144 = 0,25x). **Es el caso extremo del perfil del grupo RapHouseTV: numeros chicos,
+  conversacion altisima.** Su pieza mas desproporcionada madura: 186 likes / 56 com. = **30,1%.**
+- 🚨 **`theneighborhoodtalk` medida con n=14 (los 10 guardados + 4 maduras de la grilla de 30): 4.003
+  (0,89x), ratio 6,6%, techo 59.734.** Serie: 8.368 -> 7.993 -> 4.113 -> 17.809 (JSON) -> 14.630 -> s/d ->
+  **4.003.** **Su pieza de ratio maximo madura: 3.766 likes / 2.318 com. = 61,6%** — vuelve a confirmar la
+  mecanica de cebo ya anotada (ratio arriba de 50% no es seccion con historias propias).
+  ⚠️ **Y el instrumento sigue corto: con `resultsLimit: 30` sus 30 piezas cubren 29 horas y 26 de 30 son
+  de <24h. Para esta cuenta harian falta 50-60, o seguir con el procedimiento de guardar shortCodes.**
+- **`raphousetv` medida con n=18: 4.333 (0,96x), ratio 6,1%.** Serie 5.156 -> 5.960 (JSON) -> 5.326 -> s/d
+  -> **4.333.** **Es la cuenta mas estable de la lista a traves de cuatro mediciones y tres instrumentos.**
+- 🚨 **`blacknews` se desploma a 619 (0,14x) con n=12, la grilla entera madura, desde 1.920.** La lectura
+  del 09/11 se apoyaba en **un solo** post grande (23.664); la grilla completa de esta semana da 619, en
+  linea con su serie larga (660 - 265 - 671 - 839 - 341 - 1.920 - **619**). **Su ratio sube a 4,7% y tiene
+  dos piezas con ratio enorme: 1.384/457 = 33,0% y 1.813/405 = 22,3%.** 0 de 12 video, unica de la lista.
+  🚨 **Cuarta ventana seguida sin dar semilla: strike 4.**
+- **`becauseofthem` baja a 4.222 (0,94x) con n=15**, desde 6.660 — y como con `blacknews`, el 6.660 venia
+  de una grilla con dos techos (51.789 y 50.276). **Esta medicion, con 15 piezas maduras, la pone justo en
+  nuestra mediana.** Ratio 1,6%, identico al 09/11. 🚨 **SEXTA ventana sin aparecer como fuente en PRODUCED.**
+- **`rhtvmusic` sube a 17.611 (3,90x) con n=10 y repite su ratio exacto: 6,5%.** Segunda ventana como
+  VIGILANDO. **Su techo es otra vez un video largo: 179 segundos, 28.235 likes.** 9 de 10 video.
+- **`rhtvsports` tiene su primera grilla propia: n=9, 2.121 (0,47x), ratio 3,3%.** El 10,3% del 09/11
+  venia de **una** pieza y no se sostiene. **Su techo es un video de 62s con 38.690 / 1.237** — 18 veces su
+  propia mediana. Perfil del grupo confirmado una vez mas.
+- **`rhtvgame.ing` baja a 2.884 (0,64x) con n=10** desde 4.342. Ratio sube a 4,2%. Su techo es un video de
+  40s con **35.359 / 1.725.** Tercera medicion: 821 (n=1) -> 4.342 (n=9) -> 2.884 (n=10).
+- 🚨 **`yktesolid` cumple la condicion de salida que el archivo le escribio el 09/11.** Su grilla devuelve
+  otra vez los mismos posteos de **2023 y 2024** (con los likes ocultos) y las mismas dos piezas de
+  octubre-2026. **Cero actividad nueva en dos semanas. Pasa a DESCARTADAS** por el criterio de entrada
+  (no produce consistentemente), tal como quedo escrito la semana pasada.
+- **Dos cuentas nuevas aparecieron por cross-post, otra vez:** `rhtvstreams` (`DfyD8b1OwA2` 7.603/238 y
+  `Dfu0j8DKgzS` 5.548/171) — **quinto satelite del grupo RapHouseTV, entra a candidatas**; y
+  `kind100list` (`DfnmSEGOS5O`, 1.239 / 104 = **8,4%**), que aparecio en la grilla de `goodnews_movement`
+  — **entra a candidatas, n=1.**
+
+🚨 **MEDIDO - EL CONTRASTE VOLUMEN-CONTRA-CONVERSACION: CUARTA VENTANA SEGUIDA.** Es el dato mas
+reproducible que tiene esta lista. Los dos extremos de hoy:
+
+| | mediana | ratio |
+|---|---|---|
+| `goodnews_movement` (mas volumen, menos conversacion) | **17.099** (3,79x) | **1,2%** |
+| `rap.housetv` (menos volumen, mas conversacion) | **1.144** (0,25x) | **7,8%** |
+
+15 veces de diferencia en alcance, 6,5 veces en ratio, **en direcciones opuestas.** Serie de
+`goodnews_movement`: 1,2% -> 0,7% -> 0,9% -> **1,2%**, el mas bajo de la lista **cuatro veces seguidas**,
+rango 0,2% a 1,9%. **MEDIDO, cuatro ventanas.**
+
+**MEDIDO - el video largo pone el techo, tercera cuenta:** `rhtvmusic` 179s = 28.235 · `rhtvsports`
+223s = 11.934 y 62s = 38.690 · `theneighborhoodtalk` 167s = 48.968. Mas el antecedente de `humansofny`
+(99s = 544.599). ⚠️ **Dato de formato y de mecanica, no de cobertura: esta cuenta no publica video por los
+strikes de copyright.** Lo adaptable es la estructura (desarrollo largo de una persona a camara), no el soporte.
+
+**shortCodes guardados para medir la semana que viene** (dueño verificado por `ownerUsername`):
+`theneighborhoodtalk`: DfyQ005tnfa · DfyMIHcNp05 · DfyIc2XNnII · DfyDxEGpSp3 · DfyCaUQP567 · DfyBIUhO4vi ·
+DfxvOQntTuO · Dfxece2ucjw · Dfxjgudk7qX · Dfx_jf5H0rV · Dfxv-M3OEYC · Dfx3O4rH9CM · Dfxsv6kksaH ·
+Dfx2KQtH3Dd · Dfxjk8jp8lq · DfxpwIjJtNv · DfyW5jhNr-m · DfyuD0CG-Ms · DfxWwvOtXNk · DfxmEw7H2I1 ·
+DfxfjaYRJyH · DfyYZq_tAi- · DfxWJa4sqqG · Dfx388OvSWb · DfybgKjtQil · DfyFwyhJYVH —
+`raphousetv`: DfxedhSoGP2 · Dfx0AT1N9gM · DfxmA0HOJ9T · DfxgO-ouhYH · DfxTnqLxJuh · Dfxq4xOhdK8 ·
+DfyTMKBBZA7 · DfxPuqJhlfs · Dfxv_4fhXED · Dfyj6QGO2s- · DfxYJrChGSu · Dfx6jmWscCY —
+`rap.housetv`: Dfx0HcaqlrC · Dfyj-TsxEqU · Dfx618aKs1n · DfxUGXhKBmB · DfxQDjnqeLN · DfxmfbpqHcy ·
+DfxfLFtq6n2 · DfyFiTiNvdQ · DfxySH8qQ5x · DfyTwbptnVg · DfxYlQ6KmV7 —
+`rhtvstreams`: DfyD8b1OwA2 · Dfu0j8DKgzS — `kind100list`: DfnmSEGOS5O —
+`goodnews_movement`: DfxA7evMcFv · DfxLIkhtEpE — `becauseofthem`: DfxTUlZiKO_ — `blacknews`: DfyaNsPtwCv · DfyUh4jNKR2.
+
+**shortCodes propios guardados para maduracion:**
+`DfmpX9HlmKD` (Emani, 20.802) - `DfnLphHFlWj` (Romeo, 15.782) - `DfstIrelkZS` (T-Boz, 12.884) -
+`DflLrJLFkUL` (Stephanie Mills, 10.182) - `DfjxH4TBF3t` (Druski, 8.209) - `DfnlcQouNMd` (Angie, 5.387) -
+`DfpOKGqlvPG` (Lil' Kim, 4.791) - `DfkowKkiZan` (Bradley, 3.392) - `DfubwOKFieE` (Dorsey, 3.078) -
+`Dfu6Hbqlv0R` (Positive K, 2.824) - `DfvPYZilnIM` (Debbie Allen, 2.484) - `DfibVR-taXF` (Nipsey $20M, 1.816) -
+`Dfpx11BFMps` (Austin Collins, 1.537) -
+**<24h:** `Dfx4CFrFsDK` (Marathon Burger, 4.578) - `Dfw8l46FgRv` (monraehou, 2.325) - `DfxkTFqFuB8` (Ayesha, 496) -
+**ocultas, solo comentarios:** `Dfs0J4uFu0P` (Lionel Richie, 15) - `Dfry-eQFoYH` (Shaq, 3) - `DfqVTYkjLHP` (Jadakiss, 19) -
+**no editorial:** `DfxKPq3lnxZ` (@Sweet904, 345).
+
+### CHEQUEO DEL LOOP
+
+- ✅ **PRODUCCION: 19 piezas editoriales en el feed, maximo de la serie** (14 - 7 - 12 - 13 - 11 - 12 - 14 -
+  6 - 14 - 16 - **19**). Tercer maximo consecutivo. Sin caida.
+- 🚨 **ENTREGA -> FEED: 19 de ~27. SIETE PIEZAS ENTREGADAS EN LA VENTANA NO APARECEN EN EL FEED.**
+  PRODUCED las marca ENTREGADO y el scrape de 20 posts no las encuentra: **HERCY MILLER / MASTER P**
+  (09-nov) · **NIECY NASH** (10-nov) · **BRANDY / SY'RAI** (11-nov) · **BIG PUN / CHRIS RIVERS** (13-nov) ·
+  **LIL' KIM / ROYAL REIGN** (13-nov) · **TAMERA MOWRY / ARIAH** (13-nov) · **CHRIS BROWN / MANUTENCION**
+  (15-nov). Mas **G HERBO** (09-nov), que puede caer justo antes del borde de la ventana de 20 posts y por
+  eso queda aparte. **La corrida del 09/11 tuvo 16 de 16. Esta tiene 7 sin explicacion.**
+  ⚠️ **Tres de las siete son del 13-nov**, el mismo dia de las tres piezas ocultas y de la nota "a la espera
+  del OK del operador tras los rechazos de hoy". **Puede ser decision del operador y no una falla de
+  entrega** — PRODUCED no lo dice. **El dato se anota; la causa no se puede leer del registro.**
+  🚨 **Y las seis piezas de motor DEBATE del 16-nov quedan sin verificar por ser de hoy.**
+- ⚠️ **MELODY CLAY y KIRK FRANKLIN siguen sin resolver, TERCERA corrida.** Entregadas el 28 y el 30-oct;
+  la ventana del scrape empieza el 9-nov y no las alcanza. **Para cerrarlas hace falta un scrape con
+  `resultsLimit` mayor, o buscarlas por shortCode. Queda escrito como pendiente concreto, no como "abierto".**
+- ✅ **Titulos: 19 de 19 de PRODUCED. Cero OCR, cuarta corrida seguida.**
+- 🚨 **EL shortCode DE IG SIGUE SIN ANOTARSE: UNDECIMO PEDIDO.** El cruce titulo/rendimiento se armo otra vez
+  emparejando a mano la caption de cada post contra la fila de PRODUCED. Es el unico paso de esta tarea que
+  no se puede automatizar sin ese dato, **y es tambien lo que convertiria el chequeo de entrega->feed en
+  automatico en vez de en una lista de siete huecos sin causa.**
+- 🚨 **La columna `TÍTULO USADO` sigue desalineada (tercera corrida) y ahora la columna de CARRIL tambien
+  se fragmento en 12 etiquetas.** Para el corrector.
+- **Carriles que aparecieron:** IG por cuenta 12, prensa y feeds de cultura 3, TV local 2, barrido TikTok 1,
+  semilla del operador 1. **No aparecio: cosecha de comentarios (Repackage), quinta ventana seguida en cero.**
+- **El backlog de 7 piezas anotado el 19/10 sigue sin cerrarse**, sexta corrida.
+- **Cero cross-posts de animacion y cero QUOTES premium en el feed**, primera ventana sin ninguno de los dos
+  desde que se registran.
+- ✅ **LEARNINGS_EDITORIAL.md no se toco y no crecio. Correcto** (congelado por decision del operador,
+  28-ago). **MEDICIONES.md es el unico archivo que escribe esta tarea; WATCHLIST.md es el otro que mantiene.**
+
+### COSTO DE LA CORRIDA
+
+5 corridas de Apify: `instagram-scraper` x4 — feed propio (0,0093 CU), 40 shortCodes guardados (0,0125 CU),
+grilla de 30 para las 3 de alta frecuencia (0,0389 CU) y grilla de 10 para las otras 7 (0,20 CU, quedo
+girando en 110/111; se leyeron los 65 items devueltos) — **proxy estandar, nunca residencial**; y
+`cheerio-scraper` x4 para leer el repo (0,0017 a 0,0046 CU). **Cero OCR** (19 de 19 titulos de PRODUCED).
+El token de GitHub se leyo del store `IMS281Dl1YSeVNwmi`, sin pedirselo al operador.
