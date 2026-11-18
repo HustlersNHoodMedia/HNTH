@@ -2899,3 +2899,17 @@ Hallazgos (MEDIDO, una semana — no es regla):
 - Famoso + familia + gesto/precio: mediana de los 5 de >24h = 3,7K (0,8x), con T-Boz 3,2x y Blacc Sam 1,7x. Cardi va a ese ritmo en 4h.
 - El debate que mejor anduvo tenía familia en el centro (Debbie/Thump 2,6K). Los de pareja/famosos/opinión pelada quedan en ~0,6K.
 - Lena (opinión sin hecho ni gesto) es el más flojo en ritmo temprano.
+
+## CORRIDA 2026-11-18 (09:20 UTC) · pedido del operador: análisis profundo (60 posts propios + páginas parecidas)
+53 piezas editoriales maduras (sin videos de HNTH TV, sin <24h). Ocultos contados como 0. Mediana total 2.740 (0,61x de la vara 4.510).
+
+POR FORMATO (MEDIDO): imagen única n=15 mediana 5.977 (1,33x) · carrusel n=38 mediana 2.312 (0,51x). Invierte la tabla de dos años del Editorial.
+POR MOTOR (MEDIDO): chico local que actúa por su familia (911/abuela/otro chico) n=4 mediana 11.437 (2,54x; Wess-Pass 33.856, Ky'ier 21.613) ·
+famoso + salud con giro n=3 7.650 · famoso + familia n=11 5.977 (1,33x; Blacc Sam/sobrina 21.276, Romeo 16.321, T-Boz 14.412, S. Mills 10.732) ·
+famoso + plata/secreto (Yandy) 23.821 · famoso negocio 3.476 · famoso anécdota vieja 3.471 · familia local adulta 2.740 · héroe local adulto 1.728 ·
+injusticia local 1.675 · listas motivacionales 1.200 · DEBATE 998 (0,22x) · logro local 850 · negocio local 0 (2 de 2 ocultos).
+AGREGADO: famoso n=24 5.304 (1,18x) · local n=22 1.649 (0,37x) — el local SOLO gana cuando el que actúa es un chico (o un padre con un gesto visible hacia sus hijos: carroza de princesas 29.409).
+CARAS IA: comentarios marcando "AI / not him / who are these people" en G Herbo, Yaxel, Cardi (borrado por el operador, >4K likes, comentario top 148 likes). Riesgo crece con la fama del protagonista.
+PÁGINAS PARECIDAS (16-18 nov, n chico): becauseofthem imagen única 10.111 vs carrusel 4.301 (mismo patrón que el nuestro, sus techos son orgullo/política: no aplicable) ·
+blacknews mediana 234, techos = historia negra (prohibido para nosotros) · goodnews_movement 16.475, techos = video de familia/chicos ·
+pubity: carrusel + evento masivo de la semana (GTA 6, Bond). theshaderoom / hollywoodunlocked / thejasminebrand: grilla de 20 entera <24h, no medibles con este límite.
