@@ -2875,3 +2875,27 @@ Lectura medida:
    (Lionel), un regalo de famoso a un nene anónimo (Shaq).
 4. Sin famoso, el techo es ~3.200 aunque la historia sea fuerte (Dorsey, Monrae, Austin).
 5. Historia ya publicada por una página grande antes que nosotros = 0,70x (Dorsey vs raphousetv 17K).
+
+## CORRIDA 2026-11-18 (02:02 UTC) · pedido del operador: ¿funcionan los tópicos nuevos (debate / famoso+familia)?
+Mediana de referencia 4,510. Los 3 de <24h se leen solo como ritmo temprano.
+
+| post | motor | edad | likes | coment. | coment/likes |
+|---|---|---|---|---|---|
+| Ginuwine crucero $4,200 | debate (plata/injusticia) | 2,5h | 411 | 104 | 25% |
+| Cardi B / cumple de Grey | famosa + hijo + obstáculo | 3,8h | 2,986 | 25 | 1% |
+| Lena Waithe "blood is not entitlement" | debate (opinión) | 5,3h | 236 | 21 | 9% |
+| $3,500 cita | debate (plata/citas) | 30h | 1,292 | 1,421 | 110% |
+| Lil Jon divorcio | debate (relación) | 31h | 658 | 59 | 9% |
+| Chance, tercera hija | famoso + hija (nacimiento) | 36h | 1,960 | 98 | 5% |
+| Curry / Gilbert Arenas | debate (famosos) | 54h | 635 | 134 | 21% |
+| Blacc Sam / Marathon Burger | famoso + hermano + promesa | 51h | 7,503 | 147 | 2% |
+| Monrae / casa a la madre | familia + promesa cumplida | 60h | 2,719 | 29 | 1% |
+| Debbie Allen / Thump | debate con familia | 76h | 2,628 | 652 | 25% |
+| Positive K cuida a la madre | famoso + madre + precio | 79h | 3,737 | 186 | 5% |
+| T-Boz / hija Chase | famosa + hija + giro | 4d | 14,264 | 366 | 3% |
+
+Hallazgos (MEDIDO, una semana — no es regla):
+- Los debates juntan comentarios pero no likes: mediana de likes de los 4 debates de >24h = 1,0K (0,22x). El de $3,500 tuvo más comentarios que likes.
+- Famoso + familia + gesto/precio: mediana de los 5 de >24h = 3,7K (0,8x), con T-Boz 3,2x y Blacc Sam 1,7x. Cardi va a ese ritmo en 4h.
+- El debate que mejor anduvo tenía familia en el centro (Debbie/Thump 2,6K). Los de pareja/famosos/opinión pelada quedan en ~0,6K.
+- Lena (opinión sin hecho ni gesto) es el más flojo en ritmo temprano.
