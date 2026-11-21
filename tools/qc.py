@@ -4,7 +4,7 @@ f,tag=sys.argv[1],sys.argv[2]
 d=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]).decode())
 ims=[]
 for t in [0, d*0.4, d-1.5]:
-    subprocess.run(['ffmpeg','-v','error','-y','-ss',str(max(0,t)),'-i',f,'-frames:v','1','/tmp/qcf.png']); ims.append(Image.open('/tmp/qcf.png').convert('RGB').copy())
+    subprocess.run(['ffmpeg','-v','error','-y','-ss',str(max(0,t)),'-i',f,'-frames:v','1','/tmp/qcf_'+tag+'.png']); ims.append(Image.open('/tmp/qcf_'+tag+'.png').convert('RGB').copy())
 im=ims[0]
 # last title row: lowest row in header with red/white text
 px=im.load(); last=None
