@@ -2913,3 +2913,356 @@ CARAS IA: comentarios marcando "AI / not him / who are these people" en G Herbo,
 PÁGINAS PARECIDAS (16-18 nov, n chico): becauseofthem imagen única 10.111 vs carrusel 4.301 (mismo patrón que el nuestro, sus techos son orgullo/política: no aplicable) ·
 blacknews mediana 234, techos = historia negra (prohibido para nosotros) · goodnews_movement 16.475, techos = video de familia/chicos ·
 pubity: carrusel + evento masivo de la semana (GTA 6, Bond). theshaderoom / hollywoodunlocked / thejasminebrand: grilla de 20 entera <24h, no medibles con este límite.
+
+---
+
+## CORRIDA 2026-11-23 (12:30 UTC) — corrida semanal
+
+**Ventana:** 15-nov 22:40Z al 22-nov 21:26Z. 20 objetos scrapeados, **17 piezas maduras** (>=24h).
+Fuera del cálculo por <24h: PRINCE / LA BÓVEDA (21,7h · 1.874/31) · TUPAC / FEAR STRONGER THAN LOVE
+(17,1h · 720/2) · JAYLEN LOCKHART / CARTERO (14,6h · 1.031/24). Ocultas contadas como flop.
+**Títulos: 14 de 17 de PRODUCED.md. Cero OCR, quinta corrida seguida.** Las otras 3 no tienen fila
+(ver CHEQUEO DEL LOOP).
+
+### TABLA DE PIEZAS
+
+| # | estructura | carril de origen | título (tal como salió en la tapa) | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|---|---|---|
+| 1 | carrusel | RSS + IG por cuenta | AFTER AN 81-YEAR-OLD WOMAN WAS DIAGNOSED WITH CANCER, HER DAUGHTER TOOK HER TO SEE CHRIS BROWN SO SHE'D HAVE SOMETHING TO LOOK FORWARD TO. HE SANG TO HER ONSTAGE, THEN POSTED HER PHOTO WITH TWO WORDS: "LOVE HER." | **22.545** | 390 | 1,7% | **5,00x** |
+| 2 | carrusel 3 | IG por cuenta + RSS | NIPSEY HUSSLE AND HIS BROTHER BLACC SAM USED TO JOKE: 'WHEN WE GET THE MONEY RIGHT, WE NEED TO GET A RESTAURANT.' SAM NOW HAS 5 MARATHON BURGER SPOTS, AND ONE IS GOING UP IN TIMES SQUARE. | **8.138** | 157 | 1,9% | **1,80x** |
+| 3 | carrusel 3 | radar RSS (TV local KGTV/KTLA) | A DAD TRAPPED ON A BURNING CABIN'S BALCONY TOLD HIS 2-YEAR-OLD HE WAS SORRY, THREW HIM 20 FEET DOWN AND JUMPED. THE FLAMES BURNED HIS FACE, ARM AND LEG. HIS SON DIDN'T GET A SCRATCH. | **7.737** | 219 | 2,8% | **1,72x** |
+| 4 | imagen única | archivo de tweets | NIPSEY ONCE SAID, "THEY GONE MAKE U FEEL CRAZY BOUT YO BEST IDEAS. GREAT THOUGHTS ARE GREAT THREATS." | **5.935** | 19 | 0,3% | **1,32x** |
+| 5 | imagen única | prensa (KFF / Capital B / CBS) | A BOY IN A WHEELCHAIR LOST HIS BROTHER, HIS SISTER AND THE GRANDMA RAISING HIM, AND LIVED IN A HOSPITAL FOR 475 DAYS. THEN THE AUNT WHO CARED FOR HIM AS A BABY CAME TO TAKE HIM HOME. | 3.863 | 74 | 1,9% | 0,86x |
+| 6 | carrusel | **sin fila en PRODUCED** | ALLEN IVERSON / SU MADRE ANN Y GEORGETOWN (título no registrado) | 3.040 | 40 | 1,3% | 0,67x |
+| 7 | imagen única | archivo de tweets | NIPSEY ONCE SAID, "SEASONAL SUCCESS SCARES ME. MY GOAL IS LONGEVITY. IT'S A MARATHON." | 2.499 | 12 | 0,5% | 0,55x |
+| 8 | carrusel 2 | IG por cuenta (chancetherapper) | CHANCE THE RAPPER, WHOSE DIVORCE WAS FINALIZED LAST YEAR, JUST WELCOMED HIS THIRD DAUGHTER, HAYLI, WITH HIS NEW PARTNER. HE WROTE: 'MOM N DAD LOVE YOU. GOD IS WITH YOU.' | 2.189 | 107 | 4,9% | 0,49x |
+| 9 | imagen única | semilla del operador (TMZ) | BARON DAVIS' SISTER SAYS HE PROMISED HER THE HOUSE SHE'S LIVED IN FOR NEARLY 20 YEARS. SHE FOUND OUT FROM A REAL ESTATE AGENT THAT HE WAS SELLING IT. | 1.866 | **881** | **47,2%** | 0,41x |
+| 10 | carrusel | IG por cuenta (`raphousetv`, WATCHLIST) | A WOMAN SAYS MEN WHO COMPLAIN ABOUT PAYING FOR A $50 DATE DON'T SEE WHAT SHE SPENT TO SHOW UP: 'IT COST ME $3,500 TO STEP OUT THE HOUSE.' | 1.608 | **1.786** | **111,1%** | 0,36x |
+| 11 | imagen única | prensa cultura (theJasmineBrand) | GINUWINE SAYS HE PAID $4,200 FOR A ROYAL CARIBBEAN CRUISE, AND WHEN THE FAA GROUND STOP CANCELED HIS FLIGHTS TWICE, THE CRUISE LINE REFUSED HIM A REFUND OR EVEN A CREDIT. | 1.511 | **375** | **24,8%** | 0,34x |
+| 12 | imagen única | semilla del operador (theGrio) | CARDI B GOT STUCK IN L.A. WHEN FLIGHTS ACROSS AMERICA WERE GROUNDED, AND HER SON GREY'S FIRST BIRTHDAY WAS ON THE OTHER SIDE OF THE COUNTRY. SHE STILL MADE IT HOME FOR HIM. | 1.375 | 13 | 0,9% | 0,30x |
+| 13 | carrusel 2 | prensa cultura (theJasmineBrand) | LIL JON ADMITS HIS WIFE OF 18 YEARS WAS 'SCREAMING OUT THAT SHE NEEDED MORE LOVE,' AND HE DIDN'T SEE IT UNTIL THE MARRIAGE WAS OVER. HE SAYS ALL THAT TOURING IS WHAT KEPT THEM TOGETHER SO LONG. | 720 | 84 | **11,7%** | 0,16x |
+| 14 | imagen única | semilla del operador (theRoot) | LENA WAITHE, WHO CREATED 'THE CHI,' SAYS NOBODY SHOULD GO TO THEIR PARENTS' HOUSE OUT OF OBLIGATION: 'BLOOD IS NOT ENTITLEMENT.' | 525 | 56 | **10,7%** | 0,12x |
+| 15 | carrusel 2 | prensa cultura (theGrio / AfroTech) | MONIQUE RODRIGUEZ WAS A NURSE WHEN SHE STARTED MIELLE IN HER GARAGE AND NAMED IT AFTER HER TWO DAUGHTERS. NOW THE BRAND BELONGS TO P&G, AND ONE OF THOSE DAUGHTERS, MIA, 21, JUST JOINED THE COMPANY. | **343** | 5 | 1,5% | **0,08x** |
+| 16 | imagen única | **sin fila en PRODUCED** | KEVIN GATES / DREKA MANUTENCIÓN (título no registrado) · motor DEBATE | OCULTOS | 60 | - | flop |
+| 17 | carrusel 3 | radar RSS (BIN / CBS) | IN 2016 A GRANDMA TEXTED THE WRONG NUMBER TO INVITE HER GRANDSON TO THANKSGIVING. THE TEEN WHO GOT IT ASKED IF HE COULD STILL COME. THEY'VE SPENT EVERY ONE TOGETHER SINCE, AND NOW LIFETIME IS MAKING THEIR MOVIE. | OCULTOS | 36 | - | flop |
+
+**Medianas:** visibles (15) **2.189** (0,49x) · con ocultas como flop (17) **1.866** (0,41x) ·
+**4 de 17 arriba de 4.510.**
+
+**Serie semanal:** 26/10 4.307 · 02/11 4.294 · 16/11 3.139 (vis) / 2.560 (todas) · **23/11 2.189 (vis) / 1.866 (todas).**
+**Tercera caída consecutiva.** La causa, separada abajo, es de COMPOSICIÓN, no de redacción.
+
+### 🚨 MEDIDO — LA CAÍDA DE LA MEDIANA ES COMPOSICIÓN, Y ESTE ES EL NÚMERO
+
+| motor | n | mediana | x4.510 |
+|---|---|---|---|
+| famoso + familia + obstáculo | 2 | 12.792 | **2,84x** |
+| famoso + familia + promesa cumplida | 1 | 8.138 | **1,80x** |
+| local + familia + obstáculo | 2 | 5.800 | **1,29x** |
+| cuota (NIPSEY ONCE SAID) | 2 | 4.217 | 0,94x |
+| famoso + familia sin obstáculo | 2 | 1.782 | 0,40x |
+| **DEBATE** | **6** | **1.116** | **0,25x** |
+| famoso negocio | 1 | 343 | 0,08x |
+| local + gesto (oculta) | 1 | 0 | - |
+
+🚨 **DEBATE + cuotas = 8 de 17 piezas, el 47% de la ventana, y son los dos motores de mediana más baja.**
+El 16/11 DEBATE era 2 de 19 (11%) y no había ninguna cuota. **La mediana bajó porque el mix se corrió
+hacia los dos motores que ya medían abajo, no porque las piezas empeoraran:** las cuatro piezas de motor
+alto de esta ventana (5,00x · 1,80x · 1,72x · 1,29x) están en línea con las de las ventanas anteriores.
+**MEDIDO, dos ventanas comparables.**
+
+### 🚨 MEDIDO — EL MOTOR DEBATE: TERCERA MEDICIÓN, MISMA DIRECCIÓN, Y AHORA CON n REAL
+
+El 16/11 esto se escribió con n=2 y quedó marcado para esta corrida. **Ahora son 6 piezas.**
+
+| pieza | likes | com. | ratio | x4.510 |
+|---|---|---|---|---|
+| $3,500 TO STEP OUT THE HOUSE | 1.608 | **1.786** | **111,1%** | 0,36x |
+| BARON DAVIS / LA CASA DE SU HERMANA | 1.866 | **881** | **47,2%** | 0,41x |
+| GINUWINE / CRUCERO $4,200 | 1.511 | 375 | **24,8%** | 0,34x |
+| LIL JON / NICOLE SMITH | 720 | 84 | **11,7%** | 0,16x |
+| LENA WAITHE / BLOOD IS NOT ENTITLEMENT | 525 | 56 | **10,7%** | 0,12x |
+| KEVIN GATES / DREKA (oculta) | OCULTOS | 60 | - | flop |
+
+1. 🚨 **LAS 5 VISIBLES DE MOTOR DEBATE SON LOS 5 PRIMEROS PUESTOS DEL RANKING DE RATIO DE TODA LA VENTANA.**
+   La sexta del ranking (CHANCE, 4,9%) está **2,2 veces** abajo de la quinta. **El motor parte el feed en dos,
+   igual que con n=2 el 16/11.** Serie: 16/11 n=2 (24,6% y 20,8%) · 18/11 n=4 de >24h (mediana de likes 0,22x) ·
+   **23/11 n=6 (mediana 0,25x, 5 de 5 visibles arriba del 8%).** **MEDIDO, tres mediciones.**
+2. **$3,500 tiene MÁS COMENTARIOS QUE LIKES: 1.786 sobre 1.608 = 111,1%.** Es el ratio más alto que midió
+   este archivo en una pieza propia; el récord anterior era 24,56% (Debbie Allen, 16/11). **4,5 veces el récord.**
+3. **Y el DEBATE no levanta likes en ninguna de las seis:** la mejor es 0,41x. **Ninguna pieza de motor
+   DEBATE llegó nunca a la mediana de la cuenta en tres ventanas de medición.**
+4. **Dentro del motor, lo que ordena es si hay PLATA concreta en juego:** $3,500 (111%), Baron ($ y una casa,
+   47%) y Ginuwine ($4.200, 25%) están arriba; Lil Jon y Lena (opinión pelada sobre familia/pareja, sin cifra)
+   quedan en 11,7% y 10,7%, **y son también las dos de menos likes de la ventana entre las visibles salvo Mielle.**
+   n=6, una ventana.
+
+### MEDIDO — EL OBSTÁCULO SIGUE SIENDO EL CORTE MÁS LIMPIO
+
+| | n | mediana | x4.510 |
+|---|---|---|---|
+| con obstáculo duro (cáncer, incendio, violencia armada, cárcel a los 17) | 4 visibles | 5.800 | **1,29x** |
+| sin obstáculo (opinión, negocio, celebración, pleito de plata) | 11 visibles | 1.866 | 0,41x |
+
+**3,1 veces de diferencia.** Con las ocultas adentro: 5 vs 12, **0,86x contra 0,35x (2,5x).**
+Es la compuerta de tensión que el manual ya tiene escrita; acá queda con número. n chico, una ventana.
+
+### MEDIDO — EL CORTE FAMOSO / LOCAL SE DIO VUELTA ESTA VENTANA
+
+| | n | mediana | x4.510 |
+|---|---|---|---|
+| famoso | 13 | 1.866 | 0,41x |
+| local / anónimo | 4 | 2.736 | **0,61x** |
+
+El 18/11, con n=53, esto midió famoso 1,18x contra local 0,37x. **Esta ventana invierte el signo.**
+🚨 **Pero no es un hallazgo sobre el protagonista: es el mismo efecto de composición.** De las 13 piezas de
+famoso, **8 son DEBATE o cuota** — los dos motores bajos. El famoso pone el techo (Ms. Joyce 5,00x) y
+también 6 de los 7 pisos. **POSIBLE DESPLAZAMIENTO — hace falta otra semana con mix comparable.**
+**Lo que NO se puede concluir de esta ventana es nada sobre famoso contra local: la variable está confundida.**
+
+### MEDIDO — TECHO CONTRA PISO, LÍNEA POR LÍNEA (séptima corrida de esta hipótesis)
+
+| | MS. JOYCE (**5,00x**) | MIELLE (**0,08x**) |
+|---|---|---|
+| quién era la persona | ✅ una mujer de 81, maestra jubilada, con cáncer | ✅ era enfermera |
+| qué eligió / qué le pasó | ✅ la hija le compró las entradas | ✅ arrancó en el garage |
+| que el otro sobrevivió / qué se pagó | ✅ el cáncer está nombrado | ❌ **no hay nada en juego** |
+| cómo terminó | ✅ él le cantó en el escenario | ⚠️ la hija entra a la empresa (hito corporativo) |
+| cita del protagonista | ✅ cierra en "LOVE HER" | ❌ |
+| emoción en la primera oración | ✅ el diagnóstico | ❌ abre en oficio + marca (registro de reporte) |
+| causa pegada a la reacción | ✅ "so she'd have something to look forward to" | ❌ los dos hechos son adyacentes |
+| cierra en consecuencia | ✅ | ❌ cierra en un dato adyacente |
+
+🚨 **Por primera vez en siete corridas el techo y el piso NO cumplen las mismas líneas: Mielle falla 5 de 8,
+y Ms. Joyce cumple 8 de 8.** Las seis corridas anteriores comparaban dos títulos bien escritos con
+protagonistas distintos; acá la diferencia está en el título. **Lo que falla en Mielle no es una línea
+suelta: es que no hay obstáculo, y sin obstáculo las otras cuatro líneas no tienen qué pegar.**
+**MEDIDO, un par. No es regla — es el primer par de esta serie donde la redacción separa.**
+
+- **El cierre en consecuencia: duodécima corrida.** Acá sí separa (Ms. Joyce cierra en cita, Mielle en dato
+  adyacente), pero es el mismo par de arriba: no es evidencia independiente.
+- **"Datos correctos contados en frío": séptima ventana.** Mielle es exactamente eso — y es el piso.
+  **Primera vez que la hipótesis apunta en su dirección.** Un caso.
+
+### MEDIDO — EL LARGO: no se midió esta corrida
+
+Las 11 corridas anteriores dieron rho entre -0,34 y +0,01, con el signo dado vuelta dos veces.
+**El antecedente manda: el largo no es la variable, y medirlo otra vez con n=15 no agrega nada.**
+Se retira de la corrida semanal. Si el corrector lo quiere de vuelta, está anotado por qué salió.
+
+### MEDIDO — LA MADURACIÓN SE DETIENE A LAS 24h, Y AHORA HAY NÚMERO
+
+Dos piezas ajenas medidas el 16/11 y vueltas a medir hoy, siete días después:
+
+| pieza | 16/11 | 23/11 | cambio |
+|---|---|---|---|
+| `rhtvmusic` DfiWbAHyr8E (video 179,7s) | 28.235 | 28.608 | **+1,3%** |
+| `rhtvsports` DfdxrMTxnQi (video 62,6s) | 38.690 | 39.029 | **+0,9%** |
+| **propia** `Dfx4CFrFsDK` Blacc Sam (era de <24h el 16/11) | 4.578 | 8.138 | **+77,8%** |
+
+🚨 **Una pieza de más de 24h gana ~1% en una semana; una de menos de 24h casi duplica.**
+**El corte de 24h que esta tarea usa desde la primera corrida queda validado con número, y además significa
+que las medianas de semanas distintas son comparables entre sí.** MEDIDO, n=3.
+
+### REPACKAGE PERDIDOS (comentarios sobre likes)
+
+**Cinco piezas arriba del 8%, y las CINCO son de motor DEBATE.** Es la cosecha más grande que
+registró este archivo en una sola ventana.
+
+| pieza | ratio | com. | alcance | link |
+|---|---|---|---|---|
+| **"$3,500 TO STEP OUT THE HOUSE"** | **111,1%** | **1.786** | 0,36x | https://www.instagram.com/p/Df0MvgMFryx/ |
+| **BARON DAVIS / LA CASA DE SU HERMANA** | **47,2%** | **881** | 0,41x | https://www.instagram.com/p/Df4jZF-SXvc/ |
+| **GINUWINE / CRUCERO $4,200** | **24,8%** | 375 | 0,34x | https://www.instagram.com/p/Df3Ca2qg5Ql/ |
+| LIL JON / NICOLE SMITH | 11,7% | 84 | 0,16x | https://www.instagram.com/p/Df0Do8JFq52/ |
+| LENA WAITHE / BLOOD IS NOT ENTITLEMENT | 10,7% | 56 | 0,12x | https://www.instagram.com/p/Df20OcYhKXB/ |
+
+🚨 **La de $3,500 es el mejor candidato de cosecha que tuvo nunca este registro: 1.786 comentarios,
+likes de piso (0,36x) y el tema es plata — el perfil exacto del caso del Jeep, pero con tres veces más
+comentarios que el récord anterior.** Y hay un dato más: **la semilla ajena de esa misma historia
+(`raphousetv` Dfxv_4fhXED) midió 1.700 likes / 3.105 comentarios = 182,6%.** Las dos secciones de
+comentarios, la ajena y la propia, suman **4.891 comentarios sobre el mismo tema.**
+
+**Zona de aviso (4% a 8%), una pieza:** CHANCE THE RAPPER / HAYLI **4,9%** (107 com., 0,49x)
+https://www.instagram.com/p/DfzhYi8FhRV/
+
+**No se puede calcular el ratio de las dos ocultas:** KEVIN GATES (60 com.) y JAMAL HINTON (36 com.).
+
+**Backlog que sigue abierto y sin cosechar (DUODÉCIMA semana):**
+24,6% https://www.instagram.com/p/DfvPYZilnIM/ (Debbie Allen, 610 com. — era "el mejor de todos" hasta hoy) ·
+22,3% https://www.instagram.com/p/DfDh8DqhyLf/ (Paul Pierce, 173) ·
+41,6% https://www.instagram.com/p/DdSbiD0jFFX/ (1.437) · 20,1% https://www.instagram.com/p/DeWwTANhnLc/ (497) ·
+18,4% https://www.instagram.com/p/DdMPk0QSj54/ (536) · 15,1% https://www.instagram.com/p/DdT5U7TspEo/ (747) ·
+12,3% https://www.instagram.com/p/DdJqGZ4lhrs/ (2.909) · 9,7% https://www.instagram.com/p/Dcv05SElg-K/ (3.720) ·
+8,1% https://www.instagram.com/p/Dc9EcTxMl2p/ (276) · 7,5% https://www.instagram.com/p/DenPSATFoa_/ (Ka'Sheena, 547).
+
+### MEDIDO — CARRILES DE ORIGEN
+
+⚠️ **La columna de carril de PRODUCED está fragmentada en 14 etiquetas distintas en esta ventana** (tercera
+corrida que se anota; ver CHEQUEO DEL LOOP). La agrupación de abajo se hizo por la FUENTE de cada fila,
+no por la etiqueta.
+
+| carril | n | mediana | x4.510 | 16/11 |
+|---|---|---|---|---|
+| radar RSS / TV local | 3 (Joe Foster, Jaloni, Jamal oc.) | 3.863 | **0,86x** | TV local 0,55x |
+| archivo de tweets (**carril nuevo**) | 2 | 4.217 | 0,94x | no existía |
+| IG por cuenta | 4 (Ms. Joyce mixta, Blacc Sam mixta, Chance, $3,500) | 2.189 | 0,49x | 1,19x |
+| semilla del operador | 3 (Baron, Cardi, Lena) | 1.375 | 0,30x | 1 pieza de <24h |
+| prensa y feeds de cultura | 3 (Ginuwine, Lil Jon, Mielle) | 720 | **0,16x** | 1,44x |
+| **sin fila en PRODUCED** | 2 (Iverson, Gates oc.) | 1.520 | 0,34x | 0 |
+| **barrido TikTok** | **0** | - | - | 1 |
+| **cosecha de comentarios (Repackage)** | **0** | - | - | 0 |
+
+1. 🚨 **PRENSA Y FEEDS DE CULTURA SE CAE DE 1,44x A 0,16x, y es uno de los carriles más grandes de la ventana.**
+   Sus tres piezas son Ginuwine, Lil Jon y Mielle — **las tres sin obstáculo, dos de ellas DEBATE.**
+   **No es el carril: es lo que el carril trajo.** theJasmineBrand y theGrio devolvieron anécdota de famoso
+   y opinión, que es justo lo que mide abajo.
+2. 🚨 **EL BARRIDO DE TikTok CAYÓ A CERO. Primera ventana sin ninguna pieza de ese carril** desde que se
+   registran carriles. Serie: 09/11 2 · 16/11 1 · **23/11 0.**
+3. 🚨 **LA COSECHA DE COMENTARIOS NO CORRIÓ: SEXTA VENTANA SEGUIDA EN CERO** — y esta vez con cinco piezas
+   propias arriba del 8% y 1.786 comentarios sin tocar en una de ellas.
+4. **Carril nuevo: "archivo de tweets" (las cuotas NIPSEY ONCE SAID).** PRODUCED registra **9 piezas**
+   de este formato entregadas entre el 19 y el 21-nov; **2 llegaron al feed** y midieron 1,32x y 0,55x
+   (mediana 0,94x). Produce a la mediana con costo de producción casi nulo, **y con los dos ratios de
+   comentarios más bajos de toda la ventana (0,3% y 0,5%): no genera conversación.** n=2.
+5. **`raphousetv` dio semilla.** La pieza de $3,500 salió de su post Dfxv_4fhXED. **Es la primera semilla
+   de una cuenta de WATCHLIST en cinco ventanas**, y entró por la señal de ratio de comentarios que esa
+   lista viene midiendo. Ver WATCHLIST.md.
+
+### WATCHLIST — lo medido esta corrida
+
+Se midieron **los 57 shortCodes guardados** el 16/11 (55 de 57 devueltos) **más grilla fresca**:
+`resultsLimit: 30` para las tres de alta frecuencia y `resultsLimit: 10` para las otras ocho.
+Eso da n de 30, 34 y 31 en las tres grandes — el n más alto que tuvo esta lista.
+
+| cuenta | n>=24h | <24h | mediana hoy | 16/11 | ratio hoy | 16/11 | video |
+|---|---|---|---|---|---|---|---|
+| `goodnews_movement` | 10 | 0 | **26.278** (5,83x) | 17.099 | **1%** | 1,2% | 8/10 |
+| `theneighborhoodtalk` | **30** | 26 | **6.360** (1,41x) | 4.003 | 5% | 6,6% | 20/30 |
+| `rhtvgame.ing` | 8 | 0 | **5.669** (1,26x) | 2.884 | **8%** | 4,2% | 8/8 |
+| `rhtvstreams` | **9** | 0 | **4.068** (0,90x) | n=1 (5.548) | 4% | 3,1% | 8/9 |
+| `raphousetv` | **34** | 6 | **3.861** (0,86x) | 4.333 | 6% | 6,1% | 17/34 |
+| `rhtvmusic` | 8 | 1 | **3.646** (0,81x) | 17.611 | 6% | 6,5% | 7/8 |
+| `becauseofthem` | 9 | 1 | **3.041** (0,67x) | 4.222 | 1% | 1,6% | 0/9 |
+| `rhtvsports` | 8 | 1 | **1.962** (0,44x) | 2.121 | 4% | 3,3% | 2/8 |
+| `rap.housetv` | **31** | 7 | **1.358** (0,30x) | 1.144 | **7%** | 7,8% | 17/31 |
+| `blacknews` | 12 | 0 | **275** (0,06x) | 619 | 4% | 4,7% | 0/12 |
+| `kind100list` | **9** | 0 | **124** (0,03x) | n=1 (1.239) | 6% | 8,4% | 2/9 |
+| `joshandbrent` | 1 | 0 | 76 (**NUEVA**, cross-post) | - | 8% | - | 0/1 |
+
+**Lo que se movió:**
+- 🚨 **`raphousetv` DIO SEMILLA — la primera de esta lista en cinco ventanas.** Su post Dfxv_4fhXED
+  (**1.700 likes / 3.105 comentarios = 182,6%, el ratio más alto que midió este archivo en cualquier
+  cuenta**) fue la semilla de nuestra pieza de $3,500. **Su motivo declarado es el motor de comentarios,
+  y entregó exactamente por ahí.** Contador de strikes a cero.
+- 🚨 **`kind100list` se desploma de 1.239 (n=1) a 124 (n=9) con su primera grilla propia.** El 8,4% de
+  ratio sí se sostiene (6%), pero **con 124 likes de mediana no hay alcance que cosechar.** Es la
+  **CUARTA corrección de una lectura de n chico, y las cuatro fueron a la baja** (`blacknews` 1.920→619,
+  `becauseofthem` 6.660→4.222, `rhtvsports` 10,3%→3,3%, **`kind100list` 1.239→124**). La regla de método
+  del 16/11 queda reproducida por cuarta vez.
+- ⚠️ **`rhtvmusic` marca 3.646 contra 17.611, pero la lectura NO es comparable: su pieza techo es el MISMO
+  post que el 16/11** (DfiWbAHyr8E, 28.235 → 28.608). **La cuenta publicó muy poco en siete días y la
+  grilla se superpone con la anterior**, así que el movimiento es de composición de grilla, no de
+  rendimiento. Se anota el número y se marca no comparable.
+- **`theneighborhoodtalk` sube a 6.360 (1,41x) con n=30, el n más alto que se le midió.** Techo
+  **DfyuD0CG-Ms, carrusel (imagen fija), 124.924 likes / 4.029 com.** — ⚠️ **y eso corta la serie del video
+  largo en esta cuenta: su techo de hoy NO es video.** Ratio máximo maduro DfyFwyhJYVH 7.172/2.665 = **37,2%**
+  (sigue la mecánica de cebo ya anotada). 20 de 30 video.
+- **`rhtvgame.ing` sube a 5.669 (1,26x) y su ratio a 8%**, el más alto de la lista junto con `rap.housetv`.
+  Serie: 821 (n=1) → 4.342 (n=9) → 2.884 (n=10) → **5.669 (n=8)**. 8 de 8 video.
+- **`rhtvstreams` primera grilla propia, n=9: 4.068 (0,90x), ratio 4%, 8 de 9 video.** Confirma lo que se
+  escribió el 16/11: **números más altos que los otros satélites y ratio más bajo — no encaja con el perfil
+  del grupo.** Techo: video de 129,5s con 13.646.
+- **`rap.housetv` sostiene con n=31: 1.358 (0,30x), ratio 7%.** Su pieza más desproporcionada:
+  **DfxySH8qQ5x, 408 likes / 700 comentarios = 171,6%.** Segundo caso de la jornada de más comentarios
+  que likes, los dos en este grupo de cuentas.
+- **`blacknews` baja otra vez: 275 (0,06x) con n=12, la grilla entera madura.** Serie larga:
+  660 - 265 - 671 - 839 - 341 - 1.920 - 619 - **275.** 0 de 12 video, única de la lista sin nada de video.
+  **Quinta ventana sin dar semilla: strike 5.**
+- **`becauseofthem` 3.041 (0,67x) con n=9.** Séptima ventana sin aparecer como fuente en PRODUCED.
+- **`goodnews_movement` sube a 26.278 (5,83x) con ratio 1% — el más bajo de la lista por QUINTA corrida
+  seguida.** Serie del ratio: 1,2% → 0,7% → 0,9% → 1,2% → **1%.**
+- **Cuenta nueva por cross-post: `joshandbrent`** (Dfo90OShJBG, 76 likes / 6 com.). **Números nulos
+  → directo a DESCARTADAS**, por el precedente de `cre8tedbywavy`.
+
+🚨 **MEDIDO — EL CONTRASTE VOLUMEN-CONTRA-CONVERSACIÓN: QUINTA VENTANA SEGUIDA.**
+
+| | mediana | ratio |
+|---|---|---|
+| `goodnews_movement` (más volumen, menos conversación) | **26.278** (5,83x) | **1%** |
+| `rap.housetv` (menos volumen, más conversación) | **1.358** (0,30x) | **7%** |
+
+**19 veces de diferencia en alcance y 7 veces en ratio, en direcciones opuestas.** Es el dato más
+reproducible que tiene esta lista: cinco ventanas, mismo par de extremos, mismo signo.
+
+⚠️ **El video largo como techo: la serie se corta esta ventana.** `rhtvmusic` y `rhtvsports` repiten techo
+de video largo, pero **son los mismos posts de la semana pasada**; y el techo nuevo más grande de toda la
+lista (`theneighborhoodtalk`, 124.924) **es un carrusel de imagen fija.** **La hipótesis queda en pausa, no
+confirmada ni retirada: hace falta una ventana con posts nuevos en las cuentas de video.**
+
+**shortCodes guardados para medir la semana que viene** (dueño verificado por `ownerUsername`):
+`theneighborhoodtalk`: DgD-NZNn-zB · DgEQ5E3hgfv · DgEmOCetKe7 · DgEGSaVNGx8 · DgEHlIAvg0t · DgEQ-wsNni0 ·
+DgDgo6MtHNP · DgEOBM5pyK_ · DgDz6EtvWIe · DgDjgNxTQd- · DgELS-RB3xv · DgDqRvoPhEh · DgDtW8KAu38 ·
+DgDv6Inn-B4 · DgEbU1pxXXY · DgEJS2th5sC · DgDkaJoB9v3 · DgD3rNDtw-P · DgDfqihH06k · DgEVLm8hfTe ·
+DgDbxudPOgM · DgD6gwzPtKk · DgDbDwHn3bF · DgEoNAMhx8u · DgD8cz5sfWu · DgD3Us5xh8- —
+`raphousetv`: DgDpicluj5N · DgDVS2sNEMH · DgDyksmvbvF · DgEIh_9vdXa · DgEAZi1MA2g · DgD3xHrhgli —
+`rap.housetv`: DgD30-bqlmY · DgEgMLjtie6 · DgDVwODq0sI · DgDp5OOqUm4 · DgEIwyqKAzk · DgDgcM6mLWD · DgDxkvfKCWv —
+`rhtvmusic`: DgDdUBzRMbo — `rhtvsports`: DgDgTIVGjDf — `becauseofthem`: DgDX4xHkmu8.
+
+**shortCodes propios guardados para maduración (los tres de <24h de esta ventana):**
+`DgDAvWuBE4T` (Prince, 1.874) · `DgDdP6QBsiu` (Tupac fear, 720) · `DgDxJXUFjHE` (Jaylen Lockhart, 1.031).
+
+### CHEQUEO DEL LOOP
+
+- 🚨 **PRODUCCIÓN: 17 piezas maduras + 3 de <24h = 20 objetos en el feed en 7 días.** Serie de piezas
+  editoriales: 14 - 7 - 12 - 13 - 11 - 12 - 14 - 6 - 14 - 16 - 19 - **17.** **Primera caída después de tres
+  máximos consecutivos**, y es chica: -2 piezas. **No hay caída de producción** — ver el punto siguiente,
+  que va en la dirección opuesta.
+- 🚨 **ENTREGA → FEED: EL HUECO SE TRIPLICÓ. 17 de ~45.** PRODUCED registra alrededor de 45 piezas
+  ENTREGADO con fecha dentro de la ventana y solo 17 aparecen en el feed. **Las ocho más viejas llevan 7 u
+  8 días entregadas y sin publicar:** **CHRIS BROWN / MANUTENCIÓN** (15-nov, **ya señalada el 16/11**) ·
+  **KEYSHAWN / SHEDEUR** (16-nov) · **MAYWEATHER / LAS DEUDAS** (16-nov) · **PATRICIA WILLIAMS / McDONALD'S**
+  (16-nov) · **ODB / ROCK HALL** (16-nov) · **FLOYD NORMAN / OSCAR A LOS 91** (16-nov) ·
+  **TEYANA TAYLOR / CHEF SCHOOL** (16-nov) · **TINASHE / PRIMERAS NOMINACIONES** (16-nov).
+  Más, del 19 al 22-nov y por lo tanto todavía plausibles de cola: EASTSIDE GOLF · UNC / DERRICK MOORE ·
+  OFFSET Y KALEA · CARDI B / GREY Y LOS QUE SE BURLARON · KARL KANI · STEVIE WONDER + AISHA ·
+  AJ ENFIELD · ANDREA SMALL + WESTIN · DWYANE WADE · MAWENA TAFA · TUPAC QUOTE FAMILIA ·
+  **y 7 de las 9 cuotas NIPSEY.**
+  ⚠️ **El registro no dice si es decisión del operador o cola.** Lo que sí se puede leer: el feed absorbe
+  ~3 objetos por día y la entrega corre muy por encima de eso. **Es el hueco más grande que midió esta
+  tarea** (16/11: 7 piezas; 09/11: 0).
+- 🚨 **TRES PIEZAS DEL FEED NO TIENEN FILA EN PRODUCED: `Df82F7Pvbld` (KEVIN GATES / DREKA),
+  `DgAaEQPEeOb` (ALLEN IVERSON / SU MADRE ANN) y `DgDxJXUFjHE` (JAYLEN LOCKHART / CARTERO).**
+  Se buscó por 'Gates', 'Dreka', 'Iverson', 'Lockhart', 'Aurora', 'Georgetown', 'cartero' y 'mailman' en
+  todo el archivo: cero filas. **Es 3 de 20, el máximo de la serie** (el récord anterior era 1, el 07/09).
+  **Una de las tres (Gates) salió con los likes ocultos y no hay título registrado para analizarla.**
+  El registro es el mecanismo antiduplicado; estos tres huecos son exactamente lo que ese mecanismo no cubre.
+- ✅ **Títulos: 14 de 17 de PRODUCED. Cero OCR, quinta corrida seguida.** Los 3 que faltan son los de arriba.
+- 🚨 **EL shortCode DE IG SIGUE SIN ANOTARSE: DUODÉCIMO PEDIDO.** El cruce título/rendimiento se armó otra
+  vez emparejando a mano la caption de cada post contra la fila de PRODUCED. **Con el hueco de entrega→feed
+  en ~28 piezas, este es el dato que convertiría ese chequeo en automático.**
+- 🚨 **La columna de CARRIL llegó a 14 etiquetas distintas en una sola ventana** (el 16/11 eran 12).
+  Y la columna `TÍTULO USADO` sigue desalineada, cuarta corrida. **Para el corrector.**
+- **MELODY CLAY y KIRK FRANKLIN: CUARTA corrida sin resolver.** Entregadas el 28 y el 30-oct; la ventana
+  de 20 posts empieza el 15-nov. **Para cerrarlas hace falta un scrape por shortCode, no un `resultsLimit`
+  mayor.** Las 6 piezas señaladas el 16/11 (Hercy Miller, Niecy Nash, Brandy, Big Pun, Lil' Kim,
+  Tamera Mowry) quedan en la misma situación: fuera de la ventana, no verificables con este scrape.
+- **El backlog de Repackage sigue sin cerrarse, SÉPTIMA corrida**, y esta ventana le agregó cinco piezas.
+- **Cero cross-posts de animación y cero QUOTES premium en el feed, segunda ventana seguida sin ninguno
+  de los dos.** Por eso el ratio más alto del feed vuelve a ser editorial.
+- ✅ **LEARNINGS_EDITORIAL.md no se tocó y no creció. Correcto** (congelado por decisión del operador,
+  28-ago). **MEDICIONES.md y WATCHLIST.md son los dos únicos archivos que escribe esta tarea.**
+
+### COSTO DE LA CORRIDA
+
+7 corridas de Apify: `instagram-scraper` x4 — feed propio `resultsLimit 20` (0,0113 CU), 57 shortCodes
+guardados (0,0448 CU), grilla 10 para 8 cuentas (0,0473 CU) y grilla 30 para las 3 de alta frecuencia
+(0,0536 CU) — **proxy estándar, nunca residencial**; `cheerio-scraper` para leer el repo, agregar las
+mediciones y escribir (0,0014 a 0,0095 CU). **Cero OCR** (los 3 títulos que faltan no tienen fila, el OCR
+no los habría resuelto mejor que la caption).
+⚠️ **Un intento fallido que queda anotado para no repetirlo:** `context.sendRequest` con `payload` para
+hacer POST devuelve error; el campo correcto es `body`. Costó una corrida de 88s.
+⚠️ **Y un dato de infraestructura contra lo escrito:** en ESTA sesión programada el GET directo a
+`api.github.com` devolvió **200**, pero el repo siguió cerrado ("GitHub access to this repository is not
+enabled for this session"), y `POST /gists` devolvió **403 "Gist writes are not permitted through this
+proxy"**. **La red no es el bloqueo; el repo sí. Toda la lectura y la escritura fue por runs de Apify.**
