@@ -140,8 +140,6 @@ def logo_plate():
     lg = lg.resize((LOGO_W, int(lg.height * LOGO_W / lg.width)), Image.LANCZOS)
     pad = 46
     pl = Image.new('RGBA', (lg.width + 2 * pad, lg.height + 2 * pad), (0, 0, 0, 0))
-    ImageDraw.Draw(pl).ellipse((pad // 2, pad // 2, pl.width - pad // 2, pl.height - pad // 2), fill=(0, 0, 0, 150))
-    pl = pl.filter(ImageFilter.GaussianBlur(28))
     pl.alpha_composite(lg, (pad, pad))
     pl.save('/home/claude/m/logo_plate.png')
     return LOGO_XY[0] - pad, LOGO_XY[1] - pad
